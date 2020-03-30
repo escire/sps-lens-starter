@@ -1,0 +1,48 @@
+var Locale = {
+    _contribTypeMapping: {
+        "author": "Author",
+        "author non-byline": "Author",
+        "autahor": "Author",
+        "auther": "Author",
+        "editor": "Editor",
+        "guest-editor": "Guest Editor",
+        "group-author": "Group Author",
+        "collab": "Collaborator",
+        "reviewed-by": "Reviewer",
+        "nominated-by": "Nominator",
+        "corresp": "Corresponding Author",
+        "other": "Other",
+        "assoc-editor": "Associate Editor",
+        "associate editor": "Associate Editor",
+        "series-editor": "Series Editor",
+        "contributor": "Contributor",
+        "chairman": "Chairman",
+        "monographs-editor": "Monographs Editor",
+        "contrib-author": "Contributing Author",
+        "organizer": "Organizer",
+        "chair": "Chair",
+        "discussant": "Discussant",
+        "presenter": "Presenter",
+        "guest-issue-editor": "Guest Issue Editor",
+        "participant": "Participant",
+        "translator": "Translator"
+    },
+    _publicationTypes: {
+        "reference": "Reference",
+        "book": "Book",
+        "confproc": "Conference/Proceedings",
+        "database": "Database",
+        "journal": "Journal",
+        "patent": "Patent",
+        "report": "Technical report",
+        "software": "Software",
+        "thesis": "Thesis/Dissertation",
+        "webpage": "Webpage",
+        "legal-doc": "Legal document",
+        "newspaper": "Newspaper",
+        "data": "Data",
+        "other": "Other",
+    }
+}
+
+module.exports = Locale;

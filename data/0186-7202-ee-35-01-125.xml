@@ -1,0 +1,1639 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.1 20151215//EN" "https://jats.nlm.nih.gov/publishing/1.1/JATS-journalpublishing1.dtd">
+<article article-type="research-article" dtd-version="1.1" specific-use="sps-1.9" xml:lang="es" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<front>
+		<journal-meta>
+			<journal-id journal-id-type="publisher-id">ee</journal-id>
+			<journal-title-group>
+				<journal-title>Estudios Económicos (México, D.F.)</journal-title>
+				<abbrev-journal-title abbrev-type="publisher">Estud. Econ. (México, D.F.)</abbrev-journal-title>
+			</journal-title-group>
+			<issn pub-type="ppub">0188-6916</issn>
+			<issn pub-type="epub">0186-7202</issn>
+			<publisher>
+				<publisher-name>El Colegio de México, A.C.</publisher-name>
+			</publisher>
+		</journal-meta>
+		<article-meta>
+			<article-id pub-id-type="publisher-id">00004</article-id>
+			<article-categories>
+				<subj-group subj-group-type="heading">
+					<subject>Artículos</subject>
+				</subj-group>
+			</article-categories>
+			<title-group>
+				<article-title>Grandes datos, Google y desempleo</article-title>
+				<trans-title-group xml:lang="en">
+					<trans-title>Big data, Google and unemployment</trans-title>
+				</trans-title-group>
+			</title-group>
+			<contrib-group>
+				<contrib contrib-type="author">
+					<name>
+						<surname>Campos Vázquez</surname>
+						<given-names>Raymundo M.</given-names>
+					</name>
+					<xref ref-type="aff" rid="aff1"><sup>1</sup></xref>
+				</contrib>
+				<contrib contrib-type="author">
+					<name>
+						<surname>López-Araiza B.</surname>
+						<given-names>Sergio E.</given-names>
+					</name>
+					<xref ref-type="aff" rid="aff1"><sup>1</sup></xref>
+				</contrib>
+				<aff id="aff1">
+					<label>1</label>
+					<institution content-type="original">El Colegio de México, A. C.</institution>
+					<institution content-type="normalized">Colegio de México</institution>
+					<institution content-type="orgname">Colegio de México</institution>
+					<country country="MX">Mexico</country>
+				</aff>
+			</contrib-group>
+			<pub-date date-type="pub" publication-format="electronic">
+				<day>30</day>
+				<month>02</month>
+				<year>2020</year>
+			</pub-date>
+			<pub-date date-type="collection" publication-format="electronic">
+				<season>Jan-Jun</season>
+				<year>2020</year>
+			</pub-date>
+			<volume>35</volume>
+			<issue>1</issue>
+			<fpage>125</fpage>
+			<lpage>151</lpage>
+			<history>
+				<date date-type="received">
+					<day>07</day>
+					<month>11</month>
+					<year>2018</year>
+				</date>
+				<date date-type="accepted">
+					<day>05</day>
+					<month>02</month>
+					<year>2019</year>
+				</date>
+			</history>
+			<permissions>
+				<license license-type="open-access" xlink:href="https://creativecommons.org/licenses/by-nc-nd/4.0/" xml:lang="es">
+					<license-p>Este es un artículo publicado en acceso abierto bajo una licencia Creative Commons</license-p>
+				</license>
+			</permissions>
+			<abstract>
+				<title>Resumen: </title>
+				<p>Utilizamos datos de búsquedas en Google sobre empleo para pronosticar la tasa de desempleo en México. Discutimos la bibliografía relacionada con nowcasting y big data donde se utilizan datos generados en internet para predecir desempleo. Además, explicamos algoritmos de aprendizaje que sirven para escoger el mejor modelo de predicción. Finalmente, se aplican estos algoritmos para encontrar el modelo que mejor prediga la tasa de desempleo en México. En términos de políticas públicas, creemos que los datos generados a través de internet y los nuevos métodos estadísticos son claves para mejorar el diseño y la pertinencia de las intervenciones.</p>
+			</abstract>
+			<trans-abstract xml:lang="en">
+				<title>Abstract: </title>
+				<p>We use Google Trends data for employment opportunities related reply in order to forecast the unemployment rate in Mexico. We begin by discussing the literature related to big data and nowcasting in which user generated data is used to forecast unemployment. Afterwards, we explain the basics of several machine learning algorithms. Finally, we implement such algorithms in order to find the best model to predict unemployment using both Google Trends queries and unemployment lags. From a public policy perspective, we believe that both user generated data and new statistical methods may provide great tools for the design of policy interventions.</p>
+			</trans-abstract>
+			<kwd-group xml:lang="es">
+				<title>Palabras clave:</title>
+				<kwd>desempleo</kwd>
+				<kwd>Google</kwd>
+				<kwd>grandes datos</kwd>
+				<kwd>aprendizaje automático</kwd>
+				<kwd>predicción</kwd>
+				<kwd>México</kwd>
+			</kwd-group>
+			<kwd-group xml:lang="es">
+				<title>Clasificación JEL:</title>
+				<kwd>C52</kwd>
+				<kwd>C53</kwd>
+				<kwd>E24</kwd>
+				<kwd>J64</kwd>
+				<kwd>O54</kwd>
+			</kwd-group>
+			<kwd-group xml:lang="en">
+				<title>keywords:</title>
+				<kwd>unemployment</kwd>
+				<kwd>Google</kwd>
+				<kwd>big data</kwd>
+				<kwd>machine learning</kwd>
+				<kwd>prediction</kwd>
+			</kwd-group>
+			<kwd-group xml:lang="en">
+				<title>JEL Classification:</title>
+				<kwd>C52</kwd>
+				<kwd>C53</kwd>
+				<kwd>E24</kwd>
+				<kwd>J64</kwd>
+				<kwd>O54</kwd>
+			</kwd-group>
+			<counts>
+				<fig-count count="4"/>
+				<table-count count="2"/>
+				<equation-count count="5"/>
+				<ref-count count="47"/>
+				<page-count count="27"/>
+			</counts>
+		</article-meta>
+	</front>
+	<body>
+		<sec sec-type="intro">
+			<title>1. Introducción</title>
+			<p>Los estudios empíricos adquieren cada vez mayor importancia en la literatura de la ciencia económica (<xref ref-type="bibr" rid="B19">Einav y Levin, 2014a</xref>, <xref ref-type="bibr" rid="B20">2014b</xref>). En particular, se ha visto una importante disminución de los artículos netamente teóricos frente a aquellos en los que se utilizan los datos para validar las hipótesis presentadas (<xref ref-type="bibr" rid="B25">Hamermesh, 2013</xref>). Al mismo tiempo, por avances tecnológicos y de poder computacional, los datos generados en internet han ido ganando relevancia para investigación científica. Esto ha generado un creciente interés desde la economía por conocer y aplicar los algoritmos de aprendizaje de máquina (<italic>machine learning</italic>) y grandes datos (<italic>big data</italic>) para responder las preguntas relevantes de la disciplina.</p>
+			<p>El presente artículo se suma a la nueva corriente de literatura que ha comenzado a utilizar los métodos de aprendizaje de máquina para realizar investigación científica aplicada. En concreto, presentamos un entorno muy específico en el que tanto estos nuevos modelos como las nuevas fuentes de datos que el internet ha traído consigo son de gran utilidad para la ciencia económica en México.</p>
+			<p>Nuestra intención es, por un lado, mostrar cómo es que los métodos de aprendizaje de máquina están siendo utilizados en la literatura económica a nivel internacional y, por otro, demostrar su utilidad para estudiar la economía mexicana. Además, queremos introducir algunos de estos métodos y cómo es que son instrumentados en la computadora para mostrar al gremio de economistas mexicanos cómo es que pueden ser utilizados en otras agendas de investigación.</p>
+			<p>Por otro lado, internet se ha convertido, en sí mismo, en una inmensa nueva fuente de datos. Las interacciones de los usuarios en redes sociales, las búsquedas personales, las ofertas de empleo y hasta las reseñas son potencialmente un insumo poderoso para contestar preguntas tradicionales (y no tradicionales) utilizando nuevas bases de datos. Este artículo, por lo tanto, también contribuye a diseminar dicha información para la academia mexicana.</p>
+			<p>Nuestra principal aportación consiste en mostrar cómo es que métodos propios del aprendizaje de máquina -como el LASSO (<italic>Least Absolute Shrinkage and Selection Operator</italic>) y los bosques aleatorios (<italic>Random Forest</italic>)-, aunados a datos de búsquedas en <italic>Google</italic>, pueden ayudarnos a predecir el valor de algunas variables macroeconómicas en el presente antes de que contemos con datos oficiales al respecto. Concretamente, buscamos predecir con la mayor precisión posible la tasa de desempleo nacional antes de que el Instituto Nacional de Estadística y Geografía (INEGI) publique la información oficial. Este ejercicio no se ha realizado para la economía mexicana y representa una contribución importante en la bibliografía del tema.</p>
+			<p>Pese a que dichos métodos han demostrado ser particularmente eficientes para explorar las diferencias en efectos para subconjuntos heterogéneos de la población, este artículo pretende, únicamente, demostrar una aplicación sencilla de dichos algoritmos. En este sentido, si la capacidad predictiva que pueda tener el índice de <italic>Google Trends</italic>, utilizado tanto en modelos econométricos como en métodos de aprendizaje de máquina, mejora al analizar distintas subpoblaciones económicamente activas no será nuestro principal interés y, por este motivo, su análisis se limita a la fase exploratoria de los datos.</p>
+			<p>Tanto los nuevos métodos como los datos de <italic>Google</italic> traen consigo enormes ganancias predictivas. El método LASSO tiene un mejor desempeño que un modelo autorregresivo (conocido en la literatura como AR), incluso al incorporar datos de <italic>Google</italic>.</p>
+			<p>Por su parte, el bosque aleatorio tiene un desempeño apenas un poco inferior al LASSO. Finalmente, la precisión del modelo AR mejora de forma considerable cuando toma en cuenta datos de <italic>Google</italic>. Por tales motivos, argumentamos que la ciencia económica en México tiene que conocer y comenzar a utilizar estos métodos y nuevas fuentes de datos.</p>
+			<p>El resto del artículo está organizado como sigue. En la sección dos presentamos la abundante literatura que ha surgido de utilizar métodos de aprendizaje de máquina o datos de internet para contestar preguntas que son importantes en economía. Estos métodos han sido explotados desde muy diversos puntos de vista y con propósitos muy variados, por lo que conocer todo su potencial nos parece de enorme relevancia. Las secciones tres y cuatro están enfocadas en comprender mejor los datos que utilizaremos. En la primera, ofrecemos una breve explicación acerca de cómo se generan los datos de <italic>Google</italic> que utilizamos y exploramos sus principales características, mientras que en la segunda analizamos la relación que presentan estos datos con la Encuesta Nacional de Ocupación y Empleo (ENOE) que presenta el INEGI. En la sección cinco se discute la metodología que utilizaremos para construir y analizar los modelos y sus resultados. Explicamos en profundidad, particularmente, cómo evaluar de forma comparable el desempeño de los modelos, así como las implicaciones teóricas y prácticas del LASSO y del bosque aleatorio. La sección seis contiene el análisis de los resultados y en la sección siete presentamos nuestras conclusiones. </p>
+		</sec>
+		<sec>
+			<title>2. Bibliografía relevante</title>
+			<p> La ciencia económica ha visto en las últimas décadas un fuerte aumento de trabajos empíricos (<xref ref-type="bibr" rid="B19">Einav y Levin, 2014b</xref>). En este contexto, es natural que el uso tanto de fuentes de datos alternativas como de nuevos métodos de análisis estadístico estén incorporándose cada vez con mayor frecuencia a la literatura económica. Es cierto que el enfoque de dichas técnicas consiste en buscar mejorar las predicciones de los modelos y no, como en los métodos econométricos tradicionales, lograr identificar una relación causal entre dos variables (<xref ref-type="bibr" rid="B19">Einav y Levin, 2014b</xref>).</p>
+			<p>Sin embargo, su capacidad predictiva y las nuevas fuentes de datos han generado importantes ejemplos de su enorme valor para guiar políticas públicas (<xref ref-type="bibr" rid="B2">Athey, 2017</xref>; <xref ref-type="bibr" rid="B5">Banco Mundial, 2014</xref>) y para mejorar la investigación económica cuantitativa en general (<xref ref-type="bibr" rid="B45">Taddy, 2018</xref>). De hecho, estas nuevas técnicas estadísticas ya han comenzado a ser empleadas para responder a preguntas clave de las ciencias sociales, como mejorar la precisión de los pronósticos electorales alrededor del mundo (<xref ref-type="bibr" rid="B21">Gerunov, 2014</xref>; <xref ref-type="bibr" rid="B34">Kennedy, Lazer y Wojcik, 2017</xref>). Por otro lado, también se ha enfatizado la utilidad de dichos algoritmos para hacer que la toma de decisiones esté sistematizada y sea eficiente. Ejemplos de ello podemos encontrarlos en <xref ref-type="bibr" rid="B20">Erel <italic>et al</italic>. (2018)</xref> -en el ámbito de la conformación de los directivos de grandes empresas- o en <xref ref-type="bibr" rid="B40">Mullainathan y Obermeyer (2017)</xref>, referente a diagnósticos médicos.</p>
+			<p>Otros usos de estos métodos para ciencias sociales abarcan diversos ámbitos del sector público, desde la educación hasta los departamentos policiacos. En el ámbito educativo, diversos estudios se han enfocado en predecir a los estudiantes de educación media con una mayor propensión a no terminar sus estudios, canalizando así de forma mucho más eficiente los recursos para apoyarlos (<xref ref-type="bibr" rid="B43">Sara <italic>et al</italic>. 2015</xref>; <xref ref-type="bibr" rid="B35">Lakkaraju <italic>et al</italic>. 2015</xref>; <xref ref-type="bibr" rid="B1">Aguiar <italic>et al</italic>. 2015</xref>). Por otro lado, estas herramientas han sido utilizadas también para identificar a los elementos policiales más propensos a tener un desencuentro con la sociedad (como, por ejemplo, hacer uso desmedido de la fuerza) y evitar así el desgaste de la imagen de la policía en Estados Unidos (<xref ref-type="bibr" rid="B11">Carton <italic>et al</italic>. 2016</xref>).</p>
+			<p>Se ha enfatizado también cómo el poder predictivo del llamado aprendizaje de máquina puede ser utilizado en el entorno de inferencia causal econométrico (<xref ref-type="bibr" rid="B47">Varian, 2014</xref>). En este sentido, se ha destacado su capacidad para encontrar la forma funcional adecuada (<xref ref-type="bibr" rid="B3">Athey, 2018</xref>), su probable uso para escoger el instrumento más adecuado en un estudio de variables instrumentales (<xref ref-type="bibr" rid="B8">Belloni, Chernozhukov y Hansen, 2014</xref>), contrastar empíricamente el desempeño de diversas teorías (<xref ref-type="bibr" rid="B40">Mullainathan y Spiess, 2017</xref>) e identificar efectos heterogéneos en experimentos (<xref ref-type="bibr" rid="B13">Chernozhukov <italic>et al</italic>., 2018</xref>).</p>
+			<p>En otro ámbito, de entre todas las fuentes de datos que el <italic>Big Data</italic> ha traído consigo, la más importante de ellas es el internet. Este tipo de datos tienen importantes ventajas, como su disponibilidad en tiempo real (<xref ref-type="bibr" rid="B29">Hilbert, 2016</xref>) y el alto volumen de observaciones que nos permite analizar datos con un nivel de granularidad que antes era impensable (<xref ref-type="bibr" rid="B18">Einav y Levin, 2014a</xref>). Además, los datos obtenidos a través de internet nos han permitido generar variables que antes eran inexistentes (<xref ref-type="bibr" rid="B29">Hilbert, 2016</xref>).</p>
+			<p>Una importante fuente de datos proveniente de internet para la ciencia económica han sido las redes sociales, que nos dan acceso tanto a las conversaciones y búsquedas como a los contactos y trayectorias individuales. Por tal motivo, las redes sociales han permitido a los economistas responder empíricamente preguntas que, hasta ahora, habrían sido imposibles de estudiar. En este sentido, <xref ref-type="bibr" rid="B36">Llorente <italic>et al</italic>. (2015) </xref>, al utilizar las ubicaciones desde las cuales los españoles publicaban en la red social <italic>Twitter</italic>, generaron un modelo para predecir los datos de desempleo antes de que estos fueran publicados por el gobierno. De forma similar, el <xref ref-type="bibr" rid="B23"><italic>Global Pulse Lab</italic> (2014)</xref> de la ONU logró mejorar las predicciones de la inflación en Indonesia mediante las búsquedas en esta misma red social.</p>
+			<p>Otros estudios han logrado entender importantes procesos económicos utilizando datos de sitios electrónicos en los que se promueve algún tipo de intercambio económico entre los usuarios. Por ejemplo, <xref ref-type="bibr" rid="B12">Cavallo y Rigobon (2016)</xref> estimaron los niveles de inflación en Argentina entre 2007 y 2015 -una época en las que las estadísticas oficiales resultaban poco creíbles- utilizando datos de tiendas en línea. Asimismo, <xref ref-type="bibr" rid="B19">Einav <italic>et al</italic>. (2014)</xref> estudiaron cómo responden los consumidores a impuestos locales en sus compras por <italic>Ebay</italic>, mientras que <xref ref-type="bibr" rid="B16">Einav <italic>et al</italic>. (2018)</xref> analizaron el efecto de distintas estrategias de venta en la misma plataforma. Finalmente, <xref ref-type="bibr" rid="B22">Gleaser, Kim y Luca (2017)</xref> utilizaron datos de <italic>Yelp</italic>, una plataforma en la que los usuarios suben reseñas de diversos establecimientos comerciales, para predecir los niveles de actividad económica local en el presente (<italic>nowcasting</italic>).</p>
+			<p>El área de economía laboral también ha sido beneficiada por los datos provenientes de internet (<xref ref-type="bibr" rid="B7">Beblavy, Kurekova y Thum, 2014</xref>). <xref ref-type="bibr" rid="B38">Marinescu y Wolthoff (2016) </xref> utilizaron los datos de la página <italic>careerbuilder</italic>.com (plataforma en la que se demandan empleos y la gente puede postularse para obtenerlos) para entender cómo se emparejan las preferencias de la empresa con las de los posibles empleados, mientras que <xref ref-type="bibr" rid="B37">Marinescu (2017) </xref>los consideró para entender el efecto que tienen las extensiones al seguro de desempleo en Estados Unidos sobre la búsqueda de empleo.</p>
+			<p>Otra importante fuente de datos para la literatura económica ha sido el índice de <italic>Google Trends</italic>, que muestra la intensidad de búsquedas en esta plataforma para determinados temas. Ha sido utilizado para hacer predicciones sobre el presente en torno a la venta de coches en Estados Unidos (<xref ref-type="bibr" rid="B15">Choi y Varian, 2012</xref>; <xref ref-type="bibr" rid="B14">Choi, 2010</xref>), las solicitudes de seguro de desempleo (<xref ref-type="bibr" rid="B14">Choi, 2010</xref>) y la demanda de viajes a determinados sitios turísticos (<xref ref-type="bibr" rid="B15">Choi y Varian, 2012</xref>). Además, <italic>Google Trends</italic> ha sido usado para medir el racismo a nivel estatal en Estados Unidos (<xref ref-type="bibr" rid="B44">Stephens-Davidowitz, 2017</xref>) o los efectos del seguro de desempleo en la búsqueda de empleo (<xref ref-type="bibr" rid="B4">Baker y Fradkin, 2017</xref>).</p>
+			<p>Un mayor número de ejemplos de predicciones del presente de la actividad económica con <italic>Google Trends</italic> lo proporcionan <xref ref-type="bibr" rid="B46">Tuhkuri (2015)</xref> y <xref ref-type="bibr" rid="B24">Goel <italic>et al</italic>. (2010)</xref>. En el caso del primero, estima un modelo AR para predecir el presente de la tasa de desempleo a nivel estatal en Estados Unidos. De acuerdo con sus resultados, la información contenida en el índice de <italic>Google Trends</italic> mejora la capacidad predictiva de su modelo. <xref ref-type="bibr" rid="B24">Goel <italic>et al</italic>. (2010)</xref>, por su parte, consideran el índice de <italic>Google Trends</italic> para predecir el comportamiento de los consumidores en diversos mercados: las ventas en taquilla en la semana de estreno de películas, ventas de videojuegos y el <italic>ranking</italic> en la lista de 100 canciones más escuchadas de <italic>Billboard</italic>. En todos los casos, observan que los índices de búsqueda pueden predecir bastante bien los resultados.</p>
+			<p>Esta explosión en nuevas fuentes de datos está íntimamente relacionada con una mayor capacidad para procesar y organizar bases cada vez más complejas. En este sentido, las técnicas propias del <italic>Big Data</italic> también son sumamente útiles en una etapa de procesamiento (<xref ref-type="bibr" rid="B40">Mullainathan y Spiess, 2017</xref>). Por ejemplo, <xref ref-type="bibr" rid="B6">Barjamovic <italic>et. al</italic> (2017)</xref> utilizaron algoritmos para procesar registros de transacciones entre comerciantes asirios del siglo 19 A.C. y, haciendo uso de modelos macroeconómicos de comercio, predecir en dónde podrían encontrarse las ruinas de antiguas ciudades de la Edad de Bronce.</p>
+			<p>Otro importante ejemplo de cómo las nuevas técnicas y el poder computacional con el que contamos actualmente está influyendo poderosamente en la ciencia económica lo proveen <xref ref-type="bibr" rid="B10">Bok <italic>et al</italic>. (2018)</xref>. En un ejercicio similar al nuestro, presentan un modelo que les permite predecir en el presente, con un gran nivel de precisión, los cambios reales en el PIB de Estados Unidos utilizando índices publicados por diversas fuentes. </p>
+			<p>Finalmente, el uso de <italic>Big Data</italic> en ciencias sociales también ha sabido aprovechar las imágenes como fuentes de información. <xref ref-type="bibr" rid="B42">Rundle <italic>et al</italic>. (2011)</xref> utilizaron imágenes de <italic>Google Street View</italic> para codificar las condiciones de ambiente -seguridad peatonal y el tráfico motorizado de la zona, entre otras- de diversos barrios de Nueva York. Asimismo, se han utilizado imágenes satelitales nocturnas para generar medidas aproximadas de la riqueza de determinadas áreas basándose en su iluminación (<xref ref-type="bibr" rid="B28">Henderson, Storeygard y Weil, 2012</xref>).</p>
+			<p>Pese a que las técnicas y fuentes de datos propios del <italic>Big Data</italic> cada vez permean con mayor intensidad a la economía, es importante tener en mente múltiples consideraciones para poderlos utilizar e interpretar correctamente. Por un lado, es imprescindible tener en cuenta cuál es el proceso de generación de datos (<xref ref-type="bibr" rid="B5">Banco Mundial, 2014</xref>) que, a su vez, determina qué observaciones son observables y cuáles no. En este sentido, es importante tomar en cuenta que puede existir algún error de muestreo al tratarse de individuos que se autoseleccionan para aparecer como observables.</p>
+			<p>Para finalizar, existen también algunas complicaciones éticas y logísticas. Por un lado, los mayores recolectores de este tipo de datos son instituciones privadas. Lograr convenios de colaboración entre la academia con el sector privado para trabajar con dichos datos puede tornarse en una tarea complicada (<xref ref-type="bibr" rid="B30">Horton y Tambe, 2015</xref>). Por otro lado, la granularidad de los datos trae consigo un importante problema ético: garantizar la privacidad de las personas.</p>
+			<p>Este dilema es claro en una fuente de datos que cada vez es más común en el uso de <italic>Big Data</italic> para las ciencias sociales: las llamadas y localizaciones de los teléfonos celulares. <xref ref-type="bibr" rid="B9">Blumenstock y Donaldson (2013)</xref> analizaron patrones de llamadas desde teléfonos móviles en Ruanda para entender cómo la movilidad del factor trabajo pone en equilibrio los mercados laborales. Independientemente de que se trata de una gran aportación empírica para la economía, los protocolos para garantizar el anonimato de los individuos cuyas llamadas fueron rastradas es un tema de gran importancia.</p>
+			<p>En síntesis, el uso tanto de las nuevas fuentes de datos como de los nuevos métodos de análisis que conforman al llamado <italic>Big Data</italic> se ha insertado ya en la literatura económica con experiencias muy diversas. Sin embargo, pese a que el índice de <italic>Google Trends</italic> ha sido utilizado con herramientas econométricas tradicionales, no hemos encontrado aún una comparación entre los algoritmos de aprendizaje de máquina y dichos modelos econométricos cuando ambos incorporan la información de las búsquedas por internet. El presente estudio pretende mostrar cómo los nuevos métodos estadísticos y los datos de internet pueden utilizarse para mejorar la predicción del presente en el caso mexicano. Esa será nuestra aportación a la literatura. </p>
+		</sec>
+		<sec>
+			<title><bold>3. Tendencias en <italic>Google</italic>
+</bold></title>
+			<p>En los últimos años, <italic>Google Trends</italic> se ha convertido en una poderosa herramienta para conocer los temas que más interesan a las personas en un momento en el tiempo. Al ser <italic>Google</italic> el motor de búsqueda más popular de nuestros días, la posibilidad de conocer cómo va evolucionando el interés en esta plataforma a lo largo del tiempo de determinados temas nos permite tener un pulso de cómo van moldeándose las preferencias y los intereses individuales. Además, las condiciones en las que los individuos suelen hacer búsquedas en esta plataforma digital -usualmente solos y desde el anonimato- hacen que dichos datos sean de gran utilidad para conocer pensamientos o preferencias que podrían ser socialmente cuestionadas (<xref ref-type="bibr" rid="B44">Stephens-Davidowitz, 2017</xref>). De este modo, podemos obtener un pulso en torno a temas sensibles, como el racismo o las preferencias electorales, que probablemente no reflejaría una encuesta tradicional debido a que los entrevistados tienden a dar la respuesta socialmente aceptable al entrevistador.</p>
+			<p><italic>Google Trends</italic> nos permite obtener una serie de tiempo de un índice que representa el interés en determinados temas en la plataforma (<xref ref-type="bibr" rid="B15">Choi y Varian, 2012</xref>). Dicho índice es calculado con una muestra representativa de todos los datos de búsqueda de <italic>Google</italic> en el periodo de tiempo especificado. Pueden consultarse dos muestras distintas: en tiempo real o con datos del pasado. La primera está basada en una muestra aleatoria de los últimos siete días, mientras que la segunda se basa en otra muestra en un rango de tiempo que puede comenzar desde 2004 hasta 36 horas antes de la consulta (<xref ref-type="bibr" rid="B41">Rogers, 2016</xref>). Debido a que el ejercicio de muestreo se realiza con cada búsqueda que el usuario hace en <italic>Google Trends</italic>, los resultados pueden presentar diferencias mínimas, aun cuando se hagan dos búsquedas idénticas (<xref ref-type="bibr" rid="B15">Choi y Varian, 2012</xref>).</p>
+			<p>Sin embargo, la interpretación de la información que presenta <italic>Google Trends</italic> dista mucho de ser sencilla, pues lo que reporta es un índice que va de 0 a 100 en el periodo de tiempo seleccionado. De este modo, de acuerdo con la ayuda desplegada por el mismo <italic>Google Trends</italic>, Los números reflejan el interés de búsqueda en relación con el mayor valor [...] en una región y en un periodo determinados. Un valor de 100 indica la popularidad máxima de un término, mientras que 50 y 0 indican una popularidad que es la mitad o inferior al 1%, respectivamente, en relación al mayor valor&quot; (<italic>Google</italic>, s.f.).</p>
+			<p>Para calcular este índice, <italic>Google</italic> se basa en una medida de interés de los términos de búsqueda, y no en el total de búsquedas de dicho término en su motor. En este sentido, lo que <italic>Google Trends</italic> utiliza es el cociente del número de búsquedas del término especificado por el usuario sobre el total de búsquedas en <italic>Google</italic> en ese momento del tiempo. Por ejemplo, si le pidiéramos a <italic>Trends</italic> que nos desplegara información acerca del término de búsqueda empleo&quot;, <italic>Google Trends</italic> utilizaría la ecuación 1 para calcular su índice:</p>
+			<disp-formula id="e1"><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" ><mml:mi>i</mml:mi><mml:mi>n</mml:mi><mml:mi>t</mml:mi><mml:mi>e</mml:mi><mml:mi>r</mml:mi><mml:mi>e</mml:mi><mml:mi>s</mml:mi><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mi>B</mml:mi><mml:mi>u</mml:mi><mml:mi>s</mml:mi><mml:mi>q</mml:mi><mml:mi>u</mml:mi><mml:mi>e</mml:mi><mml:mi>d</mml:mi><mml:mi>a</mml:mi><mml:mi>s</mml:mi><mml:mtext> </mml:mtext><mml:mi>e</mml:mi><mml:mi>m</mml:mi><mml:mi>p</mml:mi><mml:mi>l</mml:mi><mml:mi>e</mml:mi><mml:mi>o</mml:mi></mml:mrow><mml:mrow><mml:mi>T</mml:mi><mml:mi>o</mml:mi><mml:mi>t</mml:mi><mml:mi>a</mml:mi><mml:mi>l</mml:mi><mml:mtext> </mml:mtext><mml:mi>d</mml:mi><mml:mi>e</mml:mi><mml:mtext> </mml:mtext><mml:mi>b</mml:mi><mml:mi>u</mml:mi><mml:mi>s</mml:mi><mml:mi>q</mml:mi><mml:mi>u</mml:mi><mml:mi>e</mml:mi><mml:mi>d</mml:mi><mml:mi>a</mml:mi><mml:mi>s</mml:mi><mml:mtext> </mml:mtext><mml:mi>G</mml:mi><mml:mi>o</mml:mi><mml:mi>o</mml:mi><mml:mi>g</mml:mi><mml:mi>l</mml:mi><mml:mi>e</mml:mi></mml:mrow></mml:mfrac></mml:math> <label>(1)</label>
+			</disp-formula>
+			<p>Con estos cocientes, Google Trends calcula el índice normalizando a 100 el día para en el cual el término de interés obtuvo una mayor proporción de búsquedas y calcula el resto de los valores relativos al cociente de ese día.</p>
+			<p>Este modo de calcular el índice trae consigo ciertas ventajas. Al reflejar el interés en un tema, y no el total de búsquedas del mismo, la comparación entre diferentes regiones y distintos periodos tiene mucho más sentido: el número de búsquedas en el estado de Guerrero podría ser potencialmente mucho menor al de la Ciudad de México, para cualquier tema, simplemente por el número de habitantes y por la penetración de internet. No obstante, la medida de intensidad utilizada por Google permite que ambos sean comparables al reflejar un índice relativo al total de búsquedas en cada entidad. Lo mismo podría decirse a través del tiempo: en el año 2004 el número de búsquedas en Google de cualquier tema es probablemente menor al que observaríamos ahora, sencillamente porque Google no era tan popular en 2004 como lo es hoy.</p>
+			<p>Sin embargo, el uso de este cociente para calcular el índice presentado con Google Trends hace que sea un poco más complicado interpretar los cambios en la tendencia del índice a lo largo del tiempo. Esto se debe a que la disminución en el valor del índice de un día al otro, para un determinado término de búsqueda, puede explicarse tanto por un menor número de búsquedas asociadas a este término como por un aumento en el resto de las búsquedas de Google. Lo que puede traer consigo ventajas y desventajas, dependiendo del tipo de análisis que pretenda hacerse con los datos de Google Trends. Por tal motivo, cualquier análisis que utilice estos datos debe hacerse con mucha precaución, siempre tomando en cuenta que se presenta un índice basado en la proporción de búsquedas, y no en el total.</p>
+			<p>Otra ventaja de Google Trends es que pueden hacerse búsquedas por términos o por temas. Mientras que las primeras arrojan los resultados para los términos de búsqueda especificados por el usuario (y muestran resultados exclusivamente para el idioma en el que se especificaron), los segundos agrupan a todos los términos de búsqueda específicos a un tema, en cualquier lenguaje. Por ejemplo, la búsqueda del tema Londres“ arrojaría un índice basado en la búsqueda de los términos Londres”, London“ y capital de Inglaterra”, entre otros. Además, en el caso de las búsquedas por términos, el modo en el que está escrita la búsqueda (en términos de mayúsculas, minúsculas y acentuación) es importante: el resultado puede ser diferente para Líbano“ que para libano” o líbano&quot;.</p>
+			<p>Finalmente, hay que considerar también que Google Trends tiene ciertas limitaciones en términos de los datos que no muestra. Por un lado, no puede mostrar datos para búsquedas hechas por pocas personas: este tipo de búsquedas tendrá un índice con un valor de cero. Además, Google Trends excluye términos de búsqueda con caracteres especiales, como apóstrofes. </p>
+		</sec>
+		<sec>
+			<title>4. Correlaciones con la Encuesta Nacional de Ocupación y Empleo (ENOE) </title>
+			<p>Antes de describir los modelos a utilizar, conviene explorar primero cómo es que se relaciona la tasa de desempleo con el predictor que estamos proponiendo: el índice de búsquedas de Google Trends (IGT) para el término empleo + ‘bolsa de trabajo’ &quot;. Debido a que los otros predictores serán las tasas de desempleo rezagadas, esta es la única variable independiente relevante en la presente sección.</p>
+			<p>Creemos que puede existir una correlación importante entre ambas variables porque internet, cada vez con mayor presencia, es un medio importante de búsquedas de empleo en nuestro país. Además, de acuerdo con datos del Instituto Nacional de Estadística y Geografía (INEGI), el número de usuarios de internet en México va en aumento, incluso llegó a 60% de cobertura en 2016 (<xref ref-type="bibr" rid="B32">INEGI, 2017</xref>).</p>
+			<p>Por otro lado, como ya se mencionó anteriormente, existe evidencia de que los datos generados en internet, en general, (<xref ref-type="bibr" rid="B22">Gleaser, Kim y Luca, 2017</xref>; <xref ref-type="bibr" rid="B10">Bok et al, 2018</xref>) y las búsquedas de Google, en particular, son de gran utilidad para predecir el presente (<xref ref-type="bibr" rid="B15">Choi y Varian, 2012</xref>). Inclusive, el índice de Google ya ha sido utilizado con éxito para predecir el desempleo en Estados Unidos (<xref ref-type="bibr" rid="B46">Tuhkuri, 2015</xref>). Sin embargo, hasta donde tenemos conocimiento, aún no existe un estudio que documente la utilidad de las búsquedas en Google para predecir las condiciones del mercado laboral en México.</p>
+			<p>En la <xref ref-type="fig" rid="ch1">gráfica 1</xref>, mostramos el comportamiento de la tasa de desempleo a nivel nacional tomada de la ENOE (eje del lado izquierdo) y del índice de Google Trends (eje del lado derecho):</p>
+			<p>
+				<fig id="ch1">
+					<label>Gráfica 1</label>
+					<caption>
+						<title>IGT y tasa de desocupación a nivel nacional</title>
+					</caption>
+					<graphic xlink:href="0186-7202-ee-35-01-125-gch1.png"/>
+					<attrib>Fuente: Elaboración propia con datos de la ENOE y del IGT para la búsqueda empleo + ‘bolsa de trabajo’ &quot;. </attrib>
+				</fig>
+			</p>
+			<p>Es importante recordar que, pese a que ambos datos teóricamente fluctúan del 0 al 100, en realidad, debido a que tienen varianzas muy distintas, están en diferentes escalas. Como podemos observar, mientras que el IGT, efectivamente, toma valores que van del 40 al 100 a lo largo de los 13 años para los que disponemos de datos, la tasa de desocupación va de 3% a 6.4%. Por tal motivo, no resulta tan relevante que las líneas pasen exactamente por el mismo punto, sino que fluctúen de forma similar a través del tiempo.</p>
+			<p>En términos generales sí observamos, de hecho, un movimiento en la misma dirección de ambas curvas. Incluso en el periodo que va de 2008 a 2010, cuando la Gran Recesión estadunidense dejó estragos en la economía mexicana, el IGT registró movimientos muy similares (aunque vale la pena recalcarlo, en otra escala) a la tasa de desocupación nacional. Por este motivo, el IGT sí parece ser un buen predictor para la tasa de desempleo nacional. Sin embargo, ?‘se relaciona tan bien con la tasa de desocupación de hombres que con la de mujeres?</p>
+			<p>Pese a que encontrar este tipo de diferencias no es la motivación principal del presente artículo, creemos que podría ayudarnos a entender el perfil de usuarios de la plataforma de búsqueda más popular de internet. En la <xref ref-type="fig" rid="ch2">gráfica 2</xref> se presenta una matriz de correlación (en número y en figura de dispersión) con el IGT y las tasas de desocupación de hombres, mujeres y promedio a nivel nacional. El primer renglón y columna se refieren al IGT, el segundo renglón y columna a la tasa de desocupación nacional y el tercer y cuarto renglón se refieren a la tasa para hombres y mujeres, respectivamente.</p>
+			<p>
+				<fig id="ch2">
+					<label>Gráfica 2</label>
+					<caption>
+						<title>Matriz de correlaciones</title>
+					</caption>
+					<graphic xlink:href="0186-7202-ee-35-01-125-gch2.png"/>
+					<attrib>Fuente: Elaboración propia con datos de la ENOE y del IGT para la
+						búsqueda empleo + ‘bolsa de trabajo’ &quot;. La gráfica muestra una matriz
+						de correlaciones entre diversas variables. En la diagonal encontramos la
+						distribución y el nombre de las variables, en la parte inferior izquierda
+						los puntos de dispersión de las variables correlacionadas acompañado de una
+						línea de tendencia entre ambas. Finalmente, la parte superior derecha
+						presenta el índice de correlación de Pearson. </attrib>
+				</fig>
+			</p>
+			<p>En primera instancia, vale la pena resaltar las correlaciones presentes en las tasas de desocupación. Claramente, como lo muestra la <xref ref-type="fig" rid="ch2">gráfica 2</xref>, la desocupación de los hombres está asociada de forma más cercana a la nacional (corr=0.98) que la de las mujeres (corr=0.94). Por otro lado, la correlación entre estas es mucho más débil: corr=0.85.</p>
+			<p>En lo referente al índice de Google Trends es claro que tiene una asociación más fuerte con la desocupación femenina nacional (corr=0.58) que con la masculina nacional (corr=0.47). No obstante, ambos valores están relativamente cercanos a la correlación que presentan con la tasa nacional (corr=0.53), por lo que podríamos esperar que, igual que como observamos en la gráfica anterior, el IGT y la desocupación nacional tanto de hombres como de mujeres se comportaran de forma similar a la nacional.</p>
+			<p>En efecto, como lo muestra la <xref ref-type="fig" rid="ch3">gráfica 3</xref>, para ambos casos el IGT y la tasa de desocupación se mueven en términos generales en la misma dirección. En síntesis, sí parece existir una relación importante entre el nivel de desempleo y el IGT para la búsqueda empleo + ‘bolsa de trabajo’ &quot;. En este sentido, usar los datos de Google Trends para predecir el presente del mercado laboral mexicano podría ser factible, siempre y cuando utilicemos los métodos adecuados. En la siguiente sección describiremos brevemente tres distintos métodos que usaremos para intentar predecir el desempleo nacional.</p>
+			<p>
+				<fig id="ch3">
+					<label>Gráfica 3</label>
+					<caption>
+						<title>IGT y desocupación nacional por sexo</title>
+					</caption>
+					<graphic xlink:href="0186-7202-ee-35-01-125-gch3.png"/>
+					<attrib>Fuente: Elaboración propia con datos de la ENOE y del IGT para la búsqueda empleo + ‘bolsa de trabajo’ &quot;. </attrib>
+				</fig>
+			</p>
+			<p>Finalmente, podría resultar importante explorar cómo es que se correlaciona el índice de Google Trends con la tasa de desempleo para distintos subconjuntos de la población económicamente activa. El <xref ref-type="table" rid="t1">cuadro 1</xref> muestra el índice de correlación de Pearson entre el índice de Google Trends y el desempleo de distintos subgrupos. </p>
+			<p>
+				<table-wrap id="t1">
+					<label>Cuadro 1</label>
+					<caption>
+						<title>Correlación entre IGT y otras series de desempleo</title>
+					</caption>
+					<table style="border: 1px solid black; border collapse: collapse" border="1">
+						<colgroup>
+							<col/>
+							<col/>
+						</colgroup>
+						<tbody>
+							<tr>
+								<td align="center"><italic>Serie</italic></td>
+								<td align="center"><italic>Índice de correlación de Pearson con el IGT</italic></td>
+							</tr>
+							<tr>
+								<td align="justify">Desempleo entre menores a 30 años</td>
+								<td align="center">0.51</td>
+							</tr>
+							<tr>
+								<td align="justify">Desempleo entre quienes tienen entre 30 y 60 años</td>
+								<td align="center">0.48</td>
+							</tr>
+							<tr>
+								<td align="justify">Desempleo entre los mayores a 60 años</td>
+								<td align="center">0.31</td>
+							</tr>
+							<tr>
+								<td align="justify">Desempleo urbano</td>
+								<td align="center">0.62</td>
+							</tr>
+							<tr>
+								<td align="justify">Hombres desempleo urbano </td>
+								<td align="center">0.54</td>
+							</tr>
+							<tr>
+								<td align="justify">Mujeres desempleo urbano</td>
+								<td align="center">0.66</td>
+							</tr>
+						</tbody>
+					</table>
+					<table-wrap-foot>
+						<fn id="TFN1">
+							<p>Fuente: Elaboración propia con datos de la ENOE y del IGT para la búsqueda empleo + ‘bolsa de trabajo’ &quot;.</p>
+						</fn>
+					</table-wrap-foot>
+				</table-wrap>
+			</p>
+			<p> Debido a la frecuencia de estos datos -que es trimestral y no mensual, como las series que ocupamos para estimar los modelos-, aunado a las restricciones de espacio del presente artículo, explorar más a fondo dichas heterogeneidades cae fuera de los límites de este trabajo. Sin embargo, consideramos que hacerlo sería de suma importancia para futuras investigaciones.</p>
+		</sec>
+		<sec sec-type="methods">
+			<title>5. Aprendizaje automático: metodología</title>
+			<p>El estudio que aquí presentamos pretende demostrar dos cosas. Por un lado, que los datos provenientes de fuentes electrónicas pueden ser de gran utilidad para predecir el presente (nowcasting) y, de este modo, obtener medidas económicas preliminares antes de que los datos oficiales estén disponibles, aun utilizando métodos econométricos tradicionales. Más allá de la ganancia predictiva de estas nuevas fuentes de datos, obtener información relativamente confiable del desempeño económico en tiempo real puede ser de gran utilidad para implementar a tiempo políticas públicas informadas y eficientes. Por otro lado, buscamos también acercar a la comunidad de ciencias sociales los nuevos métodos del aprendizaje de máquina y evaluar su capacidad predictiva vis a vis las técnicas econométricas populares en la literatura.</p>
+			<p>Se utilizarán los datos de desempleo de la ENOE así como el índice de Google Trends para la búsqueda empleo + ‘bolsa de trabajo’ “ tanto a nivel nacional como estatal. La variable independiente será la tasa de desempleo en el periodo 𝑡 y construiremos nuestro modelo predictivo con dicha variable rezagada algunos periodos, así como con el índice de Google Trends. </p>
+			<sec>
+				<title><italic>5.1. ¿Cómo medimos los errores?</italic></title>
+				<p>Quizás la principal diferencia entre la econometría tradicional y el aprendizaje de máquina es que ambas están diseñadas para hacer cosas distintas: mientras que la econometría tradicional busca estimar los parámetros del modelo (y por eso buscan estimaciones insesgadas que se acerquen al valor verdadero” del parámetro), los algoritmos de machine learning están enfocados en mejorar la capacidad predictiva del modelo (<xref ref-type="bibr" rid="B40">Mullainathan y Spiess, 2017</xref>; <xref ref-type="bibr" rid="B3">Athey, 2018</xref>). Lo que implica que ya no importa cuál es el valor real&quot; de los parámetros, sino que el valor que arroja el modelo sea el más útil para predecir nuevas observaciones.</p>
+				<p>Por este motivo, la medición del error del modelo en la literatura de aprendizaje de máquina se hace de forma distinta a los métodos econométricos. Mientras que en econometría buscamos reducir el error cuadrático medio (ECM) dentro de la muestra sobre la que se estima el modelo (<xref ref-type="bibr" rid="B27">Hayashi, 2011</xref>), en aprendizaje de máquina (machine learning) se utiliza el método de validación cruzada (cross validation): se dividen los datos en dos submuestras, una de entrenamiento (para definir el valor de los parámetros del modelo) y otra de validación, para medir el error predictivo del modelo (<xref ref-type="bibr" rid="B26">Hastie et al., 2013</xref>; <xref ref-type="bibr" rid="B47">Varian, 2014</xref>).</p>
+				<p>Por ejemplo, asumamos que dividimos los datos en cinco partes iguales, de tal suerte que cada
+					una de ellas contiene 20% de las observaciones (conocido en la literatura como
+						<italic>five-fold cross validation</italic>). Utilizaríamos 80% de las
+					observaciones (grupos 1 a 4) para entrenar el modelo y el 20% restante para
+					validarlo. Luego repetimos el ejercicio, pero con grupos distintos (entrenamos
+					con grupos 2 a 5 y validamos con grupo 1). Nos quedamos con el modelo que tenga
+					el ECM fuera de la muestra más pequeño (<xref ref-type="bibr" rid="B26">Hastie
+						et al., 2013</xref>).</p>
+				<p>Dicho procedimiento tiene sentido cuando se trata de datos de sección cruzada. Sin embargo, en nuestro caso, lo que tenemos es un modelo en el que nuestras observaciones tienen un fuerte componente de correlación serial. Pese a que hay quien argumenta que puede utilizarse el mismo procedimiento para dividir a los conjuntos de entrenamiento y de validación, consideramos que es pertinente utilizar métodos que tomen en cuenta tanto la estructura de los datos como el objetivo de predecir a futuro el problema.</p>
+				<p>Por tal motivo optamos por utilizar un procedimiento de validación cruzada con ventana cambiante (rolling window cross validation, más detalles en <xref ref-type="bibr" rid="B31">Hotal, Handa y Shrivas, 2017</xref>). Funciona de la siguiente manera: se seleccionan n número de periodos (le llamaremos ancho de la ventana&quot;) y se utilizan los primeros n datos para entrenar al modelo y, con él, predecir el valor de la variable en el siguiente periodo. Puesto que conocemos el valor de la variable en el periodo <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" ><mml:mi>n</mml:mi><mml:mo>+</mml:mo><mml:mn>1</mml:mn></mml:math>, podemos medir la precisión del modelo al compararlo con el valor de la predicción.</p>
+				<p>Esto nos da una primera aproximación de validación cruzada. Posteriormente, avanzamos solo un periodo y se repite el procedimiento, de tal suerte que se utilizan los datos que van desde que t=2 hasta n+1 para predecir la observación en <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" ><mml:mi>t</mml:mi><mml:mo>=</mml:mo><mml:mi>n</mml:mi><mml:mo>+</mml:mo><mml:mn>2</mml:mn></mml:math> y calcular el error de predicción. El procedimiento se repite hasta haber agotado los datos. La medida de error del método utilizado será el promedio de los ECM de cada estimación (<xref ref-type="bibr" rid="B33">Inouea, Jinb y Rossi, 2017</xref>).</p>
+				<p>Para contrastar y comparar diferentes técnicas de estimación, se utilizará dicha metodología para calcular los errores de todos los modelos. De este modo, tendremos una medida comparable entre los diferentes casos que nos podrá mostrar las fortalezas y debilidades de cada método.</p>
+				<p>En este sentido, dado que nuestro interés es comparar la capacidad predictiva de los modelos, vale la pena aclarar que los parámetros estimados pueden diferir a través del tiempo. Lo que se debe a que se estimará el modelo en cada ventana&quot;, por lo que el valor de los estimadores dependerá de los datos que se encuentren en esta submuestra de nuestro conjunto de datos. </p>
+			</sec>
+			<sec>
+				<title><italic>5.2. Modelo autorregresivo</italic></title>
+				<p>La primera especificación empírica que utilizamos para predecir el nivel de desempleo en las entidades federativas proviene, con base en <xref ref-type="bibr" rid="B15">Choi y Varian (2012)</xref>, de modelos macroeconométricos tradicionales. En relación con esto, utilizamos modelos AR con información de la ENOE para predecir los niveles de desocupación en los trimestres posteriores y analizamos si mejora la capacidad predictiva de dichos modelos al incorporar búsquedas de Google Trends asociadas con búsquedas de empleo.</p>
+				<p>En concreto, el procedimiento compara la precisión de dos diferentes modelos, descritos en las ecuaciones 2 y 3:<xref ref-type="fn" rid="fn1"><sup>1</sup></xref>
+				</p>
+				<disp-formula id="e2"><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" ><mml:msub><mml:mrow><mml:mi>y</mml:mi></mml:mrow><mml:mrow><mml:mi>t</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:msub><mml:mrow><mml:mi>β</mml:mi></mml:mrow><mml:mrow><mml:mn>1</mml:mn></mml:mrow></mml:msub><mml:msub><mml:mrow><mml:mi>y</mml:mi></mml:mrow><mml:mrow><mml:mi>t</mml:mi><mml:mo>-</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msub><mml:mo>+</mml:mo><mml:msub><mml:mrow><mml:mi>β</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msub><mml:msub><mml:mrow><mml:mi>y</mml:mi></mml:mrow><mml:mrow><mml:mi>t</mml:mi><mml:mo>-</mml:mo><mml:mn>12</mml:mn></mml:mrow></mml:msub><mml:mo>+</mml:mo><mml:msub><mml:mrow><mml:mi>ϵ</mml:mi></mml:mrow><mml:mrow><mml:mi>t</mml:mi></mml:mrow></mml:msub></mml:math> <label>(2)</label>
+				</disp-formula>
+				<p>Contra</p>
+				<disp-formula id="e3"><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" ><mml:msub><mml:mrow><mml:mi>y</mml:mi></mml:mrow><mml:mrow><mml:mi>t</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:msub><mml:mrow><mml:mi>β</mml:mi></mml:mrow><mml:mrow><mml:mn>1</mml:mn></mml:mrow></mml:msub><mml:msub><mml:mrow><mml:mi>y</mml:mi></mml:mrow><mml:mrow><mml:mi>t</mml:mi><mml:mo>-</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msub><mml:mo>+</mml:mo><mml:msub><mml:mrow><mml:mi>β</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msub><mml:msub><mml:mrow><mml:mi>y</mml:mi></mml:mrow><mml:mrow><mml:mi>t</mml:mi><mml:mo>-</mml:mo><mml:mn>12</mml:mn></mml:mrow></mml:msub><mml:mo>+</mml:mo><mml:mi>γ</mml:mi><mml:msub><mml:mrow><mml:mi>T</mml:mi></mml:mrow><mml:mrow><mml:mi>t</mml:mi></mml:mrow></mml:msub><mml:mo>+</mml:mo><mml:msub><mml:mrow><mml:mi>ϵ</mml:mi></mml:mrow><mml:mrow><mml:mi>t</mml:mi></mml:mrow></mml:msub></mml:math> <label>(3)</label>
+				</disp-formula>
+				<p>En donde IGT corresponde al índice de búsquedas de Google Trends. </p>
+			</sec>
+			<sec>
+				<title><italic>5.3. Otros modelos de análisis estadístico</italic></title>
+				<p>Por otro lado, queremos poner a prueba la capacidad predictiva de los algoritmos
+					desarrollados en el ámbito del aprendizaje de máquina para variables de índole
+					económica. Para hacerlo, probaremos con dos algoritmos distintos para generar
+					predicciones: el método LASSO y un bosque aleatorio <italic>(Random
+						Forest)</italic>.</p> </sec>
+					<sec>
+						<title><italic>5.3.1. Método LASSO</italic></title><p> El primero de ellos, el método LASSO, 	
+					es quizás el algoritmo de aprendizaje de máquina más utilizado por los
+					economistas. Esto se debe, principalmente, a su enorme parecido con la regresión
+					lineal clásica (<xref ref-type="bibr" rid="B47">Varian, 2014</xref>). El
+					problema de minimización al que se enfrenta el método LASSO es el que muestra la
+						ecuación 4 (<xref ref-type="bibr"
+						rid="B26">Hastie et al., 2013</xref>):</p>
+						<disp-formula id="e4">
+					<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+						<mml:mover>
+							<mml:mrow>
+								<mml:mi>β</mml:mi>
+							</mml:mrow>
+							<mml:mrow>
+								<mml:mo>^</mml:mo>
+							</mml:mrow>
+						</mml:mover>
+						<mml:mo>=</mml:mo>
+						<mml:mi>a</mml:mi>
+						<mml:mi>r</mml:mi>
+						<mml:mi>g</mml:mi>
+						<mml:mi>m</mml:mi>
+						<mml:mi>i</mml:mi>
+						<mml:mi>n</mml:mi>
+						<mml:mrow>
+							<mml:munder>
+								<mml:mo stretchy="true">∑</mml:mo>
+								<mml:mrow>
+									<mml:mi>i</mml:mi>
+								</mml:mrow>
+							</mml:munder>
+							<mml:mrow/>
+						</mml:mrow>
+						<mml:mo>(</mml:mo>
+						<mml:msub>
+							<mml:mrow>
+								<mml:mi>Y</mml:mi>
+							</mml:mrow>
+							<mml:mrow>
+								<mml:mi>i</mml:mi>
+							</mml:mrow>
+						</mml:msub>
+						<mml:mo>-</mml:mo>
+						<mml:msup>
+							<mml:mrow>
+								<mml:mi>β</mml:mi>
+							</mml:mrow>
+							<mml:mrow>
+								<mml:mi>'</mml:mi>
+							</mml:mrow>
+						</mml:msup>
+						<mml:mo>(</mml:mo>
+						<mml:msub>
+							<mml:mrow>
+								<mml:mi>X</mml:mi>
+							</mml:mrow>
+							<mml:mrow>
+								<mml:mi>i</mml:mi>
+							</mml:mrow>
+						</mml:msub>
+						<mml:mo>)</mml:mo>
+						<mml:msup>
+							<mml:mrow>
+								<mml:mo>)</mml:mo>
+							</mml:mrow>
+							<mml:mrow>
+								<mml:mn>2</mml:mn>
+							</mml:mrow>
+						</mml:msup>
+						<mml:mo>+</mml:mo>
+						<mml:mi>λ</mml:mi>
+						<mml:mrow>
+							<mml:munderover>
+								<mml:mo stretchy="true">∑</mml:mo>
+								<mml:mrow>
+									<mml:mi>j</mml:mi>
+									<mml:mo>=</mml:mo>
+									<mml:mn>1</mml:mn>
+								</mml:mrow>
+								<mml:mrow>
+									<mml:mi>p</mml:mi>
+								</mml:mrow>
+							</mml:munderover>
+							<mml:mrow>
+								<mml:mfenced open="|" close="|" separators="|">
+									<mml:mrow>
+										<mml:msub>
+											<mml:mrow>
+												<mml:mi>β</mml:mi>
+											</mml:mrow>
+											<mml:mrow>
+												<mml:mi>j</mml:mi>
+											</mml:mrow>
+										</mml:msub>
+									</mml:mrow>
+								</mml:mfenced>
+							</mml:mrow>
+						</mml:mrow>
+						<mml:mi> </mml:mi>
+					</mml:math>
+					<label>(4)</label>
+				</disp-formula>
+						
+						<p>Como resultado, LASSO determina que el valor de algunos parámetros de interés debe ser cero, ya que está penalizando aquellos que toman cualquier valor distinto (<xref ref-type="bibr" rid="B26">Hastie et al., 2013</xref>). Además, como resulta evidente, el valor que tomen los parámetros es, al final, una función del valor de lambda. Por este motivo, es importante seleccionar el valor de <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" ><mml:mi>λ</mml:mi></mml:math> que minimice el error cuadrático medio utilizando validación cruzada (<xref ref-type="bibr" rid="B8">Belloni, Chernozhukov y Hansen, 2014</xref>).</p>
+				<p>Aunque se tengan pocas variables independientes que resulten de interés, el método LASSO nos permite incorporar al análisis una buena cantidad de interacciones entre ellas. En este sentido, a diferencia de lo que sucedería con una regresión tradicional, el método nos permite explorar múltiples relaciones no lineales sabiendo que, en última instancia, buena parte de las interacciones que probemos tendrán un coeficiente de cero (<xref ref-type="bibr" rid="B40">Mullainathan y Spiess, 2017</xref>).</p>
+				<p>LASSO refleja de forma importante la principal diferencia entre la econometría y el aprendizaje de máquina de la que hablábamos al inicio de esta sección (estimación vs. predicción). Lo anterior se debe a que, puesto que el problema de minimización del método obliga a que muchos de los coeficientes tengan un valor de cero, el resto de los coeficientes (que serán los que mejor nos ayuden a predecir futuras observaciones) tendrán un sesgo de variable omitida (<xref ref-type="bibr" rid="B47">Varian, 2014</xref>; <xref ref-type="bibr" rid="B8">Belloni, Chernozhukov y Hansen, 2014</xref>).</p>
+						<p>Para el problema de predicción utilizaremos el método LASSO para predecir el valor de la tasa de desocupación considerando valores rezagados tanto de esta variable (desde <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" ><mml:mi>t</mml:mi><mml:mo>-</mml:mo><mml:mn>1</mml:mn></mml:math> hasta <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" ><mml:mi>t</mml:mi><mml:mo>-</mml:mo><mml:mn>12</mml:mn></mml:math>) como del IGT (desde t hasta <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" ><mml:mi>t</mml:mi><mml:mo>-</mml:mo><mml:mn>12</mml:mn></mml:math>). Además, para explotar la flexibilidad del método, incorporaremos al análisis las interacciones cúbicas de las variables para explorar relaciones no lineales. De este modo, intentaremos predecir el modelo descrito en la ecuación 5:</p>
+						<disp-formula id="e5"><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" ><mml:msub><mml:mrow><mml:mi>u</mml:mi></mml:mrow><mml:mrow><mml:mi>t</mml:mi></mml:mrow></mml:msub><mml:mo>∼</mml:mo><mml:msup><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:munderover><mml:mo stretchy="true">∑</mml:mo><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mi>t</mml:mi><mml:mo>-</mml:mo><mml:mn>12</mml:mn></mml:mrow><mml:mrow><mml:mi>t</mml:mi><mml:mo>-</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:munderover><mml:mrow></mml:mrow></mml:mrow><mml:msub><mml:mrow><mml:mi>u</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi></mml:mrow></mml:msub><mml:mo>+</mml:mo><mml:mrow><mml:munderover><mml:mo stretchy="true">∑</mml:mo><mml:mrow><mml:mi>j</mml:mi><mml:mo>=</mml:mo><mml:mi>t</mml:mi><mml:mo>-</mml:mo><mml:mn>12</mml:mn></mml:mrow><mml:mrow><mml:mi>t</mml:mi></mml:mrow></mml:munderover><mml:mrow></mml:mrow></mml:mrow><mml:mi>I</mml:mi><mml:mi>G</mml:mi><mml:msub><mml:mrow><mml:mi>T</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi></mml:mrow></mml:msub><mml:mo>)</mml:mo></mml:mrow><mml:mrow><mml:mn>3</mml:mn></mml:mrow></mml:msup></mml:math><label>(5)</label>
+						</disp-formula>
+				<sec>
+					<title><italic>5.3.2. Bosque aleatorio (Random Forest)</italic></title>
+					<p>El segundo método que utilizamos es un bosque aleatorio. Es uno de los métodos más populares para la comunidad de aprendizaje de máquina ya que tiene una gran capacidad predictiva sin la necesidad de afinar excesivamente los hiperparámetros (<xref ref-type="bibr" rid="B47">Varian, 2014</xref>).</p>
+					<p>Un bosque aleatorio está conformado, a su vez, por múltiples árboles de decisión. Cada árbol de decisión es un problema independiente<xref ref-type="fn" rid="fn2"><sup>2</sup></xref> que busca minimizar el error cuadrático medio (ECM) de las predicciones partiendo el espacio de características en cada nodo. De este forma, selecciona la variable que, al ser dividida en dos regiones distintas, predice mejor los resultados y minimiza el ECM. Una vez terminado el árbol, a cada observación se le asigna como predicción el valor promedio de todas las observaciones incluidas en su nodo terminal. En última instancia, cada árbol genera una partición del espacio de variables y asigna el valor promedio a todas las observaciones que se encuentran en la misma partición (<xref ref-type="bibr" rid="B26">Hastie et al., 2013</xref>; <xref ref-type="bibr" rid="B3">Athey, 2018</xref>).</p>
+					<p>Los bosques aleatorios generan una gran muestra de árboles utilizando la técnica de bootstraping para generar submuestras. Posteriormente, calculan el valor promedio que cada observación recibió en cada árbol y esta es la predicción final (<xref ref-type="bibr" rid="B26">Hastie et al., 2013</xref>). Tomar el promedio ayuda a evitar un importante problema en los árboles de decisión: el de ajustar excesivamente el modelo a los datos (overfitting).</p>
+					<p>Quizás el mayor inconveniente para el uso de este método en ciencias sociales es que es sumamente difícil interpretar sus resultados. A diferencia del método LASSO o los modelos AR, en los que interpretar los resultados de la regresión es relativamente sencillo, los bosques aleatorios fungen como una caja negra que poco pueden decirnos sobre cómo es que las variables independientes afectan a las dependientes (<xref ref-type="bibr" rid="B47">Varian, 2014</xref>).</p>
+					<p>Para efectos de este trabajo, consideraremos el bosque aleatorio para predecir el valor de la tasa de desocupación nacional de la ENOE <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" ><mml:msub><mml:mrow><mml:mi>u</mml:mi></mml:mrow><mml:mrow><mml:mi>t</mml:mi></mml:mrow></mml:msub></mml:math> utilizando rezagos trimestrales de esta variable (<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" ><mml:msub><mml:mrow><mml:mi>u</mml:mi></mml:mrow><mml:mrow><mml:mi>t</mml:mi><mml:mo>-</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msub></mml:math> ,<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" ><mml:msub><mml:mrow><mml:mi>u</mml:mi></mml:mrow><mml:mrow><mml:mi>t</mml:mi><mml:mo>-</mml:mo><mml:mn>3</mml:mn></mml:mrow></mml:msub></mml:math> , <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" ><mml:msub><mml:mrow><mml:mi>u</mml:mi></mml:mrow><mml:mrow><mml:mi>t</mml:mi><mml:mo>-</mml:mo><mml:mn>6</mml:mn></mml:mrow></mml:msub></mml:math> , <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" ><mml:msub><mml:mrow><mml:mi>u</mml:mi></mml:mrow><mml:mrow><mml:mi>t</mml:mi><mml:mo>-</mml:mo><mml:mn>9</mml:mn></mml:mrow></mml:msub></mml:math> , <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" ><mml:msub><mml:mrow><mml:mi>u</mml:mi></mml:mrow><mml:mrow><mml:mi>t</mml:mi><mml:mo>-</mml:mo><mml:mn>12</mml:mn></mml:mrow></mml:msub></mml:math> ) y rezagos trimestrales del IGT (<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" ><mml:mi>I</mml:mi><mml:mi>G</mml:mi><mml:msub><mml:mrow><mml:mi>T</mml:mi></mml:mrow><mml:mrow><mml:mi>t</mml:mi></mml:mrow></mml:msub></mml:math> , <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" ><mml:mi>I</mml:mi><mml:mi>G</mml:mi><mml:msub><mml:mrow><mml:mi>T</mml:mi></mml:mrow><mml:mrow><mml:mi>t</mml:mi><mml:mo>-</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msub></mml:math> , <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" ><mml:mi>I</mml:mi><mml:mi>G</mml:mi><mml:msub><mml:mrow><mml:mi>T</mml:mi></mml:mrow><mml:mrow><mml:mi>t</mml:mi><mml:mo>-</mml:mo><mml:mn>3</mml:mn></mml:mrow></mml:msub></mml:math> , <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" ><mml:mi>I</mml:mi><mml:mi>G</mml:mi><mml:msub><mml:mrow><mml:mi>T</mml:mi></mml:mrow><mml:mrow><mml:mi>t</mml:mi><mml:mo>-</mml:mo><mml:mn>6</mml:mn></mml:mrow></mml:msub></mml:math> , <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" ><mml:mi>I</mml:mi><mml:mi>G</mml:mi><mml:msub><mml:mrow><mml:mi>T</mml:mi></mml:mrow><mml:mrow><mml:mi>t</mml:mi><mml:mo>-</mml:mo><mml:mn>9</mml:mn></mml:mrow></mml:msub></mml:math> , <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" ><mml:mi>I</mml:mi><mml:mi>G</mml:mi><mml:msub><mml:mrow><mml:mi>T</mml:mi></mml:mrow><mml:mrow><mml:mi>t</mml:mi><mml:mo>-</mml:mo><mml:mn>12</mml:mn></mml:mrow></mml:msub></mml:math> ). Nótese que, a diferencia de LASSO, no generamos interacciones no lineales de las variables para meterlas al modelo. La búsqueda de estas interacciones la hará el algoritmo.</p>
+				</sec>
+			</sec>
+		</sec>
+		<sec sec-type="results">
+			<title>6. Aprendizaje automático: resultados</title>
+			<sec>
+				<title><italic>6.1. Errores a través del tiempo</italic></title>
+				<p>Antes de analizar qué tan precisos son los modelos en todo el periodo, es conveniente comprender cómo se comportan a través del tiempo. En la <xref ref-type="fig" rid="ch4">gráfica 4</xref> observamos los errores de cada estimación para cada periodo.</p>
+				<p>
+					<fig id="ch4">
+						<label>Gráfica 4</label>
+						<caption>
+							<title>Error de predicción por modelo</title>
+						</caption>
+						<graphic xlink:href="0186-7202-ee-35-01-125-gch4.png"></graphic>
+						<attrib>Fuente: Elaboración propia con datos de la ENOE y del IGT para la búsqueda empleo + ‘bolsa de trabajo’ &quot;. </attrib>
+					</fig>
+				</p>
+				<p>En primera instancia, en la gráfica podemos notar que, en términos generales, todos los modelos cometen sistemáticamente errores similares. Es decir que, para prácticamente todos los meses, la diferencia entre los errores de los modelos corresponde a la magnitud del error y no su sentido (todos subestiman o sobrestiman la tasa de desempleo).</p>
+				<p>Quizás el modelo más interesante para analizar de esta gráfica sea el AR sin el IGT. Si bien es cierto que la dirección del error en general no difiere de los otros modelos, podemos observar que dicho modelo suele subestimar con una magnitud mucho mayor la tasa de desempleo que el resto. Esta tendencia es mucho más clara para los meses previos a 2014.</p>
+				<p>Finalmente, llama la atención el periodo que va de mediados de 2014 a mediados de 2015, en el que todos los modelos subestiman consistentemente la tasa de desempleo. Si bien es cierto que, dado que utilizan prácticamente los mismos datos, no es del todo sorprendente que la pérdida en precisión durante un periodo resulte contagiosa, sí llama la atención la forma en que el método LASSO se recupera. En buena medida, se debe a que, para cada periodo, LASSO escoge cuáles serán sus estimadores, independientemente de lo que haya decidido en el periodo anterior.</p>
+				<p>En este sentido, LASSO puede ajustarse mucho mejor a momentos en los que la relación entre las variables se comporta de forma distinta. </p>
+			</sec>
+			<sec>
+				<title><italic>6.2. Error cuadrático medio</italic></title>
+				<p>Si bien es cierto que la <xref ref-type="fig" rid="ch4">gráfica 4</xref> nos sirve para
+					analizar las tendencias temporales de los estimadores, al presentar cuatro
+					modelos en un periodo de 13 años, basándonos en ella resulta imposible poder
+					identificar cuál es el modelo más eficiente. Por tal motivo, en esta sección
+					analizaremos el error cuadrático medio durante todo el periodo para cada
+					modelo.</p>
+				<p>En el <xref ref-type="table" rid="t2">cuadro 2</xref> presentamos el error cuadrático medio de las predicciones para los cuatro modelos:</p>
+				<p>
+					<table-wrap id="t2">
+						<label>Cuadro 2</label>
+						<caption>
+							<title>ECM por modelo</title>
+						</caption>
+						<table style="border: 1px solid black; border collapse: collapse" border="1">
+							<colgroup>
+								<col/>
+								<col/>
+							</colgroup>
+							<tbody>
+								<tr>
+									<td align="center"><italic>Modelo</italic></td>
+									<td align="center"><italic>Error cuadrático medio </italic></td>
+								</tr>
+								<tr>
+									<td align="center">AR con IGT</td>
+									<td align="center">0.083</td>
+								</tr>
+								<tr>
+									<td align="center">AR sin IGT</td>
+									<td align="center">0.096</td>
+								</tr>
+								<tr>
+									<td align="center">LASSO</td>
+									<td align="center">0.077</td>
+								</tr>
+								<tr>
+									<td align="center">Bosque aleatorio</td>
+									<td align="center">0.084</td>
+								</tr>
+							</tbody>
+						</table>
+						<table-wrap-foot>
+							<fn id="TFN2">
+								<p>Fuente: Elaboración propia con datos de la ENOE y del IGT para la búsqueda empleo + ‘bolsa de trabajo’ &quot;. Notas: Modelos estimados descritos en texto. AR se refiere a modelo autorregresivo</p>
+							</fn>
+						</table-wrap-foot>
+					</table-wrap>
+				</p>
+				<p>Como se puede observar, el modelo que comete errores de predicción, en promedio, más acertados es el método LASSO. Lo que podría indicarnos que la relación entre el índice de Google Trends y la tasa de desempleo no es necesariamente lineal, ya que entrenamos dicho modelo utilizando interacciones cúbicas.</p>
+				<p>En este sentido, los modelos de aprendizaje de máquina, en general, y el LASSO,en particular, sí parecen tener importantes ventajas predictivas sobre los métodos econométricos tradicionales. En el caso de LASSO, se lo podemos atribuír tanto a su flexibilidad para abordar interacciones no lineales entre los predictores como al uso de validación cruzada para ajustar el hiperparámetro 𝜆 y, de este modo, mejorar su capacidad predictiva.</p>
+				<p>También resulta interesante observar el comportamiento de los modelos autorregresivos. En primera instancia, el segundo modelo que mejor se comportó fue el AR cuando incluimos entre sus predictores al IGT. De hecho, la diferencia entre el ECM de este modelo y el ECM obtenido con el método LASSO no es tan grande. Es decir que, pese a que la flexibilidad para representar relaciones no lineales sí trae consigo una mejora en la capacidad predictiva del modelo, un modelo lineal sencillo es capaz de predecir el presente&quot; razonablemente bien, sin la necesidad de utilizar hiperparámetros o validación cruzada.</p>
+				<p>Por otro lado, la diferencia del error cuadrático medio de los modelos AR cuando incluimos y cuando no incluimos el índice de Google Trends es considerable: el modelo autorregresivo sin el IGT es, por mucho, el modelo con la peor capacidad predictiva. Esto parece indicarnos que las nuevas fuentes de datos, en general, y que las búsquedas en Google, en particular, sí pueden ser de utilidad para desempañar labores de nowcasting, por lo menos en determinados contextos como el nuestro.</p>
+				<p>Finalmente, hay que comentar el desempeño del bosque aleatorio. Si bien es cierto que tiene un ECM mucho menor al modelo AR cuando no usamos el IGT, puede quizás resultar un tanto sorprendente que sea superado por el modelo autorregresivo con la información de Google. Aunque, en realidad, la precisión de ambos modelos no difiere sustancialmente, creemos que hay factores que podrían explicar dicho resultado.</p>
+				<p>Hay que recordar que el bosque aleatorio es un modelo más complejo y con más hiperparámetros a optimizar que el método LASSO. En nuestro caso, para efectos de este trabajo, sólo optimizamos dos hiperparámetros del bosque aleatorio: el tamaño de la muestra de predictores que se utilizan para construir cada árbol y el número de árboles. Si bien es cierto que las mejoras en precisión conforme encontramos la combinación de parámetros óptima para este problema son marginales, podríamos esperar una disminución en el ECM si ajustáramos otros hiperparámetros. En todo caso, esperaríamos que su precisión se mantuviera relativamente cercana a la que presenta el modelo AR con el IGT. </p>
+			</sec>
+		</sec>
+		<sec sec-type="conclusions">
+			<title>7. Conclusiones</title>
+			<p>El presente artículo tenía como propósito presentar algunos modelos propios del aprendizaje de máquina junto con nuevas fuentes de datos provenientes de internet y su utilidad para la ciencia económica en México. Concretamente, utilizamos tanto el IGT como el método LASSO y el de bosque aleatorio para intentar predecir el desempleo reportado por la ENOE.</p>
+			<p>En lo referente a los métodos, observamos que el LASSO sí presenta ganancias predictivas a un método propio de la econometría: los modelos autorregresivos (AR). Además, el bosque aleatorio tuvo un desempeño apenas inferior al modelo autorregresivo. En este sentido, no se trata de que dichos métodos sean inherentemente superiores a aquellos que ya conocemos y que, por lo tanto, debamos preferir siempre a los primeros sobre los segundos. Por el contrario, concluimos que, debido a que se trata de algoritmos diseñados inherentemente para mejorar predicciones, los economistas debemos de conocerlos e incorporarlos al conjunto de herramientas que tradicionalmente utilizamos.</p>
+			<p>Por otro lado, es importante resaltar que la precisión de estos modelos y su capacidad predictiva son muy distintas cuando se utilizan en otros entornos. En este aspecto, creemos que conforme sean utilizadas para contestar nuevas preguntas iremos comprendiendo mejor cómo utilizarlas en economía y conoceremos sus alcances y limitaciones. Por su parte, el índice de Google Trends sí trajo consigo información de gran utilidad para mejorar las predicciones en la tasa de desempleo. Esto puede observarse al comparar la precisión del modelo autorregresivo cuando toma en cuenta el IGT y el del modelo autorregresivo cuando no lo hace.</p>
+			<p>La multiplicidad de nuevos datos que el internet trae consigo es de gran relevancia para la ciencia económica en México. Hoy tenemos acceso a una gran diversidad de fuentes de datos que pueden ser de utilidad para comprender mejor, desde la economía en particular y desde las ciencias sociales en general, nuestro entorno. Además, estas nuevas fuentes de datos no son solamente un insumo de gran utilidad para los científicos sociales. Por el contrario, los hacedores de políticas públicas pueden diseñar programas mucho más eficientes si cuentan con herramientas como estas.</p>
+			<p>La explosión de trabajos empíricos en economía que se ha dado desde hace ya algunos años atraviesa hoy por una nueva etapa en la que cada vez hay más datos (que, además, son sumamente granulares) y estamos conociendo nuevos métodos para analizarlos. Este artículo es tan solo una muestra de lo poderosas que pueden ser dichas herramientas aplicadas a la ciencia económica.</p>
+		</sec>
+	</body>
+	<back>
+		<ack>
+			<title>Agradecimientos</title>
+			<p>Agradecemos al director y dos dictaminadores anónimos por sus detallados comentarios y sugerencias. Todos los errores y omisiones son responsabilidad única de los autores, rmcampos@colmex.mx, selopab@gmail.com. </p>
+		</ack>
+		<ref-list>
+			<title>Referencias</title>
+			<ref id="B1">
+				<mixed-citation>Aguiar, E., H. Lakkaraju, N. Bhanpuri, D. Miller, B. Yuhas y K.L. Addison. 2015. Who, When, and Why: A Machine Learning Approach to Prioritizing Students at Risk of not Graduating High School on Time, Proceedings of the 5th Learning Analytics and Knowledge Conference.</mixed-citation>
+				<element-citation publication-type="confproc">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Aguiar</surname>
+							<given-names>E.</given-names>
+						</name>
+						<name>
+							<surname>Lakkaraju</surname>
+							<given-names>H.</given-names>
+						</name>
+						<name>
+							<surname>Bhanpuri</surname>
+							<given-names>N.</given-names>
+						</name>
+						<name>
+							<surname>Miller</surname>
+							<given-names>D.</given-names>
+						</name>
+						<name>
+							<surname>Yuhas</surname>
+							<given-names>B.</given-names>
+						</name>
+						<name>
+							<surname>Addison</surname>
+							<given-names>K.L.</given-names>
+						</name>
+					</person-group>
+					<year>2015</year>
+					<source>Who, When, and Why: A Machine Learning Approach to Prioritizing Students at Risk of not Graduating High School on Time</source>
+					<conf-name>Learning Analytics and Knowledge Conference</conf-name>
+				</element-citation>
+			</ref>
+			<ref id="B2">
+				<mixed-citation>Athey, S. 2017. Beyond prediction: Using big data for policy problems, Science, 355(6324): 483-485.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Athey</surname>
+							<given-names>S.</given-names>
+						</name>
+					</person-group>
+					<year>2017</year>
+					<article-title>Beyond prediction: Using big data for policy problems</article-title>
+					<source>Science</source>
+					<volume>355</volume>
+					<issue>6324</issue>
+					<fpage>483</fpage>
+					<lpage>485</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B3">
+				<mixed-citation>Athey, S. 2018. The Impact of Machine Learning on Economics (2018) , en A. Agrawal, J. Gans y A. Goldfarb (comps.), The Economics of Artificial Intelligence: An Agenda, NBER, cap. 21, pp. 507-547, <ext-link ext-link-type="uri" xlink:href="http://www.nber.org/chapters/c14009">http://www.nber.org/chapters/c14009</ext-link>.</mixed-citation>
+				<element-citation publication-type="book">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Athey</surname>
+							<given-names>S.</given-names>
+						</name>
+					</person-group>
+					<year>2018</year>
+					<chapter-title>The Impact of Machine Learning on Economics (2018) </chapter-title>
+					<person-group person-group-type="author">
+						<name>
+							<surname>Agrawal</surname>
+							<given-names>A.</given-names>
+						</name>
+						<name>
+							<surname>Gans</surname>
+							<given-names>J.</given-names>
+						</name>
+						<name>
+							<surname>Goldfarb</surname>
+							<given-names>A.</given-names>
+						</name>
+					</person-group>
+					<source>The Economics of Artificial Intelligence: An Agenda</source>
+					<publisher-name>NBER</publisher-name>
+					<volume>21</volume>
+					<fpage>507</fpage>
+					<lpage>547</lpage>
+					<ext-link ext-link-type="uri" xlink:href="http://www.nber.org/chapters/c14009">http://www.nber.org/chapters/c14009</ext-link>
+				</element-citation>
+			</ref>
+			<ref id="B4">
+				<mixed-citation>Baker, S. y A. Fradkin. 2017. The Impact of Unemployment Insurance on Job Search: Evidence from Google Search Data, The Review of Economics and Statistics, 99(5): 756-768.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Baker</surname>
+							<given-names>S.</given-names>
+						</name>
+						<name>
+							<surname>Fradkin</surname>
+							<given-names>A.</given-names>
+						</name>
+					</person-group>
+					<year>2017</year>
+					<article-title>The Impact of Unemployment Insurance on Job Search: Evidence from Google Search Data</article-title>
+					<source>The Review of Economics and Statistics</source>
+					<volume>99</volume>
+					<issue>5</issue>
+					<fpage>756</fpage>
+					<lpage>768</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B5">
+				<mixed-citation>Banco Mundial. 2014. Central America: Big Data in Action for Development, <ext-link ext-link-type="uri" xlink:href="https://openknowledge.worldbank.org/handle/10986/21325">https://openknowledge.worldbank.org/handle/10986/21325</ext-link>.</mixed-citation>
+				<element-citation publication-type="book">
+					<person-group person-group-type="author">
+						<collab>Banco Mundial</collab>
+					</person-group>
+					<year>2014</year>
+					<source>Central America: Big Data in Action for Development</source>
+					<ext-link ext-link-type="uri" xlink:href="https://openknowledge.worldbank.org/handle/10986/21325">https://openknowledge.worldbank.org/handle/10986/21325</ext-link>
+				</element-citation>
+			</ref>
+			<ref id="B6">
+				<mixed-citation>Barjamovic, G., T. Chaney, K. Cosary A. Hortaçsu. 2017. Trade, Merchants, and the Lost Cities of the Bronze Age, WP núm. 23992, NBER, Cambridge, <ext-link ext-link-type="uri" xlink:href="http://www.nber.org/papers/w23992">http://www.nber.org/papers/w23992</ext-link>.</mixed-citation>
+				<element-citation publication-type="book">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Barjamovic</surname>
+							<given-names>G.</given-names>
+						</name>
+						<name>
+							<surname>Chaney</surname>
+							<given-names>T.</given-names>
+						</name>
+						<name>
+							<surname>Cosar</surname>
+							<given-names>K.</given-names>
+						</name>
+						<name>
+							<surname>Hortaçsu</surname>
+							<given-names>A.</given-names>
+						</name>
+					</person-group>
+					<year>2017</year>
+					<source>Trade, Merchants, and the Lost Cities of the Bronze Age, WP</source>
+					<issue>23992</issue>
+					<publisher-name>NBER</publisher-name>
+					<publisher-loc>Cambridge</publisher-loc>
+					<ext-link ext-link-type="uri" xlink:href="http://www.nber.org/papers/w23992">http://www.nber.org/papers/w23992</ext-link>
+				</element-citation>
+			</ref>
+			<ref id="B7">
+				<mixed-citation>Beblavy, M., L. Kurekovay A. Thum. 2014. Using Internet Data to Analyse the Labour Market: A Methodological Enquiry, IZA DPnúm. 8555, <ext-link ext-link-type="uri" xlink:href="https://www.iza.org/publications/dp/8555/using-internet-data-to-analyse-the-labour-market-a-methodological-enquiry">https://www.iza.org/publications/dp/8555/using-internet-data-to-analyse-the-labour-market-a-methodological-enquiry</ext-link>.</mixed-citation>
+				<element-citation publication-type="book">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Beblavy</surname>
+							<given-names>M.</given-names>
+						</name>
+						<name>
+							<surname>Kurekova</surname>
+							<given-names>L.</given-names>
+						</name>
+						<name>
+							<surname>Thum</surname>
+							<given-names>A.</given-names>
+						</name>
+					</person-group>
+					<year>2014</year>
+					<source>Using Internet Data to Analyse the Labour Market: A Methodological Enquiry</source>
+					<publisher-name>IZA DP</publisher-name>
+					<issue>8555</issue>
+					<ext-link ext-link-type="uri" xlink:href="https://www.iza.org/publications/dp/8555/using-internet-data-to-analyse-the-labour-market-a-methodological-enquiry">https://www.iza.org/publications/dp/8555/using-internet-data-to-analyse-the-labour-market-a-methodological-enquiry</ext-link>
+				</element-citation>
+			</ref>
+			<ref id="B8">
+				<mixed-citation>Belloni, A., V. Chernozhukovy C. Hansen. 2014. High-Dimensional Methods and Inference on Structural and Treatment Effects, Journal of Economic Perspectives, 28(2): 29-50.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Belloni</surname>
+							<given-names>A.</given-names>
+						</name>
+						<name>
+							<surname>Chernozhukov</surname>
+							<given-names>V.</given-names>
+						</name>
+						<name>
+							<surname>Hansen</surname>
+							<given-names>C.</given-names>
+						</name>
+					</person-group>
+					<year>2014</year>
+					<article-title>High-Dimensional Methods and Inference on Structural and Treatment Effects</article-title>
+					<source>Journal of Economic Perspectives</source>
+					<volume>28</volume>
+					<issue>2</issue>
+					<fpage>29</fpage>
+					<lpage>50</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B9">
+				<mixed-citation>Blumenstock, J. y D. Donaldson. 2013. How Do Labor Markets Equilibrate? Using Mobile Phone Records to Estimate the Effect of Local Labor Demand Shocks on Internal Migration and Local Wages, Proposal Summary for Application C2-RA4-205 (mimeo).</mixed-citation>
+				<element-citation publication-type="book">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Blumenstock</surname>
+							<given-names>J.</given-names>
+						</name>
+						<name>
+							<surname>Donaldson</surname>
+							<given-names>D.</given-names>
+						</name>
+					</person-group>
+					<year>2013</year>
+					<source>How Do Labor Markets Equilibrate? Using Mobile Phone Records to Estimate the Effect of Local Labor Demand Shocks on Internal Migration and Local Wages, Proposal Summary for Application C2-RA4-205</source>
+					<publisher-name>mimeo</publisher-name>
+				</element-citation>
+			</ref>
+			<ref id="B10">
+				<mixed-citation>Bok, B., D. Caratelli, D. Giannone, A. Sbordone y A. Tambalotti. 2018. Macroeconomic Nowcasting and Forecasting with Big Data, Annual Review of Economics, 10(1): 615-643.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Bok</surname>
+							<given-names>B.</given-names>
+						</name>
+						<name>
+							<surname>Caratelli</surname>
+							<given-names>D.</given-names>
+						</name>
+						<name>
+							<surname>Giannone</surname>
+							<given-names>D.</given-names>
+						</name>
+						<name>
+							<surname>Sbordone</surname>
+							<given-names>A.</given-names>
+						</name>
+						<name>
+							<surname>Tambalotti</surname>
+							<given-names>A.</given-names>
+						</name>
+					</person-group>
+					<year>2018</year>
+					<article-title>Macroeconomic Nowcasting and Forecasting with Big Data</article-title>
+					<source>Annual Review of Economics</source>
+					<volume>10</volume>
+					<issue>1</issue>
+					<fpage>615</fpage>
+					<lpage>643</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B11">
+				<mixed-citation>Carton, S., A. Mahmud, C. Cody, J. Helsby, Y. Park y R. Ghani. 2016. Identifying Police Officers at Risk of Adverse Events, Conference on Knowledge Discovery and Data Mining, <ext-link ext-link-type="uri" xlink:href="http://www.kdd.org/kdd2016/papers/files/adf0832-cartonAemb.pdf">http://www.kdd.org/kdd2016/papers/files/adf0832-cartonAemb.pdf</ext-link>.</mixed-citation>
+				<element-citation publication-type="book">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Carton</surname>
+							<given-names>S.</given-names>
+						</name>
+						<name>
+							<surname>Mahmud</surname>
+							<given-names>A.</given-names>
+						</name>
+						<name>
+							<surname>Cody</surname>
+							<given-names>C.</given-names>
+						</name>
+						<name>
+							<surname>Helsby</surname>
+							<given-names>J.</given-names>
+						</name>
+							<name>
+								<surname>Park</surname>
+							<given-names>Y.</given-names>
+						</name>
+						<name>
+							<surname>Ghani</surname>
+							<given-names>R.</given-names>
+						</name>
+					</person-group>
+					<year>2016</year>
+					<source>Identifying Police Officers at Risk of Adverse Events, Conference on Knowledge Discovery and Data Mining</source>
+					<ext-link ext-link-type="uri" xlink:href="http://www.kdd.org/kdd2016/papers/files/adf0832-cartonAemb.pdf">http://www.kdd.org/kdd2016/papers/files/adf0832-cartonAemb.pdf</ext-link>
+				</element-citation>
+			</ref>
+			<ref id="B12">
+				<mixed-citation>Cavallo, A. y R. Rigobon. 2016. The Billion Prices Project: Using Online Prices for Measurement and Research, Journal of Economic Perspectives, 30(2): 151-178.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Cavallo</surname>
+							<given-names>A.</given-names>
+						</name>
+						<name>
+							<surname>Rigobon</surname>
+							<given-names>R.</given-names>
+						</name>
+					</person-group>
+					<year>2016</year>
+					<article-title>The Billion Prices Project: Using Online Prices for Measurement and Research</article-title>
+					<source>Journal of Economic Perspectives</source>
+					<volume>30</volume>
+					<issue>2</issue>
+					<fpage>151</fpage>
+					<lpage>178</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B13">
+				<mixed-citation>Chernozhukov, V., M. Demirer, E. Duflo e I. Fernandez-Val 2018. Generic Machine Learning Inference on Heterogenous Treatment Effects in Randomized Experiments, WP, núm. 24678, NBER, Cambridge, <ext-link ext-link-type="uri" xlink:href="http://www.nber.org/papers/w24678">http://www.nber.org/papers/w24678</ext-link>.</mixed-citation>
+				<element-citation publication-type="book">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Chernozhukov</surname>
+							<given-names>V.</given-names>
+						</name>
+						<name>
+							<surname>Demirer</surname>
+							<given-names>M.</given-names>
+						</name>
+						<name>
+							<surname>Duflo</surname>
+							<given-names>E.</given-names>
+						</name>
+						<name>
+							<surname>Fernandez-Val</surname>
+							<given-names>I.</given-names>
+						</name>
+					</person-group>
+					<year>2018</year>
+					<source>Generic Machine Learning Inference on Heterogenous Treatment Effects in Randomized Experiments, WP</source>
+					<issue>24678</issue>
+					<publisher-name>NBER</publisher-name>
+					<publisher-loc>Cambridge</publisher-loc>
+					<ext-link ext-link-type="uri" xlink:href="http://www.nber.org/papers/w24678">http://www.nber.org/papers/w24678</ext-link>
+				</element-citation>
+			</ref>
+			<ref id="B14">
+				<mixed-citation>Choi, H. 2010. Predicting Initial Claims for Unemployment Benefits, SSRN, <ext-link ext-link-type="uri" xlink:href="https://ssrn.com/abstract=1659307">https://ssrn.com/abstract=1659307</ext-link>.</mixed-citation>
+				<element-citation publication-type="book">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Choi</surname>
+							<given-names>H.</given-names>
+						</name>
+					</person-group>
+					<year>2010</year>
+					<source>Predicting Initial Claims for Unemployment Benefits, SSRN</source>
+					<ext-link ext-link-type="uri" xlink:href="https://ssrn.com/abstract=1659307">https://ssrn.com/abstract=1659307</ext-link>
+				</element-citation>
+			</ref>
+			<ref id="B15">
+				<mixed-citation>Choi, H. y H. Varian. 2012. Predicting the Present with Google Trends, Economic Record, 88(s1): 2-9.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Choi</surname>
+							<given-names>H.</given-names>
+						</name>
+						<name>
+							<surname>Varian</surname>
+							<given-names>H.</given-names>
+						</name>
+					</person-group>
+					<year>2012</year>
+					<article-title>Predicting the Present with Google Trends</article-title>
+					<source>Economic Record</source>
+					<volume>88</volume>
+					<issue>s1</issue>
+					<fpage>2</fpage>
+					<lpage>9</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B16">
+				<mixed-citation>Einav, L., C. Farronato, J. Levin y N. Sundaresan. 2018. Auctions versus Posted Prices in Online Markets, Journal of Political Economy, 126(1): 178-215.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Einav</surname>
+							<given-names>L.</given-names>
+						</name>
+						<name>
+							<surname>Farronato</surname>
+							<given-names>C.</given-names>
+						</name>
+						<name>
+							<surname>Levin</surname>
+							<given-names>J.</given-names>
+						</name>
+						<name>
+							<surname>Sundaresan</surname>
+							<given-names>N.</given-names>
+						</name>
+					</person-group>
+					<year>2018</year>
+					<article-title>Auctions versus Posted Prices in Online Markets</article-title>
+					<source>Journal of Political Economy</source>
+					<volume>126</volume>
+					<issue>1</issue>
+					<fpage>178</fpage>
+					<lpage>215</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B17">
+				<mixed-citation>Einav, L. , D. Knoepfle, J. Levin yN. Sundaresan . 2014. Sales Tax and Internet Commerce, American Economic Review, 104(1): 1-26.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Einav</surname>
+							<given-names>L.</given-names>
+						</name>
+						<name>
+							<surname>Knoepfle</surname>
+							<given-names>D.</given-names>
+						</name>
+						<name>
+							<surname>Levin</surname>
+							<given-names>J.</given-names>
+						</name>
+						<name>
+							<surname>Sundaresan</surname>
+							<given-names>N.</given-names>
+						</name>
+					</person-group>
+					<year>2014</year>
+					<article-title>Sales Tax and Internet Commerce</article-title>
+					<source>American Economic Review</source>
+					<volume>104</volume>
+					<issue>1</issue>
+					<fpage>1</fpage>
+					<lpage>26</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B18">
+				<mixed-citation>Einav, L. y J. Levin. 2014a. The Data Revolution and Economic Analysis, Innovation Policy and the Economy, 14(1): 1-24.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Einav</surname>
+							<given-names>L.</given-names>
+						</name>
+						<name>
+							<surname>Levin</surname>
+							<given-names>J.</given-names>
+						</name>
+					</person-group>
+					<year>2014</year>
+					<article-title>The Data Revolution and Economic Analysis</article-title>
+					<source>Innovation Policy and the Economy</source>
+					<volume>14</volume>
+					<issue>1</issue>
+					<fpage>1</fpage>
+					<lpage>24</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B19">
+				<mixed-citation>Einav, L. y J. Levin. 2014b. Economics in the Age of Big Data, Science, 345(6210): 1-6.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Einav</surname>
+							<given-names>L.</given-names>
+						</name>
+						<name>
+							<surname>Levin</surname>
+							<given-names>J.</given-names>
+						</name>
+					</person-group>
+					<year>2014</year>
+					<article-title>Economics in the Age of Big Data</article-title>
+					<source>Science</source>
+					<volume>345</volume>
+					<issue>6210</issue>
+					<fpage>1</fpage>
+					<lpage>6</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B20">
+				<mixed-citation>Erel, I., L. Henny, C. Tan y M. Weisbach. 2018. Selecting Directors Using Machine Learning, WP núm. 24435, NBER, Cambridge, <ext-link ext-link-type="uri" xlink:href="http://www.nber.org/papers/w24435">http://www.nber.org/papers/w24435</ext-link>.</mixed-citation>
+				<element-citation publication-type="book">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Erel</surname>
+							<given-names>I.</given-names>
+						</name>
+						<name>
+							<surname>Henny</surname>
+							<given-names>L.</given-names>
+						</name>
+						<name>
+							<surname>Tan</surname>
+							<given-names>C.</given-names>
+						</name>
+						<name>
+							<surname>Weisbach</surname>
+							<given-names>M.</given-names>
+						</name>
+					</person-group>
+					<year>2018</year>
+					<source>Selecting Directors Using Machine Learning, WP</source>
+					<issue>24435</issue>
+					<publisher-name>NBER</publisher-name>
+					<publisher-loc>Cambridge</publisher-loc>
+					<ext-link ext-link-type="uri" xlink:href="http://www.nber.org/papers/w24435">http://www.nber.org/papers/w24435</ext-link>
+				</element-citation>
+			</ref>
+			<ref id="B21">
+				<mixed-citation>Gerunov, A. 2014. Big Data Approaches to Modeling the Labor Market, publicado en Proceedings of the International Conference on Big Data, Knowledge and Control Systems Engineering, pp. 47-56.</mixed-citation>
+				<element-citation publication-type="confproc">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Gerunov</surname>
+							<given-names>A.</given-names>
+						</name>
+					</person-group>
+					<year>2014</year>
+					<source>Big Data Approaches to Modeling the Labor Market</source>
+					<conf-name>Big Data, Knowledge and Control Systems Engineering</conf-name>
+					<fpage>47</fpage>
+					<lpage>56</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B22">
+				<mixed-citation>Gleaser, E., H. Kim y M. Luca. 2017. Nowcasting the Local Economy: Using Yelp Data to Measure Economic Activity, WP núm. 24010, NBER, Massachusetts, <ext-link ext-link-type="uri" xlink:href="http://www.nber.org/papers/w24010">http://www.nber.org/papers/w24010</ext-link>.</mixed-citation>
+				<element-citation publication-type="book">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Gleaser</surname>
+							<given-names>E.</given-names>
+						</name>
+						<name>
+							<surname>Kim</surname>
+							<given-names>H.</given-names>
+						</name>
+						<name>
+							<surname>Luca</surname>
+							<given-names>M.</given-names>
+						</name>
+					</person-group>
+					<year>2017</year>
+					<source>Nowcasting the Local Economy: Using Yelp Data to Measure Economic Activity, WP</source>
+					<issue>24010</issue>
+					<publisher-name>NBER</publisher-name>
+					<publisher-loc>Massachusetts</publisher-loc>
+					<ext-link ext-link-type="uri" xlink:href="http://www.nber.org/papers/w24010">http://www.nber.org/papers/w24010</ext-link>
+				</element-citation>
+			</ref>
+			<ref id="B23">
+				<mixed-citation>Global Pulse Lab. 2014. Mining Indonesian Tweets to Understand Food Price Crises, UN GLOBAL PULSE METHODS PAPER, february, <ext-link ext-link-type="uri" xlink:href="https://www.unglobalpulse.org/projects/social-media-social-protection-indonesia">https://www.unglobalpulse.org/projects/social-media-social-protection-indonesia</ext-link>.</mixed-citation>
+				<element-citation publication-type="book">
+					<person-group person-group-type="author">
+						<collab>Global Pulse Lab</collab>
+					</person-group>
+					<year>2014</year>
+					<source>Mining Indonesian Tweets to Understand Food Price Crises, UN GLOBAL PULSE METHODS PAPER</source>
+					<ext-link ext-link-type="uri" xlink:href="https://www.unglobalpulse.org/projects/social-media-social-protection-indonesia">https://www.unglobalpulse.org/projects/social-media-social-protection-indonesia</ext-link>
+				</element-citation>
+			</ref>
+			<ref id="B24">
+				<mixed-citation>Goel, S., J. Hofman, S. Lahaie, D. Pennock y D. Watts. 2010. Predicting consumer behavior with Web search, Proceedings of the National Academy of Sciences, 107(41): 17486-17490.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Goel</surname>
+							<given-names>S.</given-names>
+						</name>
+						<name>
+							<surname>Hofman</surname>
+							<given-names>J.</given-names>
+						</name>
+						<name>
+							<surname>Lahaie</surname>
+							<given-names>S.</given-names>
+						</name>
+						<name>
+							<surname>Pennock</surname>
+							<given-names>D.</given-names>
+						</name>
+						<name>
+							<surname>Watts</surname>
+							<given-names>D.</given-names>
+						</name>
+					</person-group>
+					<year>2010</year>
+					<article-title>Predicting consumer behavior with Web search</article-title>
+					<source>Proceedings of the National Academy of Sciences</source>
+					<volume>107</volume>
+					<issue>41</issue>
+					<fpage>17486</fpage>
+					<lpage>17490</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B25">
+				<mixed-citation>Hamermesh, D. 2013. Six Decades of Top Economics Publishing: Who and How? Journal Of Economic Literature, 51(1): 162-172.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Hamermesh</surname>
+							<given-names>D.</given-names>
+						</name>
+					</person-group>
+					<year>2013</year>
+					<article-title>Six Decades of Top Economics Publishing: Who and How?</article-title>
+					<source>Journal Of Economic Literature</source>
+					<volume>51</volume>
+					<issue>1</issue>
+					<fpage>162</fpage>
+					<lpage>172</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B26">
+				<mixed-citation>Hastie et al. 2013. An Introduction to Statistical Learning: with Applications in R, Springer.</mixed-citation>
+				<element-citation publication-type="book">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Hastie</surname>
+							<given-names/>
+						</name>
+						<etal/>
+					</person-group>
+					<year>2013</year>
+					<source>An Introduction to Statistical Learning: with Applications in R, Springer</source>
+				</element-citation>
+			</ref>
+			<ref id="B27">
+				<mixed-citation>Hayashi, F. 2011. Econometrics, Princeton University Press.</mixed-citation>
+				<element-citation publication-type="book">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Hayashi</surname>
+							<given-names>F.</given-names>
+						</name>
+					</person-group>
+					<year>2011</year>
+					<source>Econometrics</source>
+					<publisher-name>Princeton University Press</publisher-name>
+				</element-citation>
+			</ref>
+			<ref id="B28">
+				<mixed-citation>Henderson, J., A. Storeygard y D. Weil. 2012. Measuring Economic Growth from Outer Space, American Economic Review, 102(2): 994-1028.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Henderson</surname>
+							<given-names>J.</given-names>
+						</name>
+						<name>
+							<surname>Storeygard</surname>
+							<given-names>A.</given-names>
+						</name>
+						<name>
+							<surname>Weil</surname>
+							<given-names>D.</given-names>
+						</name>
+					</person-group>
+					<year>2012</year>
+					<article-title>Measuring Economic Growth from Outer Space</article-title>
+					<source>American Economic Review</source>
+					<volume>102</volume>
+					<issue>2</issue>
+					<fpage>994</fpage>
+					<lpage>1028</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B29">
+				<mixed-citation>Hilbert, M. 2016. Big Data for Development: A Review of Promises and Challenges, Development Policy Review, 34(1): 135-174.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Hilbert</surname>
+							<given-names>M.</given-names>
+						</name>
+					</person-group>
+					<year>2016</year>
+					<article-title>Big Data for Development: A Review of Promises and Challenges</article-title>
+					<source>Development Policy Review</source>
+					<volume>34</volume>
+					<issue>1</issue>
+					<fpage>135</fpage>
+					<lpage>174</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B30">
+				<mixed-citation>Horton, J. y P. Tambe. 2015. Labor Economists Get Their Microscope: Big Data and Labor Market Analysis, Big Data, 3(3): 130-137.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Horton</surname>
+							<given-names>J.</given-names>
+						</name>
+						<name>
+							<surname>Tambe</surname>
+							<given-names>P.</given-names>
+						</name>
+					</person-group>
+					<year>2015</year>
+					<article-title>Labor Economists Get Their Microscope: Big Data and Labor Market Analysis</article-title>
+					<source>Big Data</source>
+					<volume>3</volume>
+					<issue>3</issue>
+					<fpage>130</fpage>
+					<lpage>137</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B31">
+				<mixed-citation>Hota, H.S., R. Handay A.K. Shrivas. 2017. Time Series Data Prediction Using Sliding Window Based RBF Neural Network, International Journal of Computational Intelligence Research, 13(5): 1145-1156.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Hota</surname>
+							<given-names>H.S.</given-names>
+						</name>
+						<name>
+							<surname>Handa</surname>
+							<given-names>R.</given-names>
+						</name>
+						<name>
+							<surname>Shrivas</surname>
+							<given-names>A.K.</given-names>
+						</name>
+					</person-group>
+					<year>2017</year>
+					<article-title>Time Series Data Prediction Using Sliding Window Based RBF Neural Network</article-title>
+					<source>International Journal of Computational Intelligence Research</source>
+					<volume>13</volume>
+					<issue>5</issue>
+					<fpage>1145</fpage>
+					<lpage>1156</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B32">
+				<mixed-citation>INEGI. 2017. Estadísticas a propósito del día mundial de Internet, Aguascalientes, México. <ext-link ext-link-type="uri" xlink:href="http://www.inegi.org.mx/saladeprensa/aproposito/2017/internet2017_Nal.pdf">http://www.inegi.org.mx/saladeprensa/aproposito/2017/internet2017_Nal.pdf</ext-link>
+				</mixed-citation>
+				<element-citation publication-type="book">
+					<person-group person-group-type="author">
+						<collab>INEGI</collab>
+					</person-group>
+					<year>2017</year>
+					<source>Estadísticas a propósito del día mundial de Internet</source>
+					<publisher-loc>Aguascalientes, México</publisher-loc>
+					<ext-link ext-link-type="uri" xlink:href="http://www.inegi.org.mx/saladeprensa/aproposito/2017/internet2017_Nal.pdf">http://www.inegi.org.mx/saladeprensa/aproposito/2017/internet2017_Nal.pdf</ext-link>
+				</element-citation>
+			</ref>
+			<ref id="B33">
+				<mixed-citation>Inoue, Atsushi, Lu Jin y Barbara Rossi. 2017. Rolling window selection for out-of-sample forecasting with time-varying parameters, Journal of Econometrics, 196(1): 55-67.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Inoue</surname>
+							<given-names>Atsushi</given-names>
+						</name>
+						<name>
+							<surname>Jin</surname>
+							<given-names>Lu</given-names>
+						</name>
+						<name>
+							<surname>Rossi</surname>
+							<given-names>Barbara</given-names>
+						</name>
+					</person-group>
+					<year>2017</year>
+					<article-title>Rolling window selection for out-of-sample forecasting with time-varying parameters</article-title>
+					<source>Journal of Econometrics</source>
+					<volume>196</volume>
+					<issue>1</issue>
+					<fpage>55</fpage>
+					<lpage>67</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B34">
+				<mixed-citation>Kennedy, R., D. Lazer y S. Wojcik. 2017. Improving election prediction internationally, Science, 355(6324): 515-520.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Kennedy</surname>
+							<given-names>R.</given-names>
+						</name>
+						<name>
+							<surname>Lazer</surname>
+							<given-names>D.</given-names>
+						</name>
+						<name>
+							<surname>Wojcik</surname>
+							<given-names>S.</given-names>
+						</name>
+					</person-group>
+					<year>2017</year>
+					<article-title>Improving election prediction internationally</article-title>
+					<source>Science</source>
+					<volume>355</volume>
+					<issue>6324</issue>
+					<fpage>515</fpage>
+					<lpage>520</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B35">
+				<mixed-citation>Lakkaraju, H., E. Guiar, C. Shan, D. Miller , N. Bhanpuri , R. Ghani y K.L. Addison 2015. A Machine Learning Framework to Identify Students at Risk of Adverse Academic Outcomes, International Conference on Knowledge Discovery and Data Mining.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Lakkaraju</surname>
+							<given-names>H.</given-names>
+						</name>
+						<name>
+							<surname>Guiar</surname>
+							<given-names>E.</given-names>
+						</name>
+						<name>
+							<surname>Shan</surname>
+							<given-names>C.</given-names>
+						</name>
+						<name>
+							<surname>Miller</surname>
+							<given-names>D.</given-names>
+						</name>
+						<name>
+							<surname>Bhanpuri</surname>
+							<given-names>N.</given-names>
+						</name>
+						<name>
+							<surname>Ghani</surname>
+							<given-names>R.</given-names>
+						</name>
+						<name>
+							<surname>Addison</surname>
+							<given-names>K.L.</given-names>
+						</name>
+					</person-group>
+					<year>2015</year>
+					<article-title>A Machine Learning Framework to Identify Students at Risk of Adverse Academic Outcomes</article-title>
+					<source>International Conference on Knowledge Discovery and Data Mining</source>
+				</element-citation>
+			</ref>
+			<ref id="B36">
+				<mixed-citation>Llorente, A., M. Garcia-Herranz, M. Cebriany E. Moro. 2015. Social Media Fingerprints of Unemployment, PLoS ONE 10(5): e0128692.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Llorente</surname>
+							<given-names>A.</given-names>
+						</name>
+						<name>
+							<surname>Garcia-Herranz</surname>
+							<given-names>M.</given-names>
+						</name>
+						<name>
+							<surname>Cebrian</surname>
+							<given-names>M.</given-names>
+						</name>
+						<name>
+							<surname>Moro</surname>
+							<given-names>E.</given-names>
+						</name>
+					</person-group>
+					<year>2015</year>
+					<article-title>Social Media Fingerprints of Unemployment</article-title>
+					<source>PLoS ONE</source>
+					<volume>10</volume>
+					<issue>5</issue>
+					<comment>e0128692</comment>
+				</element-citation>
+			</ref>
+			<ref id="B37">
+				<mixed-citation>Marinescu, I. 2017. The General Equilibrium Impacts of Unemployment Insurance: Evidence from a Large Online Job Board, Journal of Public Economics, 150(c): 14-29.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Marinescu</surname>
+							<given-names>I.</given-names>
+						</name>
+					</person-group>
+					<year>2017</year>
+					<article-title>The General Equilibrium Impacts of Unemployment Insurance: Evidence from a Large Online Job Board</article-title>
+					<source>Journal of Public Economics</source>
+					<volume>150</volume>
+					<issue>c</issue>
+					<fpage>14</fpage>
+					<lpage>29</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B38">
+				<mixed-citation>Marinescu, I. y R. Wolthoff. 2016. Opening the Black Box of the Matching Function: the Power of Words, WP núm. 22508, NBER, Cambridge, <ext-link ext-link-type="uri" xlink:href="http://www.nber.org/papers/w22508t">http://www.nber.org/papers/w22508t</ext-link>.</mixed-citation>
+				<element-citation publication-type="book">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Marinescu</surname>
+							<given-names>I.</given-names>
+						</name>
+						<name>
+							<surname>Wolthoff</surname>
+								<given-names>R.</given-names>
+						</name>
+					</person-group>
+					<year>2016</year>
+					<source>Opening the Black Box of the Matching Function: the Power of Words, WP</source>
+					<issue>22508</issue>
+					<publisher-name>NBER</publisher-name>
+					<publisher-loc>Cambridge</publisher-loc>
+					<ext-link ext-link-type="uri" xlink:href="http://www.nber.org/papers/w22508t">http://www.nber.org/papers/w22508t</ext-link>
+				</element-citation>
+			</ref>
+			<ref id="B39">
+				<mixed-citation>Mullainathan, S. y Z. Obermeyer. 2017. Does Machine Learning Automate Moral Hazard and Error? American Economic Review: Papers and Proceedings, 107(5): 476-480.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Mullainathan</surname>
+							<given-names>S.</given-names>
+						</name>
+						<name>
+							<surname>Obermeyer</surname>
+							<given-names>Z.</given-names>
+						</name>
+					</person-group>
+					<year>2017</year>
+					<article-title>Does Machine Learning Automate Moral Hazard and Error?</article-title>
+					<source>American Economic Review: Papers and Proceedings</source>
+					<volume>107</volume>
+					<issue>5</issue>
+					<fpage>476</fpage>
+					<lpage>480</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B40">
+				<mixed-citation>Mullainathan, S. y J. Spiess. 2017. Machine Learning: An Applied Econometric Approach, Journal of Economic Perspectives, 31(2): 87-106.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Mullainathan</surname>
+							<given-names>S.</given-names>
+						</name>
+						<name>
+							<surname>Spiess</surname>
+							<given-names>J.</given-names>
+						</name>
+					</person-group>
+					<year>2017</year>
+					<article-title>Machine Learning: An Applied Econometric Approach</article-title>
+					<source>Journal of Economic Perspectives</source>
+					<volume>31</volume>
+					<issue>2</issue>
+					<fpage>87</fpage>
+					<lpage>106</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B41">
+				<mixed-citation>Rogers, S. 2016. What is Google Trends data?-?and what does it mean? <ext-link ext-link-type="uri" xlink:href="https://medium.com/google-news-lab/what-is-google-trends-data-and-what-does-it-mean-b48f07342ee8">https://medium.com/google-news-lab/what-is-google-trends-data-and-what-does-it-mean-b48f07342ee8</ext-link>.</mixed-citation>
+				<element-citation publication-type="book">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Rogers</surname>
+							<given-names>S.</given-names>
+						</name>
+					</person-group>
+					<year>2016</year>
+					<source>What is Google Trends data?-?and what does it mean?</source>
+					<ext-link ext-link-type="uri" xlink:href="https://medium.com/google-news-lab/what-is-google-trends-data-and-what-does-it-mean-b48f07342ee8">https://medium.com/google-news-lab/what-is-google-trends-data-and-what-does-it-mean-b48f07342ee8</ext-link>
+				</element-citation>
+			</ref>
+			<ref id="B42">
+				<mixed-citation>Rundle, A., M. Bader, C.A Richards, K.M. Neckerman y J.O. Teitler. 2011. Using Google street view to audit neighborhood environments”, American Journal of Preventive Medicine, 40(1): 94-100.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Rundle</surname>
+							<given-names>A.</given-names>
+						</name>
+						<name>
+							<surname>Bader</surname>
+							<given-names>M.</given-names>
+						</name>
+						<name>
+							<surname>Richards</surname>
+							<given-names>C.A</given-names>
+						</name>
+						<name>
+							<surname>Neckerman</surname>
+							<given-names>K.M.</given-names>
+						</name>
+						<name>
+							<surname>Teitler</surname>
+							<given-names>J.O.</given-names>
+						</name>
+					</person-group>
+					<year>2011</year>
+					<article-title>Using Google street view to audit neighborhood environments</article-title>
+					<source>American Journal of Preventive Medicine</source>
+					<volume>40</volume>
+					<issue>1</issue>
+					<fpage>94</fpage>
+					<lpage>100</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B43">
+				<mixed-citation>Sara, N.B., R. Halland, C. Igel y S. Alstrup. 2015. High-School Dropout Prediction Using Machine Learning: A Danish Large-scale Study, en M. Verleysen (comp.), Proceedings, ESANN 2015: 23rd European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, i6doc.com, pp. 319-324.</mixed-citation>
+				<element-citation publication-type="book">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Sara</surname>
+							<given-names>N.B.</given-names>
+						</name>
+						<name>
+							<surname>Halland</surname>
+							<given-names>R.</given-names>
+						</name>
+						<name>
+							<surname>Igel</surname>
+							<given-names>C.</given-names>
+						</name>
+						<name>
+							<surname>Alstrup</surname>
+							<given-names>S.</given-names>
+						</name>
+					</person-group>
+					<year>2015</year>
+					<chapter-title>High-School Dropout Prediction Using Machine Learning: A Danish Large-scale Study</chapter-title>
+					<person-group person-group-type="author">
+						<name>
+							<surname>Verleysen</surname>
+							<given-names>M.</given-names>
+						</name>
+					</person-group>
+					<source>Proceedings, ESANN 2015: 23rd European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, i6doc.com</source>
+					<fpage>319</fpage>
+					<lpage>324</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B44">
+				<mixed-citation>Stephens-Davidowitz, S. 2017. Everybody Lies: Big Data, New Data, and What the Internet Can Tell Us About Who We Really Are, HarperCollins Publishers, Nueva York.</mixed-citation>
+				<element-citation publication-type="book">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Stephens-Davidowitz</surname>
+							<given-names>S.</given-names>
+						</name>
+					</person-group>
+					<year>2017</year>
+					<source>Everybody Lies: Big Data, New Data, and What the Internet Can Tell Us About Who We Really Are</source>
+					<publisher-name>HarperCollins Publishers</publisher-name>
+					<publisher-loc>Nueva York</publisher-loc>
+				</element-citation>
+			</ref>
+			<ref id="B45">
+				<mixed-citation>Taddy, M. 2018. The Technological Elements of Artificial Intelligence, WP núm. 24301, NBER, Cambridge, <ext-link ext-link-type="uri" xlink:href="http://www.nber.org/papers/w24301">http://www.nber.org/papers/w24301</ext-link>.</mixed-citation>
+				<element-citation publication-type="book">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Taddy</surname>
+							<given-names>M.</given-names>
+						</name>
+					</person-group>
+					<year>2018</year>
+					<source>The Technological Elements of Artificial Intelligence, WP</source>
+					<issue>24301</issue>
+					<publisher-name>NBER</publisher-name>
+					<publisher-loc>Cambridge</publisher-loc>
+					<ext-link ext-link-type="uri" xlink:href="http://www.nber.org/papers/w24301">http://www.nber.org/papers/w24301</ext-link>
+				</element-citation>
+			</ref>
+			<ref id="B46">
+				<mixed-citation>Tuhkuri, J. 2015. Big Data: Do Google Searches Predict Unemployment?, tesis de maestría, Universidad de Helsinki, <ext-link ext-link-type="uri" xlink:href="https://helda.helsinki.fi/handle/10138/155258">https://helda.helsinki.fi/handle/10138/155258</ext-link>.</mixed-citation>
+				<element-citation publication-type="thesis">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Tuhkuri</surname>
+							<given-names>J.</given-names>
+						</name>
+					</person-group>
+					<year>2015</year>
+					<source>Big Data: Do Google Searches Predict Unemployment?</source>
+					<comment content-type="degree">maestría</comment>
+					<publisher-name>Universidad de Helsinki</publisher-name>
+					<ext-link ext-link-type="uri" xlink:href="https://helda.helsinki.fi/handle/10138/155258">https://helda.helsinki.fi/handle/10138/155258</ext-link>
+				</element-citation>
+			</ref>
+			<ref id="B47">
+				<mixed-citation>Varian, H. 2014. Big Data: New Tricks for Econometrics, Journal of Economic Perspectives, 28(2): 3-28.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Varian</surname>
+							<given-names>H.</given-names>
+						</name>
+					</person-group>
+					<year>2014</year>
+					<article-title>Big Data: New Tricks for Econometrics</article-title>
+					<source>Journal of Economic Perspectives</source>
+					<volume>28</volume>
+					<issue>2</issue>
+					<fpage>3</fpage>
+					<lpage>28</lpage>
+				</element-citation>
+			</ref>
+		</ref-list>
+		<fn-group>
+			<fn fn-type="other" id="fn1">
+				<label>1</label>
+				<p> Esta es la versión más simple para un modelo autorregresivo, que nos pareció sensata para la estimación del modelo: el rezago de un mes nos ayuda a incorporar la tendencia temporal del desempleo, mientras que el rezago anual nos permita capturar la estacionalidad de la demanda laboral. Sin embargo, en el anexo B se pueden encontrar los resultados para estimaciones con modelos de AR con más rezagos. Como podrá verse, las diferencias de precisión son marginales.</p>
+			</fn>
+			<fn fn-type="other" id="fn2">
+				<label>2</label>
+				<p>Dichos árboles aplican reglas simples a los valores de las variables observables de forma secuencial para mejorar su capacidad predictiva. Por ejemplo, supongamos que queremos predecir si la calificación de los alumnos en un examen estandarizado es aprobatoria utilizando tan solo dos variables: las calificaciones promedio de su escuela el ciclo pasado y su estatura. El árbol de decisión tomaría en cuenta la variable de mayor poder predictivo en el primer nodo (supongamos que lo son las calificaciones promedio) y partiría el espacio paramétrico en dos (supongamos que es &lt; 7 y &gt;= 7). Posteriormente, en el siguiente nodo, generaría una nueva regla para la estatura de los niños.</p>
+			</fn>
+		</fn-group>
+	</back>
+</article>

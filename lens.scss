@@ -1,0 +1,78 @@
+/* Lens Base styles */
+@import 'node_modules/lens/article/nodes/text/text';
+@import 'node_modules/lens/article/nodes/paragraph/paragraph';
+@import 'node_modules/lens/article/nodes/heading/heading';
+@import 'node_modules/lens/article/nodes/list/list';
+@import 'node_modules/lens/article/nodes/image/image';
+@import 'node_modules/lens/article/nodes/codeblock/codeblock';
+@import 'node_modules/lens/article/nodes/cover/cover';
+@import 'node_modules/lens/article/nodes/supplement/supplement';
+@import 'node_modules/lens/article/nodes/box/box';
+@import 'node_modules/lens/article/nodes/citation/citation';
+@import 'node_modules/lens/article/nodes/definition/definition';
+@import 'node_modules/lens/article/nodes/figure/figure';
+@import 'node_modules/lens/article/nodes/html_table/html_table';
+@import 'node_modules/lens/article/nodes/video/video';
+@import 'node_modules/lens/article/nodes/caption/caption';
+@import 'node_modules/lens/article/nodes/contributor/contributor';
+@import 'node_modules/lens/article/nodes/publication_info/publication_info';
+@import 'node_modules/lens/styles/surface';
+@import 'node_modules/lens/styles/reader';
+@import 'node_modules/lens/styles/lens';
+
+// Custom styles
+
+.intro{
+    background: #FFFFFF !important;
+    border: 0 !important;
+    padding: 0 !important;
+}
+
+.intro .subjects{
+    color: #852837;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.content-node.text .content{
+    text-align: justify;
+}
+
+.article .document{
+    width: 65%;
+}
+
+.article .resources{
+    width: 35%;
+}
+
+a.go-back{
+    top: 0;
+    left: 20px;
+    position: absolute;
+    z-index: 5000;
+    display: block;
+    font-size: 18px;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 0.6);
+    background: #FFFEF5DD;
+    border-right: 1px solid #D8D9C1;
+    border-bottom: 1px solid #D8D9C1;
+    padding: 2px 10px;
+}
+
+a.go-back:hover{
+    background: #FFFEF5;
+}
+
+a.go-back span{
+    display: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+a.go-back:hover span{
+    display: inline;
+    padding-left: 6px;
+    padding-right: 6px;
+}

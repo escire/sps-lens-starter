@@ -24,25 +24,3 @@ var qs = function () {
     }
     return query_string;
 } ();
-
-// This document gets loaded by default
-// --------
-
-//var documentURL = "data/example.xml";
-
-$(function() {
-    
-    // Create a new Lens app instance
-    // --------
-    //
-    // Injects itself into body
-    
-    var app = new window.Lens({
-        document_url: qs.url ? decodeURIComponent(qs.url) : documentURL
-    });
-    
-    app.start();
-    
-    window.app = app;
-    
-});

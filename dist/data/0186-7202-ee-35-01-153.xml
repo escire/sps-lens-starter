@@ -1,0 +1,1845 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.1 20151215//EN" "https://jats.nlm.nih.gov/publishing/1.1/JATS-journalpublishing1.dtd">
+<article article-type="research-article" dtd-version="1.1" specific-use="sps-1.9" xml:lang="es" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<front>
+		<journal-meta>
+			<journal-id journal-id-type="publisher-id">ee</journal-id>
+			<journal-title-group>
+				<journal-title>Estudios Económicos (México, D.F.)</journal-title>
+				<abbrev-journal-title abbrev-type="publisher">Estud. Econ. (México, D.F.)</abbrev-journal-title>
+			</journal-title-group>
+			<issn pub-type="ppub">0188-6916</issn>
+			<issn pub-type="epub">0186-7202</issn>
+			<publisher>
+				<publisher-name>El Colegio de México, A.C.</publisher-name>
+			</publisher>
+		</journal-meta>
+		<article-meta>
+			<article-id pub-id-type="publisher-id">00005</article-id>
+			<article-categories>
+				<subj-group subj-group-type="heading">
+					<subject>Artículos</subject>
+				</subj-group>
+			</article-categories>
+			<title-group>
+				<article-title>Polarización salarial y ocupacional en México: 2005-2017</article-title>
+				<trans-title-group xml:lang="en">
+					<trans-title>Wage and occupational polarization in Mexico: 2005-2017</trans-title>
+				</trans-title-group>
+			</title-group>
+			<contrib-group>
+				<contrib contrib-type="author">
+					<name>
+						<surname>García Ramírez</surname>
+						<given-names>Gonzalo</given-names>
+					</name>
+					<xref ref-type="aff" rid="aff1"><sup>1</sup></xref>
+				</contrib>
+				<contrib contrib-type="author">
+					<name>
+						<surname>García Ramírez</surname>
+						<given-names>Gabriela</given-names>
+					</name>
+					<xref ref-type="aff" rid="aff2"><sup>2</sup></xref>
+				</contrib>
+			</contrib-group>
+			<aff id="aff1">
+				<label>1</label>
+				<institution content-type="original">Universidad Autónoma Metropolitana</institution>
+				<institution content-type="normalized">Universidad Autónoma Metropolitana</institution>
+				<institution content-type="orgname">Universidad Autónoma Metropolitana</institution>
+				<country country="MX">Mexico</country>
+			</aff>
+			<aff id="aff2">
+				<label>2</label>
+				<institution content-type="original">Centro de Investigación y Docencia Económicas, A.C.</institution>
+				<institution content-type="normalized">Centro de Investigación y Docencia Económicas</institution>
+				<institution content-type="orgname">Centro de Investigación y Docencia Económicas</institution>
+				<country country="MX">Mexico</country>
+			</aff>
+			<pub-date date-type="pub" publication-format="electronic">
+				<day>30</day>
+				<month>02</month>
+				<year>2020</year>
+			</pub-date>
+			<pub-date date-type="collection" publication-format="electronic">
+				<season>Jan-Jun</season>
+				<year>2020</year>
+			</pub-date>
+			<volume>35</volume>
+			<issue>1</issue>
+			<fpage>153</fpage>
+			<lpage>188</lpage>
+			<history>
+				<date date-type="received">
+					<day>04</day>
+					<month>04</month>
+					<year>2018</year>
+				</date>
+				<date date-type="accepted">
+					<day>04</day>
+					<month>03</month>
+					<year>2019</year>
+				</date>
+			</history>
+			<permissions>
+				<license license-type="open-access" xlink:href="https://creativecommons.org/licenses/by-nc-nd/4.0/" xml:lang="es">
+					<license-p>Este es un artículo publicado en acceso abierto bajo una licencia Creative Commons</license-p>
+				</license>
+			</permissions>
+			<abstract>
+				<title>Resumen: </title>
+				<p>Se analiza el fenómeno de la polarización salarial y ocupacional en el mercado de trabajo mexicano durante el periodo 2005-2017, a partir de una división del mercado de trabajo en empleo formal e informal, así como de género. A través de una descomposición por nivel de destrezas se sugiere que existe un proceso de polarización incipiente en el mercado formal y un proceso canónico de polarización en el mercado informal. Del mismo modo, los índices DER corroboran un incremento de la polarización salarial y ocupacional en el periodo. Asimismo, por medio de una descomposición por elementos se observa que la segmentación del mercado laboral, la debilidad sindical, el tamaño de los establecimientos y la discriminación laboral son unas de las principales causas de la polarización salarial y ocupacional en México.</p>
+			</abstract>
+			<trans-abstract xml:lang="en">
+				<title>Abstract: </title>
+				<p>This research analyzes the phenomenon of wage and occupational polarization in the Mexican labor market during the period 2005-2017, based on a division of the labor market into formal and informal employment as well as gender. Through a decomposition by level of skills it is suggested that there is a process of incipient polarization in the formal market and a canonical process of polarization in the informal market. In the same way, the index DER corroborate an increase in the wage and occupational polarization in the period. Likewise, a breakdown of components shows that labor market segmentation, union weakness, size of establishments and labor discrimination are some of the main causes of wage and occupational polarization in Mexico.</p>
+			</trans-abstract>
+			<kwd-group xml:lang="es">
+				<title>Palabras clave:</title>
+				<kwd>polarización</kwd>
+				<kwd>inequidad</kwd>
+				<kwd>mercados de trabajo informal</kwd>
+				<kwd>discriminación</kwd>
+			</kwd-group>
+			<kwd-group xml:lang="es">
+				<title>Clasificaci´on JEL:</title>
+				<kwd>I32</kwd>
+				<kwd>D63</kwd>
+				<kwd>O15</kwd>
+				<kwd>J46</kwd>
+				<kwd>J71</kwd>
+			</kwd-group>
+			<kwd-group xml:lang="en">
+				<title>keywords:</title>
+				<kwd>polarization</kwd>
+				<kwd>inequality</kwd>
+				<kwd>informal labor markets</kwd>
+				<kwd>discrimination</kwd>
+			</kwd-group>
+			<kwd-group xml:lang="en">
+				<title>JEL Classification:</title>
+				<kwd>I32</kwd>
+				<kwd>D63</kwd>
+				<kwd>O15</kwd>
+				<kwd>J46</kwd>
+				<kwd>J71</kwd>
+			</kwd-group>
+			<counts>
+				<fig-count count="14"/>
+				<table-count count="1"/>
+				<equation-count count="5"/>
+				<ref-count count="49"/>
+				<page-count count="36"/>
+			</counts>
+		</article-meta>
+	</front>
+	<body>
+		<sec sec-type="intro">
+			<title>1. Introducción</title>
+			<p>El tema de polarización ha sido excluido por la economía convencional hasta tiempo muy reciente. Desde la visión de <xref ref-type="bibr" rid="B19">Duclos, Esteban y Ray (2004) </xref> y <xref ref-type="bibr" rid="B49">Wan y Wang (2015)</xref> la polarización es un indicador del nivel de malestar en una sociedad. En palabras de <xref ref-type="bibr" rid="B40">Linz (1987)</xref> se sugiere que la polarización tiene un fuerte vínculo con el quiebre del sistema institucional, lo cual puede dar paso a la revuelta social o a la violencia revolucionaria (<xref ref-type="bibr" rid="B22">Esteban y Ray, 1994</xref>; <xref ref-type="bibr" rid="B19">Duclos, Esteban y Ray, 2004</xref>). Asimismo, la polarización puede generar obstáculos al crecimiento y al desarrollo económico debido a que inhibe el funcionamiento de los mercados de crédito de forma generalizada, con lo que propicia posibles fallas en las economías y el no aprovechamiento de las economías a escala a nivel global (<xref ref-type="bibr" rid="B34">Keefer y Knack, 2002</xref>).</p>
+			<p>La polarización, sin embargo, presenta varios rostros, dos de ellos son la polarización salarial y ocupacional, mismas que profundizan los efectos negativos de la desigualdad económica y social. Por un lado, la polarización salarial y ocupacional disminuyen de forma relativa el grupo de personas que durante algún período obtenían ingresos salariales medios o que pertenecían a ocupaciones que percibían remuneraciones medias, lo que los situaba, en palabras de <xref ref-type="bibr" rid="B24">Foster y Wolfson (2009)</xref>, en el grupo social de clase media. Esto, sin duda, tiene repercusiones en el ámbito de bienestar de las personas pero, por otra parte, cataliza esquemas débiles de participación política que en el largo plazo podrían generar una sociedad más polarizada y desigual. De igual manera, dicho proceso de polarización reduce el conjunto de las oportunidades de la personas, la sociedad se vuelve más rígida y con poca capacidad para generar movilidad social, en este sentido, socava las fuentes de dicha movilidad y es altamente probable que obstaculice la dinámica de un alto crecimiento económico que redunde en un beneficio público para la sociedad en general (<xref ref-type="bibr" rid="B26">García, 2017</xref>; <xref ref-type="bibr" rid="B48">Stiglitz, 2012</xref>).</p>
+			<p>En las últimas décadas se ha evidenciado un proceso de polarización, tanto del ingreso como del salario, a nivel global. La gran mayoría de estudios en economías desarrolladas (<xref ref-type="bibr" rid="B2">Acemoglu y Autor, 2011</xref>; <xref ref-type="bibr" rid="B5">Autor, Levy y Murnane, 2003</xref>; <xref ref-type="bibr" rid="B6">Autor, Katz y Kearney, 2006</xref>; <xref ref-type="bibr" rid="B7">Autor, 2010</xref>; <xref ref-type="bibr" rid="B27">Goldin y Katz, 2007</xref>; <xref ref-type="bibr" rid="B31">Hulchanski y Murdie, 2013</xref>; <xref ref-type="bibr" rid="B23">Fortin y Green, 2012</xref>; <xref ref-type="bibr" rid="B28">Goos y Manning, 2003</xref>; <xref ref-type="bibr" rid="B42">Michaels, Natraj y Van Reenen, 2010</xref>; <xref ref-type="bibr" rid="B45">Pertold-Gebicka, 2013</xref> y <xref ref-type="bibr" rid="B11">Brzezinski, 2013</xref>) como en economías emergentes (<xref ref-type="bibr" rid="B49">Wan y Wang, 2015</xref>; <xref ref-type="bibr" rid="B29">Horenstein y Olivieri, 2004</xref>; <xref ref-type="bibr" rid="B8">Borraz y González, 2011</xref>) sugieren que existe un proceso creciente de polarización. Para el caso de México existe poca investigación acerca del tema, sin embargo, destacan dos trabajos. Por una parte el elaborado por <xref ref-type="bibr" rid="B30">Huesca (2004) </xref> para el período 1984-2000 y por otra el realizado por <xref ref-type="bibr" rid="B14">Campos-Vázquez (2013a)</xref> para el período 1989-2006. Ambos trabajos sugieren un proceso de polarización.</p>
+			<p>En aras de ampliar y actualizar la investigación sobre el problema de polarización, el presente trabajo intenta abrir una nueva senda de investigación para el caso de la polarización salarial y ocupacional en México durante el periodo 2005-2017, al analizar el proceso de polarización en el empleo formal e informal, al mismo tiempo que hace la distinción por sexo y por nivel educativo. Para ello, se ha planteado estudiar si existe polarización en ambos sectores del mercado de trabajo y así descubrir sus causas. En un primer momento se construye una clasificación por destrezas, a fin de dividir al conjunto de asalariados ocupados en tres grupos ocupacionales, más adelante se calcula el índice de polarización <xref ref-type="bibr" rid="B19">Duclos, Esteban y Ray (DER) (2004)</xref> y se lleva a cabo una descomposición de la polarización por componentes para observar las posibles fuentes de la polarización salarial. Se ha encontrado, en términos generales, que existe un proceso de polarización tanto salarial como ocupacional en el mercado de trabajo mexicano, que se amplifica en el empleo informal. De igual forma, la evidencia sugiere que los factores institucionales y la discriminación salarial por sexo tienen un peso relevante a la hora de explicar la polarización en México.</p>
+			<p>El trabajo se ha dividido de la siguiente manera. Después de la introducción, la sección dos establece la estructura teórica con la cual se va a trabajar, la tercera, aborda la revisión de los estudios empíricos acerca de la polarización, la cuarta, establece la metodología y el uso de datos, la quinta emprende el análisis para el caso del mercado de trabajo en México, en la última se exponen las reflexiones y conclusiones finales.</p>
+		</sec>
+		<sec>
+			<title>2. Estructura teórica</title>
+			<p>Como lo han anotado <xref ref-type="bibr" rid="B49">Wan y Wang (2015)</xref>, el tema de polarización ha sido relegado por la economía convencional hasta hace muy poco tiempo. Dicho concepto es relevante en el sentido que caracteriza el estado de una sociedad en relación con su conformación, ya sea si esta última se da por ingreso, salario, escolaridad, ocupación, entre otros. En este sentido, la polarización propicia que los individuos se aglomeren en virtud de rasgos homogéneos que les son comunes y que les dan identidad y cohesión (<xref ref-type="bibr" rid="B34">Keefer y Knack, 2002</xref>).</p>
+			<p>El análisis de la polarización puede realizarse desde dos perspectivas. La primera la relacionamos con la conformación ocupacional que existe en el mercado de trabajo. Se considera que el mercado de trabajo se integra bajo una estructura ocupacional definida a partir de un conjunto de ocupaciones que están vinculadas con cierto tipo de trabajos, dichos trabajos son explicados en función de las tareas que realizan. La idea tiene una clara explicación tecnológica, a decir verdad, se argumenta que la tecnología puede reemplazar a los trabajos de destrezas medias,<xref ref-type="fn" rid="fn1"><sup>1</sup></xref> los cuales tienen que ver con las tareas manuales o cognitivas repetitivas, en tanto que es complementaria de aquellos trabajos que se vinculan con las tareas cognitivas-abstractas no repetitivas y aquellos trabajos de tareas manuales no repetitivas (<xref ref-type="bibr" rid="B5">Autor, Levy y Murnane, 2003</xref>; <xref ref-type="bibr" rid="B28">Goos y Manning, 2003</xref>).<xref ref-type="fn" rid="fn2"><sup>2</sup></xref>
+			</p>
+			<p>Al seguir a <xref ref-type="bibr" rid="B28">Goos y Manning (2003)</xref> establecemos que la calidad de los trabajos, <italic>así como su relación progresiva con la tecnología</italic> está definida a partir de los salarios medios: La definición de calidad de un trabajo en función del salario promedio es una aproximación de valor en cuanto a su simplicidad y en cuanto a que nos capacita para etiquetar trabajos específicos como buenos o malos...&quot;(<xref ref-type="bibr" rid="B28">Goos y Manning, 2003, p. 13, traducción propia</xref>). En este sentido, las ocupaciones guardan una relación recíproca con los salarios promedio, lo que implica que en los niveles más bajos de la distribución ocupacional se encuentran los trabajos de bajas destrezas con salarios promedio bajos, en tanto que en la cola más alta están aquellos trabajos de más elevadas destrezas y más altos salarios. Es obvio, en consecuencia, que en la media de la distribución se encuentran los trabajos con destrezas y salarios medios (<xref ref-type="bibr" rid="B28">Goos y Manning, 2003</xref>; <xref ref-type="bibr" rid="B7">Autor, 2010</xref>).</p>
+			<p>Lo anterior significa que una variación porcentual positiva en los extremos de la distribución genera un proceso de polarización bimodal en el sentido de Esteban, Gradin y Ray (1998), es decir, existe un crecimiento de los trabajos con menores destrezas y de bajos salarios, así como un crecimiento en los trabajos de altas destrezas con elevados salarios. Sin embargo, puede existir otro tipo de polarización, aquella que es sesgada hacia alguna de las colas. La situación más probable es la que aglutina a gran parte de la población ocupada en los deciles de ingreso más bajo y, por ello, en ocupaciones de bajas destrezas (<xref ref-type="bibr" rid="B19">Duclos, Esteban y Ray, 2004</xref>).</p>
+			<p>La segunda vía para detectar el fenómeno de la polarización se deriva de los trabajos realizados por <xref ref-type="bibr" rid="B21">Esteban y Ray (1994)</xref>, <xref ref-type="bibr" rid="B22">Esteban, Gradín y Ray (2007)</xref> y <xref ref-type="bibr" rid="B19">Duclos, Esteban y Ray (2004)</xref>. Es importante distinguir que la polarización calculada como índice es una medida diferente a ciertos índices de desigualdad; si una medida de desigualdad como el índice Gini cumple con ciertas características, como el principio de Pigou-Dalton, el índice de polarización no necesariamente lo hace. Esta característica es importante en el sentido que una transferencia dentro del segundo decil de un agente más rico a uno más pobre disminuirá el índice de Gini, dado el Principio de Pigou-Dalton. No obstante, dicha transferencia, desde el punto de vista del índice de polarización de <xref ref-type="bibr" rid="B19">Duclos, Esteban y Ray (2004)</xref>, aumentará la polarización. El hecho es que, cuando calculamos la polarización, debemos tener en cuenta que tal medida puede comportarse igual que el índice de Gini, por poner un ejemplo, o bien de forma inversa. De ahí el que ambos índices describan situaciones diferentes (<xref ref-type="bibr" rid="B46">Schmidt, 2002</xref>).</p>
+			<p>Lo arriba expuesto revela que el índice de polarización considera la conformación de <italic>clusters</italic> o grupos que presentan rasgos específicos, como son la alienación e identificación. El ejemplo anterior nos muestra cómo al aumentar las semejanzas entre los individuos de un grupo, el grado de identificación entre ellos aumenta y, por lo tanto, la polarización entre grupos también (<xref ref-type="bibr" rid="B19">Duclos, Esteban y Ray, 2004</xref>).</p>
+			<p>De esta manera, con base en <xref ref-type="bibr" rid="B21">Esteban y Ray (1994)</xref> la polarización puede ser caracterizada por tres rasgos fundamentales. La primera hace referencia a la <italic>identificación</italic>. Según los autores, existen <italic>clusters</italic> dentro de la sociedad, estos son grupos integrados por un conjunto de miembros que comparten ciertas características que los hacen ser un grupo homogéneo, como por ejemplo el ingreso. Conforme los miembros sean más parecidos, el grado de identificación aumentará y, por ende, la polarización. La segunda característica hace referencia a la <italic>alienación</italic>. Este concepto tiene que ver con la heterogeneidad que se presenta entre los <italic>clusters</italic>. En la medida que los grupos sean más diferenciados, el grado de alienación será mayor. La alienación refleja entonces el nivel de antagonismo que puede existir entre los grupos que configuran una sociedad. Así, mayor nivel de alienación implicará un mayor nivel de polarización dentro de la sociedad. Por último, la conformación de grupos debe ser pequeña, pero su tamaño debe ser significativo (<xref ref-type="bibr" rid="B19">Duclos, Esteban y Ray, 2004</xref>).</p>
+			<p>Si seguimos a <xref ref-type="bibr" rid="B49">Wan y Wang (2015)</xref> supóngase que el
+				dominio a considerar es IR+. Además, sea ahora <mml:math
+					xmlns:mml="http://www.w3.org/1998/Math/MathML">
+					<mml:mrow>
+						<mml:msub>
+							<mml:mo stretchy="false">ν</mml:mo>
+							<mml:mrow>
+								<mml:mi>i</mml:mi>
+							</mml:mrow>
+						</mml:msub>
+						<mml:mrow/>
+					</mml:mrow>
+				</mml:math> que define la parte de la población del grupo i, <mml:math
+					xmlns:mml="http://www.w3.org/1998/Math/MathML">
+					<mml:mrow>
+						<mml:msub>
+							<mml:mo stretchy="false">υ</mml:mo>
+							<mml:mrow>
+								<mml:mi>i</mml:mi>
+							</mml:mrow>
+						</mml:msub>
+						<mml:mrow/>
+					</mml:mrow>
+				</mml:math>el ingreso promedio y α una constante tal que α una constante tal que α∈
+				&#091;0, 1.6&#093;.<xref ref-type="fn" rid="fn3"><sup>3</sup></xref> α considera el
+				grado de sensibilidad de una población a la polarización, en este sentido se asocia
+				al nivel de identificación que existe entre los grupos conformados. Hay que recordar
+				que un α igual a cero no es otra cosa que el índice de Gini. Los rangos establecidos
+				para α se derivan de los estudios empíricos hechos por <xref ref-type="bibr"
+					rid="B19">Duclos, Esteban y Ray, 2004</xref> Ahora, supongamos que <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" ><mml:msub><mml:mrow><mml:mi>I</mml:mi><mml:mi>D</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mrow><mml:msubsup><mml:mo stretchy="false">ν</mml:mo><mml:mrow><mml:mi>i</mml:mi></mml:mrow><mml:mrow><mml:mi>α</mml:mi></mml:mrow></mml:msubsup><mml:mrow></mml:mrow></mml:mrow></mml:math>
+				define la identificación entre los individuos de un grupo y <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" ><mml:msub><mml:mrow><mml:mi>A</mml:mi><mml:mi>L</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi><mml:mi>j</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mfenced open="|" close="" separators="|"><mml:mrow><mml:mrow><mml:msub><mml:mo stretchy="false">υ</mml:mo><mml:mrow><mml:mi>i</mml:mi></mml:mrow></mml:msub><mml:mrow></mml:mrow></mml:mrow></mml:mrow></mml:mfenced><mml:mo>-</mml:mo><mml:mfenced open="" close="|" separators="|"><mml:mrow><mml:mrow><mml:msub><mml:mo stretchy="false">υ</mml:mo><mml:mrow><mml:mi>j</mml:mi></mml:mrow></mml:msub><mml:mrow></mml:mrow></mml:mrow></mml:mrow></mml:mfenced></mml:math> la
+				alienación, en consecuencia el índice de polarización Esteban y Ray (ER) será una
+				suma ponderada de ID y AL dada por:</p>
+			<disp-formula id="e1">	<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" ><mml:mi>E</mml:mi><mml:mi>R</mml:mi><mml:mo>=</mml:mo><mml:mi>β</mml:mi><mml:mrow><mml:munderover><mml:mo stretchy="true">∑</mml:mo><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mi>S</mml:mi></mml:mrow></mml:munderover><mml:mrow><mml:mrow><mml:munderover><mml:mo stretchy="true">∑</mml:mo><mml:mrow><mml:mi>j</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mi>S</mml:mi></mml:mrow></mml:munderover><mml:mrow><mml:msub><mml:mrow><mml:mi>ν</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:mrow></mml:mrow><mml:mrow><mml:mrow><mml:msub><mml:mrow><mml:mi>ν</mml:mi></mml:mrow><mml:mrow><mml:mi>j</mml:mi></mml:mrow></mml:msub></mml:mrow><mml:mo>⁡</mml:mo><mml:mrow><mml:mrow><mml:mrow><mml:msubsup><mml:mrow><mml:mi>ν</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi></mml:mrow><mml:mrow><mml:mi>α</mml:mi></mml:mrow></mml:msubsup></mml:mrow><mml:mo>⁡</mml:mo><mml:mrow><mml:mfenced open="|" close="|" separators="|"><mml:mrow><mml:msub><mml:mrow><mml:mi>υ</mml:mi></mml:mrow><mml:mrow><mml:mi>i</mml:mi></mml:mrow></mml:msub><mml:mo>-</mml:mo><mml:msub><mml:mrow><mml:mi>υ</mml:mi></mml:mrow><mml:mrow><mml:mi>j</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:mfenced></mml:mrow></mml:mrow></mml:mrow></mml:mrow></mml:math><label>(1)</label>
+			</disp-formula>
+			<disp-formula id="e2"><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" ><mml:mo>=</mml:mo><mml:mi>β</mml:mi><mml:mrow><mml:munderover><mml:mo stretchy="false">∑</mml:mo><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mi>S</mml:mi></mml:mrow></mml:munderover><mml:mrow><mml:mrow><mml:munderover><mml:mo stretchy="false">∑</mml:mo><mml:mrow><mml:mi>j</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:mi>S</mml:mi></mml:mrow></mml:munderover><mml:mrow><mml:mrow><mml:msubsup><mml:mo stretchy="false">ν</mml:mo><mml:mrow><mml:mi>i</mml:mi></mml:mrow><mml:mrow><mml:mn>1</mml:mn><mml:mo>+</mml:mo><mml:mi>α</mml:mi></mml:mrow></mml:msubsup><mml:mrow></mml:mrow></mml:mrow></mml:mrow></mml:mrow></mml:mrow></mml:mrow><mml:mrow><mml:msub><mml:mo stretchy="false">ν</mml:mo><mml:mrow><mml:mi>j</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mfenced open="|" close="" separators="|"><mml:mrow><mml:mrow><mml:msub><mml:mo stretchy="false">υ</mml:mo><mml:mrow><mml:mi>i</mml:mi></mml:mrow></mml:msub><mml:mrow></mml:mrow></mml:mrow></mml:mrow></mml:mfenced></mml:mrow></mml:mrow><mml:mo>-</mml:mo><mml:mfenced open="" close="|" separators="|"><mml:mrow><mml:mrow><mml:msub><mml:mo stretchy="false">υ</mml:mo><mml:mrow><mml:mi>j</mml:mi></mml:mrow></mml:msub><mml:mrow></mml:mrow></mml:mrow></mml:mrow></mml:mfenced></mml:math></disp-formula>
+			<p>Aquí β es un parámetro de normalización y <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" ><mml:mi>α</mml:mi></mml:math> refleja la sensibilidad a la polarización. Cuando ,<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" ><mml:mi>α</mml:mi><mml:mo>=</mml:mo><mml:mn>0</mml:mn></mml:math> ER es equivalente al coeficiente de Gini. Lo que observamos entonces en (1) es que la polarización es el resultado de la identificación entre individuos más la alienación entre grupos. No obstante, surge un problema: 𝐸𝑅 es una medida que contempla sólo datos discretos. Dado que estaremos trabajando con un conjunto de datos continuos, la adecuación que realizan <xref ref-type="bibr" rid="B19">Duclos, Esteban y Ray (2004)</xref> será más útil:</p>
+				<disp-formula id="e3"><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+					<mml:mi>D</mml:mi>
+					<mml:mi>E</mml:mi>
+					<mml:mi>R</mml:mi>
+					<mml:mo>(</mml:mo>
+					<mml:mi>f</mml:mi>
+					<mml:mo>,</mml:mo>
+					<mml:mi>α</mml:mi>
+					<mml:mo>)</mml:mo>
+					<mml:mo>=</mml:mo>
+					<mml:mo>∫</mml:mo>
+					<mml:mo>∫</mml:mo>
+					<mml:msup>
+						<mml:mrow>
+							<mml:mi>f</mml:mi>
+							<mml:mo>(</mml:mo>
+							<mml:mi>x</mml:mi>
+							<mml:mo>)</mml:mo>
+						</mml:mrow>
+						<mml:mrow>
+							<mml:mn>1</mml:mn>
+							<mml:mo>+</mml:mo>
+							<mml:mi>α</mml:mi>
+						</mml:mrow>
+					</mml:msup>
+					<mml:msup>
+						<mml:mrow>
+							<mml:mi>f</mml:mi>
+							<mml:mo>(</mml:mo>
+							<mml:mi>y</mml:mi>
+							<mml:mo>)</mml:mo>
+						</mml:mrow>
+						<mml:mrow/>
+					</mml:msup>
+					<mml:mo>⁡</mml:mo>
+					<mml:mo>|</mml:mo>
+					<mml:msub>
+						<mml:mrow>
+							<mml:mi>x</mml:mi>
+						</mml:mrow>
+						<mml:mrow/>
+					</mml:msub>
+					<mml:mo>-</mml:mo>
+					<mml:msub>
+						<mml:mrow>
+							<mml:mi>y</mml:mi>
+						</mml:mrow>
+						<mml:mrow/>
+					</mml:msub>
+					<mml:mo>|</mml:mo>
+					<mml:msub>
+						<mml:mrow>
+							<mml:mi>d</mml:mi>
+							<mml:mi>y</mml:mi>
+						</mml:mrow>
+						<mml:mrow/>
+					</mml:msub>
+					<mml:mo>⁡</mml:mo>
+					<mml:msub>
+						<mml:mrow>
+							<mml:mi>d</mml:mi>
+							<mml:mi>x</mml:mi>
+						</mml:mrow>
+						<mml:mrow/>
+					</mml:msub>
+				</mml:math><label>(2)</label>
+			</disp-formula>
+			<p>De esta manera tenemos que para el índice DER el componente de identificación está dado por</p>
+			<disp-formula id="e4"><mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+					<mml:mi>I</mml:mi>
+					<mml:mi>d</mml:mi>
+					<mml:mi>e</mml:mi>
+					<mml:mi>n</mml:mi>
+					<mml:mi>t</mml:mi>
+					<mml:mi>i</mml:mi>
+					<mml:mi>f</mml:mi>
+					<mml:mi>i</mml:mi>
+					<mml:mi>c</mml:mi>
+					<mml:mi>a</mml:mi>
+					<mml:mi>c</mml:mi>
+					<mml:mi>i</mml:mi>
+					<mml:mi>o</mml:mi>
+					<mml:mi>n</mml:mi>
+					<mml:mo>=</mml:mo>
+					<mml:mo>∫</mml:mo>
+					<mml:msup>
+						<mml:mrow>
+							<mml:mi>f</mml:mi>
+							<mml:mfenced separators="|">
+								<mml:mrow>
+									<mml:mi>x</mml:mi>
+								</mml:mrow>
+							</mml:mfenced>
+						</mml:mrow>
+						<mml:mrow>
+							<mml:mn>1</mml:mn>
+							<mml:mo>+</mml:mo>
+							<mml:mi>α</mml:mi>
+						</mml:mrow>
+					</mml:msup>
+					<mml:msub>
+						<mml:mrow>
+							<mml:mi>d</mml:mi>
+							<mml:mi>x</mml:mi>
+						</mml:mrow>
+						<mml:mrow/>
+					</mml:msub>
+					<mml:mi> </mml:mi>
+					<mml:mi> </mml:mi>
+				</mml:math><label>(3)</label>
+			</disp-formula>
+			<p>Y el componente de alienación está representado por</p>
+			<disp-formula id="e5">
+				<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+					<mml:mi>A</mml:mi>
+					<mml:mi>l</mml:mi>
+					<mml:mi>i</mml:mi>
+					<mml:mi>e</mml:mi>
+					<mml:mi>n</mml:mi>
+					<mml:mi>a</mml:mi>
+					<mml:mi>c</mml:mi>
+					<mml:mi>i</mml:mi>
+					<mml:mi>o</mml:mi>
+					<mml:mi>n</mml:mi>
+					<mml:mo>=</mml:mo>
+					<mml:mo>∫</mml:mo>
+					<mml:mo>∫</mml:mo>
+					<mml:mo>|</mml:mo>
+					<mml:msub>
+						<mml:mrow>
+							<mml:mi>x</mml:mi>
+						</mml:mrow>
+						<mml:mrow/>
+					</mml:msub>
+					<mml:mo>-</mml:mo>
+					<mml:msub>
+						<mml:mrow>
+							<mml:mi>y</mml:mi>
+						</mml:mrow>
+						<mml:mrow/>
+					</mml:msub>
+					<mml:mo>|</mml:mo>
+					<mml:msub>
+						<mml:mrow>
+							<mml:mi>d</mml:mi>
+							<mml:mi>F</mml:mi>
+							<mml:mo>(</mml:mo>
+							<mml:mi>x</mml:mi>
+							<mml:mo>)</mml:mo>
+						</mml:mrow>
+						<mml:mrow/>
+					</mml:msub>
+					<mml:mo>⁡</mml:mo>
+					<mml:msub>
+						<mml:mrow>
+							<mml:mi>d</mml:mi>
+							<mml:mi>F</mml:mi>
+							<mml:mo>(</mml:mo>
+							<mml:mi>y</mml:mi>
+							<mml:mo>)</mml:mo>
+						</mml:mrow>
+						<mml:mrow/>
+					</mml:msub>
+					<mml:mo>⁡</mml:mo>
+				</mml:math><label>(4)</label>
+			</disp-formula>
+			<p>Por lo tanto, así es como se concibe la polarización en su forma desagregada. Como puede observarse, en la medida en la que los individuos que integran los grupos sean más homogéneos y conforme las diferencias entre los grupos se vuelvan más abismales, la polarización tenderá a crecer, lo cual puede tener consecuencias graves para la estabilidad económica, política e institucional de una sociedad (<xref ref-type="bibr" rid="B49">Wan y Wang, 2015</xref>; <xref ref-type="bibr" rid="B18">Charkravarty, 2009</xref>). </p>
+		</sec>
+		<sec>
+			<title>3. Revisión de la literatura</title>
+			<p>Los estudios sobre polarización tuvieron su origen en economías desarrolladas como Estados Unidos e Inglaterra. Para el primer caso, <xref ref-type="bibr" rid="B7">Autor (2010</xref>), <xref ref-type="bibr" rid="B5">Autor, Levy y Murnane (2003)</xref> y <xref ref-type="bibr" rid="B6">Autor, Katz y Kearney (2006)</xref> encontraron que el proceso de cambio tecnológico en las últimas cuatro décadas ha tenido un efecto positivo muy sensible sobre la demanda de trabajo con mayores y menores destrezas frente al trabajo de destrezas medias; lo que ha implicado el aumento de la polarización salarial, sin embargo, dicho fenómeno se ha reforzado por la deslocalización industrial, la disminución de la tasa de sindicalización y la caída del salario mínimo (<xref ref-type="bibr" rid="B2">Acemoglu y Autor, 2011</xref>; <xref ref-type="bibr" rid="B7">Autor, 2010</xref>).</p>
+			<p>En relación con Inglaterra, <xref ref-type="bibr" rid="B28">Goos y Manning (2003)</xref> establecen que el proceso de cambio tecnológico tiene un efecto sustitución sobre la demanda de trabajo de diferentes destrezas. Esto sugiere que el cambio tecnológico ha generado un aumento del empleo en las dos colas de la distribución salarial, es decir, tanto de los trabajos manuales no rutinarios (cola baja), como de los trabajos cognitivos no rutina-rios (cola alta), lo cual implica un incremento de la polarización del mercado de trabajo (<xref ref-type="bibr" rid="B43">Juhn, Murphy y Pierce, 1993</xref>; <xref ref-type="bibr" rid="B5">Autor, Levy y Murnane, 2003</xref>).</p>
+			<p>Para el caso de las economías emergentes <xref ref-type="bibr" rid="B29">Horenstein y Olivieri (2004</xref>), en su estudio para Argentina, han encontrado que la polarización y la desigualdad del ingreso han aumentado (<xref ref-type="bibr" rid="B19">Duclos Esteban y Ray, 2004</xref>). Por su parte, <xref ref-type="bibr" rid="B8">Borraz, González y Rossi (2011) </xref> observan que para Uruguay durante los períodos 1994-2004 y 2004-2010, la polarización y la desigualdad del ingreso aumentaron y disminuyeron, respectivamente. Esto último propiciado por la introducción de un conjunto de políticas redistributivas. En esta misma perspectiva, <xref ref-type="bibr" rid="B49">Wan y Wang (2015) </xref> realizan un estudio para China de 1978 a 2010 y encuentran que, en términos generales, la polarización aumentó entre 2002 y 2007. Lo que puede ser explicado por una masiva inyección de capital físico que acrecentó el producto marginal del trabajo bajo condiciones de complementariedad entre destrezas y capital, lo cual benefició a los trabajadores más educados frente a los menos educados.</p>
+			<p>En cuanto a la economía mexicana, no existen muchos estudios sobre polarización salarial ni del ingreso. <xref ref-type="bibr" rid="B14">Campos-Vázquez (2013a) </xref> ha abordado el análisis de polarización para México, pero de forma muy marginal, sin ahondar en la división por género y sin distinguir entre mercado formal e informal. Concluye que existe un cierto proceso de polarización en México.</p>
+			<p>Por su parte <xref ref-type="bibr" rid="B30">Huesca (2004) </xref>, en su estudio para México, detecta que entre los años 1984 y 2000 la polarización del ingreso ha crecido. Asimismo, se observa un periodo de bipolarización más acentuado en el año de 1996 y, en términos generales, una reducción de la clase media en 5.6% hacia el año 2000. Al mismo tiempo, Huesca encontró que la participación del ingreso del grupo más rico sobre la media global se quintuplicó en 1996. Concluye que la clase media pasó de 40% a 34% durante el período analizado y que las características de región y nivel educativo contribuyeron sustancialmente a la polarización en México.</p>
+			<p>A la luz de estos estudios, el presente trabajo es un esfuerzo por entender más ampliamente el fenómeno de la polarización salarial y ocupacional en México, al articular el análisis desde varios planos, a saber, por sexo, por pertenencia al mercado de trabajo, ya sea formal o informal, y por nivel de escolaridad. Para ello hemos considerado pertinente realizar un trabajo de estadística descriptiva que condense muchos de los resultados de la polarización salarial y ocupacional y que muestren la acentuación de la polarización en el mercado de trabajo femenino e informal. También se han querido reforzar los resultados estadísticos-descriptivos con el cálculo del índice de polarización salarial y ocupacional (DER), así como considerar las posibles variables que determinan la polarización salarial a partir de un modelo de descomposición salarial. Todo lo anterior ha sido, en parte, soslayado por la literatura reciente para el caso mexicano. Por otra parte, es necesario reconocer que el análisis sobre ocupaciones y su reducción a tres tipos de destrezas implicó un ajuste un poco forzoso sobre las tareas de los trabajadores, no obstante, se ajustó de forma adecuada para el análisis comparativo con otros estudios, como por ejemplo el llevado a cabo por <xref ref-type="bibr" rid="B7">Autor (2010)</xref> para Estados Unidos.</p>
+		</sec>
+		<sec sec-type="methods">
+			<title>4. Metodología y datos</title>
+			<p>Para realizar el estudio se ha recurrido a la encuesta nacional de ocupación y empleo (ENOE) para el período 2005-2017, la cual permite hacer un análisis más preciso y actualizado de los hogares e individuos. Asimismo, los datos para los años señalados son comparables entre sí y son representativos a nivel nacional, esto nos permitirá obtener implicaciones a nivel país.</p>
+			<p>Es preciso aclarar, no obstante, que debido a la creciente no declaración de ingresos salariales por parte de los trabajadores (alrededor de 65% en promedio, donde la ENOE considera estas observaciones como igual a cero), se ha aplicado el proceso de imputación Hot deck a fin sustituir los ingresos cero por valores aleatorios Hot deck que eviten el sesgo por no respuesta en las implicaciones finales (<xref ref-type="bibr" rid="B14">Campos-Vázquez, 2013c</xref>).</p>
+			<p>Los ingresos por hora son deflactados al año base 2010 y se considera el manual de precodificación de la ENOE para la conformación de las categorías ocupacionales con base al trabajo de <xref ref-type="bibr" rid="B7">Autor (2010)</xref>, dado que la clasificación mexicana de ocupaciones se dejó de utilizar en el año 2012.</p>
+			<p>Además de lo anterior, hemos recurrido a la definición de ocupaciones<xref ref-type="fn" rid="fn4"><sup>4</sup></xref> con base en las competencias del sistema nacional de clasificación de ocupaciones (SINCO). En él se establece una clasificación de cuatro ocupaciones por nivel de competencias, desde 1 hasta 4.<xref ref-type="fn" rid="fn5"><sup>5</sup></xref> De esta manera hemos agrupado las ocupaciones con nivel de competencias 3 y 4 en una sola, debido a ciertas coincidencias en sus tareas. Dicha agrupación ha generado al grupo de destrezas altas,<xref ref-type="fn" rid="fn6"><sup>6</sup></xref> el grupo de destrezas medias se sujeta a la definición de ocupaciones con nivel de competencias 2 y el grupo de destrezas bajas a la definición de ocupaciones con nivel de competencias 1. Así, tenemos que se incluyen en el grupo de destrezas altas: funcionarios y directivos, profesionales, técnicos y trabajadores del arte, trabajadores de la educación; en destrezas medias: oficinistas, trabajadores industriales, artesanos y ayudantes, comerciantes y operadores de transporte, en destrezas bajas: trabajadores en servicios personales, trabajadores en protección y vigilancia y trabajadores agropecuarios.<xref ref-type="fn" rid="fn7"><sup>7</sup></xref>
+			</p>
+			<p>Asimismo, con base en la ENOE se ha conformado una base de datos que distingue a los trabajadores asalariados ocupados. Dicha población se analiza en tres niveles: nacional, empleo formal y empleo informal. De igual manera, se ha dividido a la población por nivel de escolaridad, por género, por tamaño de establecimiento en que laboran y por espacio geográfico. Se han utilizado los ingresos salariales deflactados por hora y la segmentación por destrezas para la elaboración del índice de polarización salarial y ocupacional generalizado DER, respectivamente.</p>
+			<p>Con el objetivo de verificar la polarización, se construye una tipología de destrezas que están vinculadas con su ingreso promedio y con cierto tipo de tareas a realizar. Además, por medio del módulo distributive analysis Stata package (DASP) se obtiene la descomposición de la polarización con base en un conjunto de variables que van desde el nivel de escolaridad y pasan por sexo, tamaño de establecimiento, situación geográfica y algunas variables institucionales como son tasa de sindicalización, formalidad y salario mínimo.</p>
+			<p>Este proceso de descomposición básicamente nos mostrará cómo las distintas variables explicativas del ingreso salarial afectan la polarización salarial, es decir, muestra cuál es la contribución relativa de cada una de las variables sobre la polarización. Cuando las contribuciones presentan un signo positivo, se considera que dicha variable contribuye al incremento de la polarización salarial, pero si el signo es negativo, la variable contribuirá a una disminución en la polarización salarial. Un ejemplo sería que el salario mínimo contribuye a la ampliación de la polarización, en este sentido, dicho porcentaje debe presentar signo positivo. </p>
+		</sec>
+		<sec>
+			<title>5. Análisis empírico</title>
+			<p>Esta investigación distingue dos vías de análisis para evaluar la polarización en el mercado de trabajo en México, a saber, establece una distinción entre perfiles ocupacionales para diferenciar los cambios relativos en las oportunidades de empleo (<xref ref-type="bibr" rid="B7">Autor, 2010</xref>) y utiliza la metodología de Duclos, Esteban y Ray para analizar el comportamiento de la polarización tanto ocupacional como salarial, así como resaltar los factores que inciden en dicha polarización a través de su descomposición por fuentes (<xref ref-type="bibr" rid="B19">Duclos, Esteban y Ray, 2004</xref>; <xref ref-type="bibr" rid="B24">Foster y Wolfson, 2009</xref>; <xref ref-type="bibr" rid="B21">Esteban y Ray, 1994</xref>).</p>
+			<sec>
+				<title><italic>5.1. Perfiles ocupacionales, destrezas y mercado de trabajo</italic></title>
+				<p> Es bien sabido que la estructura ocupacional guarda una relación positiva con los años de escolaridad y, por consiguiente, con los ingresos promedio por hora. Esta relación puede observarse en las gráficas 1-3 del anexo,<xref ref-type="fn" rid="fn8"><sup>8</sup></xref> las cuales muestran el ingreso promedio real imputado vinculado a los años de escolaridad y, al mismo tiempo, relacionados con las competencias del sistema nacional de clasificación de ocupaciones (SINCO) y de la ENOE (2011, 2017). Esto se muestra a nivel nacional, formal e informal. Como puede apreciarse, aquellas ocupaciones que demandan mayor capacidad abstracta para la resolución de problemas y que llevan a cabo tareas no repetitivas, presentan altos niveles de escolaridad y, en consecuencia, altos ingresos reales promedio. En tanto que aquellas ocupaciones que realizan tareas no rutinarias y de bajo nivel de abstracción guardan una relación positiva con bajos niveles de escolaridad y bajos ingresos reales promedio (<xref ref-type="bibr" rid="B7">Autor, 2010</xref>; <xref ref-type="bibr" rid="B28">Goos y Manning, 2003</xref>). En una posición intermedia se encuentran las ocupaciones que ejecutan tareas rutinarias o repetitivas, las cuales están asociadas con niveles de escolaridad media y salarios medios (<xref ref-type="bibr" rid="B5">Autor, Levy y Murnane, 2003</xref>; <xref ref-type="bibr" rid="B7">Autor, 2010</xref>).<xref ref-type="fn" rid="fn9"><sup>9</sup></xref>
+				</p>
+				<p>Como ya se ha descrito antes, en este sentido tenemos al grupo de destrezas altas, al grupo de destrezas medias y al grupo de destrezas bajas. Lo que revela cierto tipo de complementariedad entre ocupaciones que demandan mayor nivel de escolaridad con el cambio técnico, es decir, los trabajos que utilizan altas destrezas se complementarán con el cambio tecnológico y serán los trabajos mejor pagados, lo que quiere decir -con base en <xref ref-type="bibr" rid="B28">Goos y Manning (2003)</xref> - que la calidad del trabajo se define en términos del salario promedio obtenido. De esta manera, las variaciones positivas en la demanda relativa de trabajo de mayores destrezas, frente a una variación negativa de demanda relativa de destrezas medias o frente a una variación negativa o positiva de la demanda relativa de destrezas bajas, tendrá por resultado un proceso de polarización en el mercado de trabajo mexicano (<xref ref-type="bibr" rid="B28">Goos y Manning, 2003</xref>; <xref ref-type="bibr" rid="B5">Autor, Levy y Murnane, 2003</xref> y <xref ref-type="bibr" rid="B6">Autor, Katz y Kearney, 2006</xref>).</p>
+				<p>Asimismo, un hecho destacable que no hay que soslayar en las gráficas 1-3 es que los ingresos salariales reales promedio, tanto para profesionales, técnicos, trabajadores del arte, trabajadores de la educación, funcionarios y directivos, e inclusive oficinistas, han disminuido en términos relativos entre 2005 y 2017.<xref ref-type="fn" rid="fn10"><sup>10</sup></xref> Esta brecha se va reduciendo en la medida que nos vamos desplazando a categorías ocupacionales con menores años de escolaridad. Lo que, probablemente, se explica por la creciente oferta relativa de trabajadores más educados que se ha venido desarrollando en los últimos años en México. Esta oferta creciente está estrechamente ligada a asalariados con educación media y superior, lo que ha generado una caída en los salarios promedio, así como en los salarios relativos de dichos segmentos educativos (<xref ref-type="bibr" rid="B20">Esquivel y Rodríguez, 2003</xref>; <xref ref-type="bibr" rid="B14">Campos-Vázquez, 2013a</xref>). Ahora bien, cuando observamos la brecha en años de escolaridad entre 2005 y 2017, tanto para hombres como para mujeres, tenemos que en 2005 la brecha promedio entre mujeres más educadas y menos educadas era de 10.29 años de escolaridad, para 2017 la brecha bajó 9.035 años promedio. Con respecto a los hombres, dicha brecha pasó de 7.76 años a 9.36 años promedio entre los dos años (<xref ref-type="fig" rid="ch1">gráficas 1</xref>-<xref ref-type="fig" rid="ch3">3</xref>).<xref ref-type="fn" rid="fn11"><sup>11</sup></xref> La brecha es más significativa en el caso de los hombres, casi un incremento de dos años promedio, de igual manera los cambios en la brecha se dan en sentidos contrarios; parecería que, debido a que en los últimos años las mujeres han aumentado sus años de escolaridad promedio en general, en lo bajo de la distribución educacional ellas han incrementado aún más sus años de escolaridad promedio, con lo que disminuye así la brecha.<xref ref-type="fn" rid="fn12"><sup>12</sup></xref>
+				</p>
+				<p>Para el caso de México hemos considerado la codificación de destrezas que surgen a partir de la clasificación mexicana de ocupaciones (CMO), la pre-codificación de la ENOE, que sigue la metodología de <xref ref-type="bibr" rid="B5">Autor, Levy y Murnane (2003</xref>), <xref ref-type="bibr" rid="B6">Autor (2010)</xref> y <xref ref-type="bibr" rid="B28">Goos y Manning (2003</xref>), así como el sistema nacional de clasificación de ocupaciones (SINCO) para lograr la integración por grupo de destrezas. Se establece un perfil de destrezas, a saber, altas, medias y bajas, dichas destrezas son compatibles con tareas no rutinarias abstractas, tareas rutinarias y tareas no rutinarias manuales. De esta forma, en un primer acercamiento, podemos ver en la <xref ref-type="fig" rid="ch4">gráfica 4</xref> que la población asalariada ocupada de altas y bajas destrezas a nivel nacional tuvieron una variación porcentual positiva de 1.39% y 0.03%, entre 2005 y 2017, respectivamente. Por el contrario, la población asalariada ocupada de destrezas medias tuvo una variación negativa, de -1.42%. Lo que sugiere que, a nivel global, el mercado de trabajo mexicano presenta un proceso de polarización ocupacional incipiente.</p>
+				<p>En la misma gráfica observamos que las mayores variaciones positivas en el empleo formal ahora se presentan en los segmentos de destrezas altas y medias, a saber, 1.48% y 0.06%, respectivamente. Sin embargo, la variación para destrezas bajas es negativa del orden de -1.54 por ciento. Situación que aún sigue reflejando cierta polarización sesgada hacia el perfil de destrezas más altas. Asimismo, en lo relativo al comportamiento del empleo informal según el nivel de destrezas. Resulta bastante notorio como se presenta una variación negativa del orden de -2.81% en las destrezas medias, por su parte, tanto las destrezas altas como las bajas reflejan una variación porcentual positiva de 1.13% y 1.68%, respectivamente. Esto, sin duda, refleja un claro comportamiento de polarización bimodal en el empleo informal.</p>
+				<p>Da la impresión que debido a las condiciones generales del mercado de trabajo en México, a saber, la baja demanda relativa de trabajadores con mayores destrezas, el incremento acelerado en la oferta relativa de este segmento, así como el exiguo crecimiento económico de los últimos años,<xref ref-type="fn" rid="fn13"><sup>13</sup></xref> el empleo informal ha recibido a un mayor número de trabajadores asalariados de bajas y altas destrezas, en tanto que los de destrezas medias han disminuido su participación en el mismo.<xref ref-type="fn" rid="fn14"><sup>14</sup></xref>
+				</p>
+				<p>Esta polarización canónica tiene dos explicaciones y es coherente con la definición de informalidad que hemos considerado en nuestro trabajo. Por un lado, el incremento en el empleo de altas destrezas probablemente tiene que ver con el cambio técnico, situación que coincide con la hipótesis de la complementariedad entre éste y las destrezas altas, por otro lado, el incremento en el empleo de destrezas bajas se refuerza más por rasgos institucionales como la falta de contrato y la baja tasa de sindicalización.</p>
+				<p>En este sentido, la informalidad reproduce un mercado bipolar en el que aumentan las participaciones del volumen de empleos con más bajos salarios y peores condiciones y aquellos empleos que reciben altos salarios en el ámbito de lo informal. En síntesis, el empleo informal ahonda la participación de los extremos de la distribución y, en consecuencia, aumenta la polarización.<xref ref-type="fn" rid="fn15"><sup>15</sup></xref>
+				</p>
+				<p>Cuando realizamos el análisis por género podemos observar hechos relevantes. La gráfica 5 nos muestra las variaciones porcentuales de la población asalariada femenina y masculina entre 2005 y 2017. Lo que se revela cuando descomponemos por género es que existe una variación porcentual positiva del orden de 1% a nivel nacional para los trabajos de más bajas destrezas que ocupan las mujeres. Los trabajos de destrezas medias para ambos sexos tienen variaciones negativas, lo destacable aquí es que el empleo femenino es el que sufre un mayor deterioro, -1.57% de variación. Esta situación refleja un fenómeno de deterioro en dos vías: la caída del empleo femenino de salarios medios y el incremento, aunque pequeño, del empleo femenino con más bajos salarios, lo que probablemente expresaría una ampliación en la brecha salarial entre hombres y mujeres entre 2005 y 2017.</p>
+				<p>Ahora, al evaluar la situación por género pero en el espacio formal e informal tenemos que el mercado formal (<xref ref-type="fig" rid="ch6">gráfica 6</xref>) muestra un sesgo hacia los empleos con mayores destrezas, tal como reflejan los hallazgos de <xref ref-type="bibr" rid="B5">Autor, Levy y Murnane (2003)</xref> y <xref ref-type="bibr" rid="B6">Autor, Katz y Kearney (2006)</xref> para Estados Unidos, aunque este sesgo es más profundo para los hombres asalariados. Los empleos con destrezas medias tienen un comportamiento ambivalente, siempre con un sesgo negativo hacia el empleo femenino (-0.40%), como se observó a nivel nacional. Por su parte, la <xref ref-type="fig" rid="ch7">gráfica 7</xref> nos muestra casi la versión canónica de la polarización en el mercado informal, es decir, una caída de los empleos de destrezas medias (sólo en hombres) frente a un incremento de los empleos con destrezas altas y bajas, tanto para mujeres como para hombres. Lo que sugiere que, como se señaló antes, ceteris paribus, el mercado informal podría estar agudizando la polarización del empleo, en tanto que amplifica las oportunidades en los trabajos con mejores salarios y de mayor calidad, así como en aquellos de menores salarios y de calidad exigua.</p>
+			</sec>
+			<sec>
+				<title><italic>5.2. Distribución salarial en el mercado de trabajo</italic></title>
+				<p>Una primera mirada a la distribución salarial para México nos muestra lo siguiente. La <xref ref-type="fig" rid="ch8">gráfica 8</xref> revela cómo se distribuye la población asalariada por ingreso salarial a nivel nacional para el año 2005 y 2017. En 2005 aproximadamente 43% de la población asalariada ganaba a lo más dos salarios mínimos, no obstante, para 2017 era de alrededor de 48 por ciento. Lo que representa un alto y creciente porcentaje de la población asalariada, esto es, casi 50% de la población asalariada se encuentra aglutinada en la parte más baja de la distribución salarial (en promedio, gana como máximo 4,800 pesos al mes), lo que significaría un posible rasgo de polarización salarial en el mercado de trabajo mexicano. Es importante destacar que tales porcentajes son superiores si los comparamos a los resultados que se derivan de una base de datos no imputada. Esto significa que, cuando corregimos el sesgo por datos inválidos o faltantes, la polarización salarial se ve incrementada.</p>
+				<p>Veamos ahora qué sucede cuando distribuimos a la población de asalariados con base en el criterio de formalidad e informalidad y de género. Las <xref ref-type="fig" rid="ch9">gráficas 9</xref> y <xref ref-type="fig" rid="ch10">10</xref> nos muestran la distribución salarial formal e informal, así como por género para el año 2005. La gráfica 9 exhibe que la distribución salarial en el mercado formal tanto para hombres como para mujeres se distribuye más o menos normalmente. Sin embargo, se puede apreciar que las mujeres se encuentran en su mayoría concentradas en los niveles más bajos de la distribución salarial, alrededor de 28% de ellas ganan a lo más dos salarios mínimos, en tanto que, aproximadamente, sólo 21% de hombres gana como mucho dos salarios mínimos.</p>
+				<p>Cuando observamos el mercado informal en la <xref ref-type="fig" rid="ch10">gráfica 10</xref> la situación se torna bastante diferente. Existe un sesgo hacia la parte baja de la distribución tanto para mujeres como para hombres. En promedio 55% de los hombres gana a lo sumo dos salarios mínimos en el mercado informal, por su parte, 72% de las mujeres gana a lo más dos salarios mínimos. Si el dato para los hombres no es desdeñable, la cifra para las mujeres es bastante significativa, pues más de dos terceras partes de ellas reciben un ingreso bajo. Este sesgo en contra de las mujeres bien puede deberse al tipo de ocupaciones que ellas realizan frente a los hombres o, en su defecto, a una probable discriminación salarial.</p>
+				<p>En cuanto al primer caso, se conoce que entre 2005 y 2017, 47.08% de las mujeres asalariadas realizaba trabajos en servicios personales, los cuales suelen recibir bajos salarios en promedio, en tanto que los hombres sólo participaban en dichos empleos en 11.71% en promedio, en el mismo lapso. Lo anterior, sin duda, puede ser parte de la explicación del por qué el mercado femenino parece más polarizado, frente al masculino.<xref ref-type="fn" rid="fn16"><sup>16</sup></xref> Por otra parte, cuando nos movemos sobre la distribución salarial se puede apreciar como la participación de las mujeres cae más rápidamente que la participación de los hombres. Si a bajos niveles de ingreso la participación de la mujer es alta, a niveles altos de ingreso su participación en relación con la de los hombres disminuye a la mitad.</p>
+				<p>Todo este proceso indudablemente refleja dos hechos neurálgicos. Por un lado, muestra una profunda polarización salarial en el empleo informal en México y, por otro, hace patente que la polarización salarial se amplifica cuando analizamos el caso del empleo femenino, lo cual, probablemente, está vinculado con las ocupaciones que ellas realizan.</p>
+				<p>La situación para 2017 es semejante, aunque tiene sus diferencias. La distribución salarial para los hombres en el empleo formal (<xref ref-type="fig" rid="ch11">gráfica 11</xref>) es aproximadamente consistente con una distribución normal, no obstante, la distribución salarial femenina comienza a presentar características de sensible polarización. La <xref ref-type="fig" rid="ch12">gráfica 12 </xref>nos revela una estructura salarial profundamente polarizada, tanto para mujeres como para hombres en el empleo informal. En 2017 cerca de 57% de los hombres gana a lo más dos salarios mínimos, en tanto que 73% de las mujeres está por debajo de los dos salarios mínimos. Como es evidente, vuelve a repetirse el sesgo en contra de las mujeres para el año 2017. Asimismo, la cifra para hombres aumentó 2%, en tanto que para mujeres se elevó 1%, entre 2005 y 2017. De hecho, la proporción de los que ganan a lo sumo dos salarios mínimos tanto para hombres como para mujeres sigue siendo demasiado alta y va en aumento. Esto, por consiguiente, muestra un alto nivel de polarización. Del mismo modo que en el año 2005, en 2017 la significativa participación de las mujeres en servicios personales (47%) y de los hombres en actividades agropecuarias (23.2%) tiene un efecto preponderante sobre el crecimiento de la polarización salarial. Asimismo, el proceso de imputación en los ingresos salariales nos ha revelado la existencia de un mayor nivel de polarización salarial en el mercado de trabajo en México, frente a los resultados que se derivaban de una base de datos que asumía los datos faltantes como ingresos cero. </p>
+			</sec>
+			<sec>
+				<title><italic>5.3. Índice de polarización generalizado (DER) salarial y ocupacional y descomposición de la polarización</italic></title>
+				<p>Hasta este momento hemos presentado una manera de distinguir la polarización en el mercado de trabajo mexicano. Los resultados nos han revelado una situación de polarización tanto a nivel nacional como en el empleo formal y, más profusamente, en el empleo informal. Cuando realizamos el cálculo de la polarización a través del índice de <xref ref-type="bibr" rid="B19">Duclos, Esteban y Ray (2004) </xref>, DER, podemos visualizar, más allá de la previa estática comparativa que hemos hecho entre 2005 y 2017, el comportamiento de la polarización salarial y ocupacional durante el período completo, tanto a nivel nacional como en el empleo formal e informal. La <xref ref-type="fig" rid="ch13">gráfica 13</xref>nos muestra la evolución del índice de polarización salarial DER, con un <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" ><mml:mi>α</mml:mi></mml:math> = 0.5.<xref ref-type="fn" rid="fn17"><sup>17</sup></xref> Esta gráfica exhibe una tendencia ligeramente creciente del índice de polarización, tanto a nivel nacional como informal, no obstante, mantiene una relativa estabilidad en el ámbito formal. La tendencia ligeramente creciente en el ámbito nacional e informal se mantiene desde 2007 hasta 2016, de hecho, la crisis del 2008 tiene un sensible impacto en la polarización salarial del mercado informal, lo cual se refleja de forma más tenue en la polarización nacional debido a la relativa estabilidad de la polarización en el mercado formal. Dicha estabilidad bien puede ser debido a la relativa estabilidad del poder adquisitivo del salario mínimo en las dos últimas décadas, como bien lo ha sugerido <xref ref-type="bibr" rid="B14">Campos-Vázquez (2013a) </xref>.</p>
+				<p>Sin embargo, a partir del 2015 y principalmente en los últimos tres años del período de análisis, la polarización comenzó a tener un comportamiento creciente, especialmente en el mercado de trabajo formal, superando los niveles de 1.19 en 2017. La <xref ref-type="fig" rid="ch14">gráfica 14</xref>, por su parte, muestra que la polarización ocupacional ha tenido un comportamiento creciente a partir de la crisis económica de 2008. Al mismo tiempo, la polarización en el empleo informal se muestra más alta frente a la que se da en el empleo formal. ?‘Qué significa esto en términos de polarización? que probablemente las condiciones salariales, tiempo de trabajo, así como otro tipo de condiciones favorables en el empleo se vieron deterioradas por la crisis. Situación que coincide con nuestros hallazgos previos acerca de la polarización por destrezas, a saber, que la polarización en el empleo informal se muestra más intensa revistiendo la expresión canónica de la polarización.</p>
+				<p>Lo anterior es probable que sea una característica derivada de la ausencia de leyes laborales, las cuales puedan amainar las amplificaciones de la brecha salarial entre grupos ocupacionales.<xref ref-type="fn" rid="fn18"><sup>18</sup></xref> La evidencia ha sugerido que los salarios de la parte baja de la distribución en el empleo informal son inferiores a los que se presentan en el empleo formal y que, en esta parte baja, se aglutinan un mayor porcentaje de asalariados, más de 57% de hombres y más de 72% de las mujeres. Lo que es evidente en el período en cuestión y que, probablemente, explique parte de este incremento de la polarización es la caída en la tasa de sindicalización para los tres grupos de destrezas, aunque la caída de la tasa de sindicalización más alta se ha dado en el grupo de más bajas destrezas, al pasar de 11.38% en 2005 a 6.45% en 2017. Para los grupos de destrezas medias y altas la tasa también declinó de 8.49% a 5.9% y de 13.68% a 11.01%, respectivamente. Por su parte, la tasa de sindicalización en el empleo informal es nada significativa, situándose, a lo sumo, en 1% en promedio y con una tendencia decreciente entre 2005 y 2017 para los tres niveles de destrezas.</p>
+				<p>La descripción previa puede ser enriquecida cuando descomponemos la polarización por elementos. El <xref ref-type="table" rid="t1">cuadro 1</xref> del anexo nos muestra la contribución relativa de un conjunto de variables sobre la polarización salarial en los años 2005 y 2017. En esos dos años la contribución relativa promedio de la educación superior a la polarización salarial ha sido del orden de 6.75 por ciento. Lo que nos indica la poca importancia de la educación superior en el proceso de polarización. ?‘Cómo puede entenderse esto? Que a pesar de que la educación superior esté vinculada a tareas cognitivas abstractas no repetitivas, en México dichas tareas, en general, no están asociadas a elevados niveles salariales o, en palabras de <xref ref-type="bibr" rid="B28">Goos y Manning (2003) </xref>, a mejores trabajos.</p>
+				<p>En esta misma perspectiva, pero desde la parte de la demanda de destrezas, los establecimientos de mayor tamaño están contribuyendo de forma relativa 14.08%, en promedio, a la polarización. De tal forma que, los establecimientos de mayor tamaño, demandan trabajo con mayores destrezas, esto es, trabajo que comúnmente requiere habilidades de abstracción para realizar tareas no repetitivas y que incorporan procesos complejos, lo que contribuye, en mayor medida, al proceso de polarización (<xref ref-type="bibr" rid="B5">Autor, Levy y Murnane, 2003</xref>; <xref ref-type="bibr" rid="B7">Autor, Katz y Kearney, 2006</xref>y <xref ref-type="bibr" rid="B8">Autor, 2010</xref>).<xref ref-type="fn" rid="fn19"><sup>19</sup></xref>
+				</p>
+				<p>Cuando consideramos el dato de sexo se puede apreciar la relevancia de dicha variable. Como lo hemos venido observando existe una brecha salarial entre hombres y mujeres que favorece a los primeros. De forma coincidente, la variable sexo contribuye a la polarización del ingreso salarial 17.5% en 2005 y alcanza 20.21% para el año 2017. Lo que significa que, lejos de cerrarse la brecha entre ingresos laborales de hombres y mujeres, se ha ido ampliando.</p>
+				<p>Ahora, desde una perspectiva institucional nos enfocamos en tres variables torales para el análisis de la polarización. Como se muestra en el mismo cuadro la contribución relativa de la tasa de sindicalización en promedio pasó de 21.17% en 2005 a 15.24% en 2017. Esto representa que el peso que pudiera tener sobre los incrementos salariales el estar sindicalizado frente a no estarlo sigue una tendencia decreciente.<xref ref-type="fn" rid="fn20"><sup>20</sup></xref> Por su parte, el hecho de que los asalariados sean formales implicó una contribución relativa a la polarización salarial del orden de 34.24% en promedio entre 2005 y 2017. Este dato es destacable, ya que muestra que la formalidad tiene un peso realmente significativo sobre la brecha salarial entre grupos, de hecho es la variable que influye de manera más destacada en la polarización. El salario mínimo, aunque ha tenido menor influencia en la polarización, su contribución relativa pasó de 3.59% en 2005 a 5.6% en 2017. La creciente contribución, probablemente, se vincula a la reciente pérdida de poder adquisitivo del salario derivada del crecimiento de la inflación a partir de julio de 2016.<xref ref-type="fn" rid="fn21"><sup>21</sup></xref> Asimismo, habría que considerar con cuidado el dato en cuestión debido al hecho de que gran parte de la población asalariada percibe entre uno y dos salarios mínimos. Lo que significa que el peso de dicha variable podría estar recayendo de forma más acentuada en la parte baja de la distribución, situación que no está contemplando la descomposición de la polarización salarial.</p>
+				<p>Lo expuesto anteriormente saca a la luz aspectos importantes. Sugiere que los factores de género e institucionales como la formalidad y la sindicalización tienen un lugar neurálgico a la hora de analizar las fuentes de la polarización, asimismo, pone el acento en la demanda de destrezas, en el sentido que enfatiza la importancia del tamaño de los establecimientos y, paralelamente con ello, del nivel tecnológico de los mismos, lo cual es un rasgo destacable cuando se evalúa la productividad y los altos salarios. Si bien la escolaridad con que cuentan los asalariados es una variable importante, no deja de sorprender como su influencia se ve rebasada por factores institucionales, tales como la formalidad y la sindicalización. Por último, la influencia del salario mínimo como factor explicativo de la polarización ha ido en aumento. </p>
+			</sec>
+		</sec>
+		<sec sec-type="conclusions">
+			<title>6. Reflexiones finales y conclusiones</title>
+			<p>Una de las principales contribuciones de la presente investigación es que ofrece un panorama más amplio en relación con la polarización salarial, a saber, el análisis se lleva a cabo en cuatro planos, es decir, descompone a la población de asalariados en dos segmentos de empleo, formal e informal, por categoría de género, mujeres y hombres, por nivel de destrezas y por tamaño de establecimiento. Asimismo, el análisis ha corregido el sesgo de datos inválidos (=0) a través del proceso de imputación Hot deck. Dicho ajuste no se había realizado previamente para el caso de México en un estudio sobre polarización salarial.</p>
+			<p>De esta manera, la caracterización del mercado de trabajo asalariado mediante tres categorías de destrezas, nos ha brindado una forma de visualizar el proceso de polarización junto con el cálculo de un índice de polarización. Los hallazgos sugieren que existe un proceso de polarización ocupacional y salarial tendiente a aumentar los empleos de los asalariados con mayores destrezas, frente a una caída de los trabajos con destrezas medias. Por su parte, la polarización canónica se expresa de forma más reveladora en el empleo informal, donde los trabajos de bajas y altas destrezas se han incrementado, en tanto que los de destrezas medias han sufrido una disminución.</p>
+			<p>Al mismo tiempo, la corrección por imputación Hot deck nos ha permitido observar que la polarización salarial es más profunda de lo que se creía cuando se utilizaban las bases sin corregir el sesgo de datos inválidos. Esto es destacable, sin duda, porque muestra un rasgo ominoso que profundiza el conflicto dentro de una sociedad democrática, es decir, las profundas brechas en el ingreso salarial que existen en México.</p>
+			<p>Asimismo, los resultados sugieren que la composición del mercado de trabajo, a saber, su fragmentación entre empleo formal e informal es una de las principales causas del proceso de polarización salarial en México. Del mismo modo, la característica de género ha tenido gran peso a la hora de explicar las fuentes de la polarización del ingreso salarial. Adicionalmente, un efecto semejante ha provocado el empleo en establecimientos más grandes. Esto podría ser una condición, incluso natural, propiciada por la configuración industrial, pero exacerbada por condicionamientos tanto institucionales como tecnológicos que tienen presencia en nuestro país. Del mismo modo, la aglutinación asimétrica en la distribución salarial entre hombres y mujeres que está íntimamente ligada al tipo de ocupación que se realiza, especialmente en el empleo informal, ha contribuido al proceso de polarización en perjuicio de éstas últimas.</p>
+			<p>Finalmente, la pérdida de poder de los sindicatos para lograr mejoras en los salarios (estrechamiento de la estructura salarial) y en las condiciones de empleo, también ha sido una causa que ha contribuido a la polarización en el mercado de trabajo mexicano. En consecuencia, en términos generales, los factores institucionales han tenido un gran efecto sobre la polarización salarial. Asimismo, una probable causa que creemos ha contribuido a la polarización salarial, pero que no se ha contemplado en esta investigación, ha sido la subcontratación o outsourcing, debido a que, posiblemente, ha propiciado la fragmentación del poder de negociación de los trabajadores y ha provocado una reducción sustancial de los salarios.</p>
+		</sec>
+	</body>
+	<back>
+		<ack>
+			<title>Agradecimientos</title>
+			<p>Agradecemos en mucho al Dr. Raymundo Campos Vázquez por sus valiosas sugerencias en relación con el manejo de datos, mismas que mejoraron sustancialmente los resultados de este trabajo. De igual manera damos las gracias a los dictaminadores anónimos por sus importantes observaciones. Los errores que hayan quedado son responsabilidad única de los autores. gonzalogr@yahoo.com, gagamirez@yahoo.com. </p>
+		</ack>
+		<ref-list>
+			<title>Referencias</title>
+			<ref id="B1">
+				<mixed-citation>Acemoglu, D.; P. Aghion y G. Violante. 2001. Deunionization, technical change and inequality, Carnegie-Rochester Conference Series on Public Policy, 55 (1): 229-264.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Acemoglu</surname>
+							<given-names>D.</given-names>
+						</name>
+						<name>
+							<surname>Aghion</surname>
+							<given-names>P.</given-names>
+						</name>
+						<name>
+							<surname>Violante</surname>
+							<given-names>G.</given-names>
+						</name>
+					</person-group>
+					<year>2001</year>
+					<article-title>Deunionization, technical change and inequality</article-title>
+					<source>Carnegie-Rochester Conference Series on Public Policy</source>
+					<volume>55</volume>
+					<issue>1</issue>
+					<fpage>229</fpage>
+					<lpage>264</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B2">
+				<mixed-citation>Acemoglu, D. y D. Autor. 2011. Skills, tasks and technologies: implications for employment and earnings, NBER, Working Papers Series, no. 10082, consultado en <ext-link ext-link-type="uri" xlink:href="http://www.nber.org/papers/w16082, 13/06/2015">http://www.nber.org/papers/w16082, 13/06/2015</ext-link>.</mixed-citation>
+				<element-citation publication-type="book">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Acemoglu</surname>
+							<given-names>D.</given-names>
+						</name>
+						<name>
+							<surname>Autor</surname>
+							<given-names>D.</given-names>
+						</name>
+					</person-group>
+					<year>2011</year>
+					<source>Skills, tasks and technologies: implications for employment and earnings, NBER</source>
+					<series>Working Papers Series</series>
+					<issue>10082</issue>
+					<ext-link ext-link-type="uri" xlink:href="http://www.nber.org/papers/w16082, 13/06/2015">http://www.nber.org/papers/w16082, 13/06/2015</ext-link>
+				</element-citation>
+			</ref>
+			<ref id="B3">
+				<mixed-citation>Andridge, R. y R. Little. 2010. A review of hot deck imputation for survey non-response, International Statistical Review, 78(1): 40-64. doi:10.1111/j.1751-5823.2010.00103.x</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Andridge</surname>
+							<given-names>R.</given-names>
+						</name>
+						<name>
+							<surname>Little</surname>
+							<given-names>R.</given-names>
+						</name>
+					</person-group>
+					<year>2010</year>
+					<article-title>A review of hot deck imputation for survey non-response</article-title>
+					<source>International Statistical Review</source>
+					<volume>78</volume>
+					<issue>1</issue>
+					<fpage>40</fpage>
+					<lpage>64</lpage>
+					<pub-id pub-id-type="doi">10.1111/j.1751-5823.2010.00103.x</pub-id>
+				</element-citation>
+			</ref>
+			<ref id="B4">
+				<mixed-citation>Araar, Abdelkrim. 2008. On the decomposition of polarization indices: Illustrations with Chinese and Nigerian household surveys, CIRPEE Working Paper 08-06.</mixed-citation>
+				<element-citation publication-type="book">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Araar</surname>
+							<given-names>Abdelkrim</given-names>
+						</name>
+					</person-group>
+					<year>2008</year>
+					<source>On the decomposition of polarization indices: Illustrations with Chinese and Nigerian household surveys</source>
+					<series>CIRPEE Working Paper</series>
+					<comment>08-06</comment>
+				</element-citation>
+			</ref>
+			<ref id="B5">
+				<mixed-citation>Autor, D; F. Levy y R. Murnane. 2003. The skill content of recent technological change: an empirical exploration, The Quarterly Journal of Economics, 118(4): 1279-1333.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Autor</surname>
+							<given-names>D</given-names>
+						</name>
+						<name>
+							<surname>Levy</surname>
+							<given-names>F.</given-names>
+						</name>
+						<name>
+							<surname>Murnane</surname>
+							<given-names>R.</given-names>
+						</name>
+					</person-group>
+					<year>2003</year>
+					<article-title>The skill content of recent technological change: an empirical exploration</article-title>
+					<source>The Quarterly Journal of Economics</source>
+					<volume>118</volume>
+					<issue>4</issue>
+					<fpage>1279</fpage>
+					<lpage>1333</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B6">
+				<mixed-citation>Autor, D .; L. Katz y M. Kearney. 2006. The polarization of the US labor market, NBER, Working Papers Series, no. 11986, consultado en <comment> 11986, consultado en <ext-link ext-link-type="uri" xlink:href="http://www.nb er.org/papers/w11986">http://www.nb er.org/papers/w11986</ext-link>
+					</comment>, 12/10/2015.</mixed-citation>
+				<element-citation publication-type="book">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Autor</surname>
+							<given-names>D</given-names>
+						</name>
+						<name>
+							<surname>Katz</surname>
+							<given-names>L.</given-names>
+						</name>
+						<name>
+							<surname>Kearney</surname>
+							<given-names>M.</given-names>
+						</name>
+					</person-group>
+					<year>2006</year>
+					<source>The polarization of the US labor market, NBER</source>
+					<series>Working Papers Series</series>
+					<issue>11986</issue>
+					<comment> 11986, consultado en <ext-link ext-link-type="uri" xlink:href="http://www.nb er.org/papers/w11986">http://www.nb er.org/papers/w11986</ext-link>
+					</comment>
+					<date-in-citation content-type="access-date" iso-8601-date="2015-10-12">12/10/2015</date-in-citation>
+				</element-citation>
+			</ref>
+			<ref id="B7">
+				<mixed-citation>Autor, D . 2010. The polarization of job opportunities in the US labor market. Implications for employment and earnings, Center for American Progress/ The Hamilton Project, pp. 41.</mixed-citation>
+				<element-citation publication-type="book">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Autor</surname>
+							<given-names>D</given-names>
+						</name>
+					</person-group>
+					<year>2010</year>
+					<source>The polarization of job opportunities in the US labor market. Implications for employment and earnings</source>
+					<publisher-name>Center for American Progress</publisher-name>
+					<publisher-name>The Hamilton Project</publisher-name>
+					<size units="pages">41</size>
+				</element-citation>
+			</ref>
+			<ref id="B8">
+				<mixed-citation>Borraz, F.; N. González y M. Rossi. 2011. Polarization and the middle class, Latin American Journal of Economics, 50(2): 1-34.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Borraz</surname>
+							<given-names>F.</given-names>
+						</name>
+						<name>
+							<surname>González</surname>
+							<given-names>N.</given-names>
+						</name>
+						<name>
+							<surname>Rossi</surname>
+							<given-names>M.</given-names>
+						</name>
+					</person-group>
+					<year>2011</year>
+					<article-title>Polarization and the middle class</article-title>
+					<source>Latin American Journal of Economics</source>
+					<volume>50</volume>
+					<issue>2</issue>
+					<fpage>1</fpage>
+					<lpage>34</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B9">
+				<mixed-citation>Bound, J. y G. Johnson. 1992. Changes in the structure of wage in the 1980’s: An evaluation of alternative explanations, The American Review, 82(3): 371-392.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Bound</surname>
+							<given-names>J.</given-names>
+						</name>
+						<name>
+							<surname>Johnson</surname>
+							<given-names>G.</given-names>
+						</name>
+					</person-group>
+					<year>1992</year>
+					<article-title>Changes in the structure of wage in the 1980’s: An evaluation of alternative explanations</article-title>
+					<source>The American Review</source>
+					<volume>82</volume>
+					<issue>3</issue>
+					<fpage>371</fpage>
+					<lpage>392</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B10">
+				<mixed-citation>Bluestone, B. y B. Harrison. 1988. The growth of low-wage employment: 1963-86, American Economic Review, 78(2): 124-128.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Bluestone</surname>
+							<given-names>B.</given-names>
+						</name>
+						<name>
+							<surname>Harrison</surname>
+							<given-names>B.</given-names>
+						</name>
+					</person-group>
+					<year>1988</year>
+					<article-title>The growth of low-wage employment: 1963-86</article-title>
+					<source>American Economic Review</source>
+					<volume>78</volume>
+					<issue>2</issue>
+					<fpage>124</fpage>
+					<lpage>128</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B11">
+				<mixed-citation>Brzezinski, M. 2013. Income polarization and economic growth, National Bank of Poland, Working Paper, no. 147, consultado en <comment> 147, consultado en <ext-link ext-link-type="uri" xlink:href="http://www.ecineq.org/milano/WP/ECINEQ2013-296.pdf">http://www.ecineq.org/milano/WP/ECINEQ2013-296.pdf</ext-link>
+					</comment>, 7/05/2014.</mixed-citation>
+				<element-citation publication-type="book">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Brzezinski</surname>
+							<given-names>M.</given-names>
+						</name>
+					</person-group>
+					<year>2013</year>
+					<source>Income polarization and economic growth, National Bank of Poland</source>
+					<series>Working Paper</series>
+					<issue>147</issue>
+					<comment> 147, consultado en <ext-link ext-link-type="uri" xlink:href="http://www.ecineq.org/milano/WP/ECINEQ2013-296.pdf">http://www.ecineq.org/milano/WP/ECINEQ2013-296.pdf</ext-link>
+					</comment>
+					<date-in-citation content-type="access-date" iso-8601-date="2014-05-07">7/05/2014</date-in-citation>
+				</element-citation>
+			</ref>
+			<ref id="B12">
+				<mixed-citation>Campos-Vázquez, R. 2013a. Why did wage inequality decrease in México after NAFTA?, Economía Mexicana, 22(2): 245-278.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Campos-Vázquez</surname>
+							<given-names>R.</given-names>
+						</name>
+					</person-group>
+					<year>2013</year>
+					<article-title>Why did wage inequality decrease in México after NAFTA?</article-title>
+					<source>Economía Mexicana</source>
+					<volume>22</volume>
+					<issue>2</issue>
+					<fpage>245</fpage>
+					<lpage>278</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B13">
+				<mixed-citation>Campos Vázquez, R. 2013b. Pobreza y desigualdad en México: identificación y diagnóstico, CEE, Serie de documentos de trabajo, núm VIII.</mixed-citation>
+				<element-citation publication-type="book">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Campos Vázquez</surname>
+							<given-names>R.</given-names>
+						</name>
+					</person-group>
+					<year>2013</year>
+					<source>Pobreza y desigualdad en México: identificación y diagnóstico</source>
+					<publisher-name>CEE</publisher-name>
+					<series>Serie de documentos de trabajo</series>
+					<issue>VIII</issue>
+				</element-citation>
+			</ref>
+			<ref id="B14">
+				<mixed-citation>Campos Vázquez, R. 2013c. Efectos de los ingresos no reportados en el nivel y tendencia de la pobreza laboral en México, Ensayos Revista de Economía, 32(2): 23-54.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Campos Vázquez</surname>
+							<given-names>R.</given-names>
+						</name>
+					</person-group>
+					<year>2013</year>
+					<article-title>Efectos de los ingresos no reportados en el nivel y tendencia de la pobreza laboral en México</article-title>
+					<source>Ensayos Revista de Economía</source>
+					<volume>32</volume>
+					<issue>2</issue>
+					<fpage>23</fpage>
+					<lpage>54</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B15">
+				<mixed-citation>Campos Vázquez, R. 2014. Consecuencias de no corregir por ingresos no declarados en el ingreso laboral, Coyuntura Demográfica, 6: 59-65.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Campos Vázquez</surname>
+							<given-names>R.</given-names>
+						</name>
+					</person-group>
+					<year>2014</year>
+					<article-title>Consecuencias de no corregir por ingresos no declarados en el ingreso laboral</article-title>
+					<source>Coyuntura Demográfica</source>
+					<volume>6</volume>
+					<fpage>59</fpage>
+					<lpage>65</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B16">
+				<mixed-citation>Campos Vázquez, R. y L. Monroy Gómez-Franco. 2016. ¿El crecimiento económico reduce la pobreza en México?, Revista de Economía Mexicana, Anuario UNAM, 1(1): 140-185.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Campos Vázquez</surname>
+							<given-names>R.</given-names>
+						</name>
+						<name>
+							<surname>Monroy Gómez-Franco</surname>
+							<given-names>L.</given-names>
+						</name>
+					</person-group>
+					<year>2016</year>
+					<article-title>¿El crecimiento económico reduce la pobreza en México?</article-title>
+					<source>Revista de Economía Mexicana</source>
+					<publisher-name>Anuario UNAM</publisher-name>
+					<volume>1</volume>
+					<issue>1</issue>
+					<fpage>140</fpage>
+					<lpage>185</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B17">
+				<mixed-citation>Campos-Vazquez, Raymundo M. y Nora Lustig. 2017. Labour income inequality in Mexico: Puzzles solved and unsolved, WIDER Working Paper Series, no. 186.</mixed-citation>
+				<element-citation publication-type="book">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Campos-Vazquez</surname>
+							<given-names>Raymundo M.</given-names>
+						</name>
+						<name>
+							<surname>Lustig</surname>
+							<given-names>Nora</given-names>
+						</name>
+					</person-group>
+					<year>2017</year>
+					<source>Labour income inequality in Mexico: Puzzles solved and unsolved</source>
+					<series>WIDER Working Paper Series</series>
+					<issue>186</issue>
+				</element-citation>
+			</ref>
+			<ref id="B18">
+				<mixed-citation>Chakravarty, S.R. 2009. Inequality, polarization, and poverty: Advances in distributional analysis, Nueva York: Springer</mixed-citation>
+				<element-citation publication-type="book">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Chakravarty</surname>
+							<given-names>S.R.</given-names>
+						</name>
+					</person-group>
+					<year>2009</year>
+					<source>Inequality, polarization, and poverty: Advances in distributional analysis</source>
+					<publisher-loc>Nueva York</publisher-loc>
+					<publisher-name>Springer</publisher-name>
+				</element-citation>
+			</ref>
+			<ref id="B19">
+				<mixed-citation>Duclos, J.; J. Estebany D. Ray. 2004. Polarization: Concepts, measurement, estimation, Econometrica, 72(6): 1737-1772.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Duclos</surname>
+							<given-names>J.</given-names>
+						</name>
+						<name>
+							<surname>Esteban</surname>
+							<given-names>J.</given-names>
+						</name>
+						<name>
+							<surname>Ray</surname>
+							<given-names>D.</given-names>
+						</name>
+					</person-group>
+					<year>2004</year>
+					<article-title>Polarization: Concepts, measurement, estimation</article-title>
+					<source>Econometrica</source>
+					<volume>72</volume>
+					<issue>6</issue>
+					<fpage>1737</fpage>
+					<lpage>1772</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B20">
+				<mixed-citation>Esquivel, G. y J. Rodríguez. 2003. Technology, trade, and wage inequality in México before and after NAFTA, Journal of Development Economics, 72(2): 543-565.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Esquivel</surname>
+							<given-names>G.</given-names>
+						</name>
+						<name>
+							<surname>Rodríguez</surname>
+							<given-names>J.</given-names>
+						</name>
+					</person-group>
+					<year>2003</year>
+					<article-title>Technology, trade, and wage inequality in México before and after NAFTA</article-title>
+					<source>Journal of Development Economics</source>
+					<volume>72</volume>
+					<issue>2</issue>
+					<fpage>543</fpage>
+					<lpage>565</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B21">
+				<mixed-citation>Esteban, J. y D. Ray. 1994. On the measurement of polarization, Econometrica, 62(4): 819-851.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Esteban</surname>
+							<given-names>J.</given-names>
+						</name>
+						<name>
+							<surname>Ray</surname>
+							<given-names>D.</given-names>
+						</name>
+					</person-group>
+					<year>1994</year>
+					<article-title>On the measurement of polarization</article-title>
+					<source>Econometrica</source>
+					<volume>62</volume>
+					<issue>4</issue>
+					<fpage>819</fpage>
+					<lpage>851</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B22">
+				<mixed-citation>Esteban, J.; C. Gradín yD. Ray . 2007. Extensions of a measurement of polarization, with an application to the income distribution of five OECD countries, Journal of Income Inequality, 5(1): 1-19.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Esteban</surname>
+							<given-names>J.</given-names>
+						</name>
+						<name>
+							<surname>Gradín</surname>
+							<given-names>C.</given-names>
+						</name>
+						<name>
+							<surname>Ray</surname>
+							<given-names>D.</given-names>
+						</name>
+					</person-group>
+					<year>2007</year>
+					<article-title>Extensions of a measurement of polarization, with an application to the income distribution of five OECD countries</article-title>
+					<source>Journal of Income Inequality</source>
+					<volume>5</volume>
+					<issue>1</issue>
+					<fpage>1</fpage>
+					<lpage>19</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B23">
+				<mixed-citation>Fortin, N.; D.A. Green; T. Lemieux y K. Milligan. 2012. Canadian inequality: Recent developments and policy opcion, Canadian Public Policy, 38(2): 121-145.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Fortin</surname>
+							<given-names>N.</given-names>
+						</name>
+						<name>
+							<surname>Green</surname>
+							<given-names>D.A.</given-names>
+						</name>
+						<name>
+							<surname>Lemieux</surname>
+							<given-names>.</given-names>
+						</name>
+						<name>
+							<surname>Milligan</surname>
+							<given-names>K.</given-names>
+						</name>
+					</person-group>
+					<year>2012</year>
+					<article-title>Canadian inequality: Recent developments and policy opcion</article-title>
+					<source>Canadian Public Policy</source>
+					<volume>38</volume>
+					<issue>2</issue>
+					<fpage>121</fpage>
+					<lpage>145</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B24">
+				<mixed-citation>Foster, J. y M. Wolfson. 2009. Polarization and the decline of the middle class: Canada and the US, The Journal of Economic Inequality, 8(1): 247-273.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Foster</surname>
+							<given-names>J.</given-names>
+						</name>
+						<name>
+							<surname>Wolfson</surname>
+							<given-names>M.</given-names>
+						</name>
+					</person-group>
+					<year>2009</year>
+					<article-title>Polarization and the decline of the middle class: Canada and the US</article-title>
+					<source>The Journal of Economic Inequality</source>
+					<volume>8</volume>
+					<issue>1</issue>
+					<fpage>247</fpage>
+					<lpage>273</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B25">
+				<mixed-citation>Gradín, C. 2000. Polarization by sub-populations in Spain, 1973-91, Review of Economic and Wealth, 46(4): 457-474.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Gradín</surname>
+							<given-names>C.</given-names>
+						</name>
+					</person-group>
+					<year>2000</year>
+					<article-title>Polarization by sub-populations in Spain, 1973-91</article-title>
+					<source>Review of Economic and Wealth</source>
+					<volume>46</volume>
+					<issue>4</issue>
+					<fpage>457</fpage>
+					<lpage>474</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B26">
+				<mixed-citation>García, G. 2017. Desigualdad y polarización salarial en el empleo formal e informal: el caso de México, 2005-2014, tesis doctoral, UAM, México.</mixed-citation>
+				<element-citation publication-type="thesis">
+					<person-group person-group-type="author">
+						<name>
+							<surname>García</surname>
+							<given-names>G.</given-names>
+						</name>
+					</person-group>
+					<year>2017</year>
+					<source>Desigualdad y polarización salarial en el empleo formal e informal: el caso de México, 2005-2014</source>
+					<comment content-type="degree">doctoral</comment>
+					<publisher-name>UAM</publisher-name>
+					<publisher-loc>México</publisher-loc>
+				</element-citation>
+			</ref>
+			<ref id="B27">
+				<mixed-citation>Goldin, C. yL. Katz . 2007. The race between education and technology: The evolution of US education wage differentials, 1890 to 2005, NBER, Working Papers Series, no. 12984, consultado en <comment> 12984, consultado en <ext-link ext-link-type="uri" xlink:href="https://www.nber.org/papers/w12 984.pdf">https://www.nber.org/papers/w12 984.pdf</ext-link>
+					</comment>, 20/01/2016.</mixed-citation>
+				<element-citation publication-type="book">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Goldin</surname>
+							<given-names>C.</given-names>
+						</name>
+						<name>
+							<surname>Katz</surname>
+							<given-names>L.</given-names>
+						</name>
+					</person-group>
+					<year>2007</year>
+					<source>The race between education and technology: The evolution of US education wage differentials, 1890 to 2005, NBER</source>
+					<series>Working Papers Series</series>
+					<issue>12984</issue>
+					<comment> 12984, consultado en <ext-link ext-link-type="uri" xlink:href="https://www.nber.org/papers/w12 984.pdf">https://www.nber.org/papers/w12 984.pdf</ext-link>
+					</comment>
+					<date-in-citation content-type="access-date" iso-8601-date="2016-01-20">20/01/2016</date-in-citation>
+				</element-citation>
+			</ref>
+			<ref id="B28">
+				<mixed-citation>Goos, M. y A. Manning. 2003 Lousy and lovely jobs: The rising polarization of work in Britain, CEP Discussion Papers.</mixed-citation>
+				<element-citation publication-type="book">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Goos</surname>
+							<given-names>M.</given-names>
+						</name>
+						<name>
+							<surname>Manning</surname>
+							<given-names>A.</given-names>
+						</name>
+					</person-group>
+					<year>2003</year>
+					<source>Lousy and lovely jobs: The rising polarization of work in Britain</source>
+					<publisher-name>CEP Discussion Papers</publisher-name>
+				</element-citation>
+			</ref>
+			<ref id="B29">
+				<mixed-citation>Horenstein, M. y S. Olivieri. 2004. Income polarization in Argentina: Pure income polarization, theory and applications, Económica, 0(1-2): 39-66.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Horenstein</surname>
+							<given-names>M.</given-names>
+						</name>
+						<name>
+							<surname>Olivieri</surname>
+							<given-names>S.</given-names>
+						</name>
+					</person-group>
+					<year>2004</year>
+					<article-title>Income polarization in Argentina: Pure income polarization, theory and applications</article-title>
+					<source>Económica</source>
+					<volume>0</volume>
+					<issue>1-2</issue>
+					<fpage>39</fpage>
+					<lpage>66</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B30">
+				<mixed-citation>Huesca, L. 2004. Is the middle class vanishing in México?: An application of polarization by subgroups between 1984 y 2000, MPRA Paper no. 14390.</mixed-citation>
+				<element-citation publication-type="book">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Huesca</surname>
+							<given-names>L.</given-names>
+						</name>
+					</person-group>
+					<year>2004</year>
+					<source>Is the middle class vanishing in México?: An application of polarization by subgroups between 1984 y 2000</source>
+					<series>MPRA Paper </series>
+					<issue>14390</issue>
+				</element-citation>
+			</ref>
+			<ref id="B31">
+				<mixed-citation>Hulchanski, J. y R. Murdie. 2013. Canada’s income polarization trend: An international and a four metropolitan area comparison, Neighbourhood Change Research Partnership Policy Brief no. 4, consultado en <comment> 4, consultado en <ext-link ext-link-type="uri" xlink:href="http://www.Neighbourhood Change.ca">http://www.Neighbourhood Change.ca</ext-link>
+					</comment>, 12/10/2015.</mixed-citation>
+				<element-citation publication-type="book">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Hulchanski</surname>
+							<given-names>J.</given-names>
+						</name>
+						<name>
+							<surname>Murdie</surname>
+							<given-names>R.</given-names>
+						</name>
+					</person-group>
+					<year>2013</year>
+					<source>Canada’s income polarization trend: An international and a four metropolitan area comparison, Neighbourhood Change Research Partnership Policy Brief</source>
+					<issue>4</issue>
+					<comment> 4, consultado en <ext-link ext-link-type="uri" xlink:href="http://www.Neighbourhood Change.ca">http://www.Neighbourhood Change.ca</ext-link>
+					</comment>
+					<date-in-citation content-type="access-date" iso-8601-date="2015-10-12">12/10/2015</date-in-citation>
+				</element-citation>
+			</ref>
+			<ref id="B32">
+				<mixed-citation>Juhn, C.; K. Murphy y B. Pierce. 1993. Wage inequality and the rise in return to skill, Journal of Political Economy, 101(3): 410-442.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Juhn</surname>
+							<given-names>C.</given-names>
+						</name>
+						<name>
+							<surname>Murphy</surname>
+							<given-names>K.</given-names>
+						</name>
+						<name>
+							<surname>Pierce</surname>
+							<given-names>B.</given-names>
+						</name>
+					</person-group>
+					<year>1993</year>
+					<article-title>Wage inequality and the rise in return to skill</article-title>
+					<source>Journal of Political Economy</source>
+					<volume>101</volume>
+					<issue>3</issue>
+					<fpage>410</fpage>
+					<lpage>442</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B33">
+				<mixed-citation>Katz, L. yD. Autor . 1999. Changes in the wage structure and earnings inequality, Handbook of Labor Economics, 3(A): 1463-1555.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Katz</surname>
+							<given-names>L.</given-names>
+						</name>
+						<name>
+							<surname>Autor</surname>
+							<given-names>D.</given-names>
+						</name>
+					</person-group>
+					<year>1999</year>
+					<article-title>Changes in the wage structure and earnings inequality</article-title>
+					<source>Handbook of Labor Economics</source>
+					<volume>3</volume>
+					<issue>A</issue>
+					<fpage>1463</fpage>
+					<lpage>1555</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B34">
+				<mixed-citation>Keefer, P. y S. Knack. 2002. Polarization, politics, and property rights; links between inequality and growth, Public Choice, 111(1-2): 127-154.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Keefer</surname>
+							<given-names>P.</given-names>
+						</name>
+						<name>
+							<surname>Knack</surname>
+							<given-names>S.</given-names>
+						</name>
+					</person-group>
+					<year>2002</year>
+					<article-title>Polarization, politics, and property rights; links between inequality and growth</article-title>
+					<source>Public Choice</source>
+					<volume>111</volume>
+					<issue>1-2</issue>
+					<fpage>127</fpage>
+					<lpage>154</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B35">
+				<mixed-citation>Kosters, M.H. y M.N. Ross. 1988. A shrinking middle class? The Public Interest, 90: 3-27.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Kosters</surname>
+							<given-names>M.H.</given-names>
+						</name>
+						<name>
+							<surname>Ross</surname>
+							<given-names>M.N.</given-names>
+						</name>
+					</person-group>
+					<year>1988</year>
+					<article-title>A shrinking middle class?</article-title>
+					<source>The Public Interest</source>
+					<volume>90</volume>
+					<fpage>3</fpage>
+					<lpage>27</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B36">
+				<mixed-citation>Instituto Nacional de Estadística y Geografía. INEGI. 2007. Encuesta nacional de ocupación y empleo, México.</mixed-citation>
+				<element-citation publication-type="book">
+					<person-group person-group-type="author">
+						<collab>Instituto Nacional de Estadística y Geografía. INEGI</collab>
+					</person-group>
+					<year>2007</year>
+					<source>Encuesta nacional de ocupación y empleo</source>
+					<publisher-loc>México</publisher-loc>
+				</element-citation>
+			</ref>
+			<ref id="B37">
+				<mixed-citation>INEGI. 2009. Encuesta nacional de ocupación y empleo. Clasificación mexicana de ocupaciones (CMO), volumen 1 y 2, México.</mixed-citation>
+				<element-citation publication-type="book">
+					<person-group person-group-type="author">
+						<collab>INEGI</collab>
+					</person-group>
+					<year>2009</year>
+					<source>Encuesta nacional de ocupación y empleo. Clasificación mexicana de ocupaciones (CMO)</source>
+					<issue>1 y 2</issue>
+					<publisher-loc>México</publisher-loc>
+				</element-citation>
+			</ref>
+			<ref id="B38">
+				<mixed-citation>INEGI. 2011. Sistema nacional de clasificación de ocupaciones 2011 (SINCO), México.</mixed-citation>
+				<element-citation publication-type="book">
+					<person-group person-group-type="author">
+						<collab>INEGI</collab>
+					</person-group>
+					<year>2011</year>
+					<source>Sistema nacional de clasificación de ocupaciones 2011 (SINCO)</source>
+					<publisher-loc>México</publisher-loc>
+				</element-citation>
+			</ref>
+			<ref id="B39">
+				<mixed-citation>INEGI. 2012. Lo que indican los indicadores. Cómo utilizar la información estadística para entender la realidad económica de México, México.</mixed-citation>
+				<element-citation publication-type="book">
+					<person-group person-group-type="author">
+						<collab>INEGI</collab>
+					</person-group>
+					<year>2012</year>
+					<source>Lo que indican los indicadores. Cómo utilizar la información estadística para entender la realidad económica de México</source>
+					<publisher-loc>México</publisher-loc>
+				</element-citation>
+			</ref>
+			<ref id="B40">
+				<mixed-citation>Linz, J. 1987. La quiebra de las democracias, Alianza Editorial, Madrid.</mixed-citation>
+				<element-citation publication-type="book">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Linz</surname>
+							<given-names>J.</given-names>
+						</name>
+					</person-group>
+					<year>1987</year>
+					<source>La quiebra de las democracias</source>
+					<publisher-name>Alianza Editorial</publisher-name>
+					<publisher-loc>Madrid</publisher-loc>
+				</element-citation>
+			</ref>
+			<ref id="B41">
+				<mixed-citation>Medina, F. y M. Galván. 2007. Imputación de datos: teoría y práctica, CEPAL, Serie estudios estadísticos y prospectivos, núm. 54, pp. 84.</mixed-citation>
+				<element-citation publication-type="book">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Medina</surname>
+							<given-names>F.</given-names>
+						</name>
+						<name>
+							<surname>Galván</surname>
+							<given-names>M.</given-names>
+						</name>
+					</person-group>
+					<year>2007</year>
+					<source>Imputación de datos: teoría y práctica, CEPAL</source>
+					<series>Serie estudios estadísticos y prospectivos</series>
+					<issue>54</issue>
+					<size units="pages">84</size>
+				</element-citation>
+			</ref>
+			<ref id="B42">
+				<mixed-citation>Michaels, G.; A. Natraj y J. Van Reenen. 2010. Has ICT polarized skill demand? Evidence from eleven countries over 25 years, CEP Discussion Papers dp0987, Centre for Economic Performance, LSE.</mixed-citation>
+				<element-citation publication-type="book">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Michaels</surname>
+							<given-names>G.</given-names>
+						</name>
+						<name>
+							<surname>Natraj</surname>
+							<given-names>A.</given-names>
+						</name>
+						<name>
+							<surname>Van Reenen</surname>
+							<given-names>J.</given-names>
+						</name>
+					</person-group>
+					<year>2010</year>
+					<source>Has ICT polarized skill demand? Evidence from eleven countries over 25 years, CEP Discussion Papers dp0987</source>
+					<publisher-name>Centre for Economic Performance, LSE</publisher-name>
+				</element-citation>
+			</ref>
+			<ref id="B43">
+				<mixed-citation>Murphy, K. y F. Welch. 1993. Occupational change and demand for skill, 1940-1990, American Economic Review, 83(2): 122-126.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Murphy</surname>
+							<given-names>K.</given-names>
+						</name>
+						<name>
+							<surname>Welch</surname>
+							<given-names>F.</given-names>
+						</name>
+					</person-group>
+					<year>1993</year>
+					<article-title>Occupational change and demand for skill, 1940-1990</article-title>
+					<source>American Economic Review</source>
+					<volume>83</volume>
+					<issue>2</issue>
+					<fpage>122</fpage>
+					<lpage>126</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B44">
+				<mixed-citation>OIT. 2014. El empleo informal en México: situación actual, políticas y desafíos, FORLAC, Notas sobre formalización.</mixed-citation>
+				<element-citation publication-type="book">
+					<person-group person-group-type="author">
+						<collab>OIT</collab>
+					</person-group>
+					<year>2014</year>
+					<source>El empleo informal en México: situación actual, políticas y desafíos</source>
+					<publisher-name>FORLAC</publisher-name>
+					<comment>Notas sobre formalización</comment>
+				</element-citation>
+			</ref>
+			<ref id="B45">
+				<mixed-citation>Pertold-Gebicka, B. 2013. Job market polarization and employment protection in Europe, Aarhus University, Business and Social Science, Working Paper, No. 13, consultado en <comment> 13, consultado en <ext-link ext-link-type="uri" xlink:href="http://ies.fsv.cuni.cz/sci/publication/show/id/4734/ lang/paper/cs">http://ies.fsv.cuni.cz/sci/publication/show/id/4734/ lang/paper/cs</ext-link>
+					</comment>, 12/06/2015.</mixed-citation>
+				<element-citation publication-type="book">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Pertold-Gebicka</surname>
+							<given-names>B.</given-names>
+						</name>
+					</person-group>
+					<year>2013</year>
+					<source>Job market polarization and employment protection in Europe</source>
+					<publisher-name>Aarhus University</publisher-name>
+					<publisher-name>Business and Social Science</publisher-name>
+					<series>Working Paper</series>
+					<issue>13</issue>
+					<comment> 13, consultado en <ext-link ext-link-type="uri" xlink:href="http://ies.fsv.cuni.cz/sci/publication/show/id/4734/ lang/paper/cs">http://ies.fsv.cuni.cz/sci/publication/show/id/4734/ lang/paper/cs</ext-link>
+					</comment>
+					<date-in-citation content-type="access-date" iso-8601-date="2015-06-12">12/06/2015</date-in-citation>
+				</element-citation>
+			</ref>
+			<ref id="B46">
+				<mixed-citation>Schmidt, A. 2002. Statistical measurement of income polarization. A cross-national comparison, 10th International Conference on Panel Data, Berlin, July 5-6, 2002 D3-1,</mixed-citation>
+				<element-citation publication-type="book">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Schmidt</surname>
+							<given-names>A.</given-names>
+						</name>
+					</person-group>
+					<year>2002</year>
+					<source>Statistical measurement of income polarization. A cross-national comparison, 10th International Conference on Panel Data</source>
+					<publisher-loc>Berlin</publisher-loc>
+					<comment>July 5-6, 2002 D3-1</comment>
+				</element-citation>
+			</ref>
+			<ref id="B47">
+				<mixed-citation>Shorrocks, A. 1982. Inequality descomposition by factor components, Econometrica, 50(1): 193-211.</mixed-citation>
+				<element-citation publication-type="journal">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Shorrocks</surname>
+							<given-names>A.</given-names>
+						</name>
+					</person-group>
+					<year>1982</year>
+					<article-title>Inequality descomposition by factor components</article-title>
+					<source>Econometrica</source>
+					<volume>50</volume>
+					<issue>1</issue>
+					<fpage>193</fpage>
+					<lpage>211</lpage>
+				</element-citation>
+			</ref>
+			<ref id="B48">
+				<mixed-citation>Stiglitz, J. 2012. El precio de la desigualdad, 2a edición, Taurus, México.</mixed-citation>
+				<element-citation publication-type="book">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Stiglitz</surname>
+							<given-names>J.</given-names>
+						</name>
+					</person-group>
+					<year>2012</year>
+					<source>El precio de la desigualdad</source>
+					<edition>2a </edition>
+					<publisher-name>Taurus</publisher-name>
+					<publisher-loc>México</publisher-loc>
+				</element-citation>
+			</ref>
+			<ref id="B49">
+				<mixed-citation>Wan, G. y C. Wang. 2015. Income polarization in the people’s Republic of China: Trends and changes, Asian Development Bank Institut, working paper, no. 538.</mixed-citation>
+				<element-citation publication-type="book">
+					<person-group person-group-type="author">
+						<name>
+							<surname>Wan</surname>
+							<given-names>G.</given-names>
+						</name>
+						<name>
+							<surname>Wang</surname>
+							<given-names>C.</given-names>
+						</name>
+					</person-group>
+					<year>2015</year>
+					<source>Income polarization in the people’s Republic of China: Trends and changes</source>
+					<publisher-name>Asian Development Bank Institut</publisher-name>
+					<series>working paper</series>
+					<issue>538</issue>
+				</element-citation>
+			</ref>
+		</ref-list>
+		<fn-group>
+			<fn fn-type="other" id="fn1">
+				<label>1</label>
+				<p>
+					<xref ref-type="bibr" rid="B10">Bluestone y Harrison (1988)</xref> establecieron que existía un proceso de polarización donde el número de trabajos con bajos salarios se incrementó, en tanto que hubo una caída del número de trabajos con salarios altos en un estudio para el período 1975-1999. Los estudios de <xref ref-type="bibr" rid="B35">Kosters y Ross (1988)</xref> ahondaban la controversia, en el sentido que afirmaban que, lejos de incrementarse los empleos de destrezas y salarios bajos, éstos se iban reduciendo.</p>
+			</fn>
+			<fn fn-type="other" id="fn2">
+				<label>2</label>
+				<p>Durante los noventa se popularizó la idea de que la tecnología tenía un efecto en el mercado de trabajo, a saber, se establecía que el cambio tecnológico operaba en favor de los trabajadores más educados o con mayores destrezas, esto es, el cambio técnico propiciaba que la demanda relativa de trabajo con mayores destrezas aumentara, en oposición al trabajo de menores destrezas. A esta visión se le llamó el cambio tecnológico sesgado a mayores destrezas (SBTC) (<xref ref-type="bibr" rid="B33">Katz y Autor, 1999</xref>). Sin embargo, dicha visión, como lo sugieren <xref ref-type="bibr" rid="B5">Autor, Levy y Murnane (2003)</xref>, sólo remarcaba la correlación positiva que podía existir entre cambio técnico y mayores destrezas, pero no daba cuenta de cuál era la causa fundamental de ello. Para explicar la interrogante, Autor, Levy y Murnane (ALM) trazan una teoría la cual establece que el cambio técnico es complementario a un conjunto de tareas cognitivas-abstractas no rutinarias, así como a tareas no repetitivas poco calificadas. Por otra parte, dicho cambio técnico sustituye un conjunto de actividades manuales y cognitivas repetitivas. Lo que se desprende de la teoría es que el cambio técnico acrecentará la demanda relativa de trabajadores con mayores destrezas y mayores salarios, así como de trabajadores con menores destrezas y bajos salarios, y disminuirá la demanda relativa de trabajos de destrezas medias (<xref ref-type="bibr" rid="B5">Autor, Levy y Murnane, 2003</xref>; <xref ref-type="bibr" rid="B32">Juhn, Murphy y Pierce, 1993</xref>; <xref ref-type="bibr" rid="B43">Murphy y Welch, 1993</xref>).</p>
+			</fn>
+			<fn fn-type="other" id="fn4">
+				<label>4</label>
+				<p>Por ocupación debe entenderse: el conjunto de tareas y cometidos desempeñados por una persona o que se prevé que ésta desempeñe, incluido para un empleador o por cuenta propia“. También puede entenderse como un conjunto de trabajos cuyos principales tareas y cometidos se caracterizan por tener un alto grado de similitud”. En este sentido, una ocupación se define a partir de rasgos de contexto y de esencia, como son: finalidad, complejidad, funciones, tipo de procedimiento, bagaje de conocimientos, posición en el proceso de producción, variabilidad de actividades, autonomía&quot; (<xref ref-type="bibr" rid="B38">SINCO, INEGI, 2011, p. 11</xref>).</p>
+			</fn>
+			<fn fn-type="other" id="fn5">
+				<label>5</label>
+				<p>Estas ocupaciones se pueden definir a grandes rasgos como sigue: Por nivel de competencias 1: exige la realización de tareas físicas o manuales sencillas y rutinarias, pueden necesitar fuerza o resistencia física [...] pueden exigir conocimientos básicos de lectura y escritura. Incluye tareas como: limpieza, excavación, transporte manual de materiales, manejo de vehículos no motorizados, recolección de frutas y vegetales, etc“. Por nivel de competencias 2: exige el desempeño de tareas tales como el manejo de maquinarias y equipos electrónicos, la conducción de vehículos, así como la manipulación, ordenamiento y almacenamiento de información. Es fundamental saber leer información como instrucciones de seguridad, redactar informes escritos [...] buena comunicación personal”. Por nivel de competencias 3: exige el desempeño de funciones técnicas y prácticas complejas basadas en conocimiento concreto en un área especializada [...] capacidad de comprender material escrito de carácter técnico, preparar informes documentados y comunicarse verbalmente en situaciones difíciles“. Por nivel de competencias 4: exige el desempeño de funciones que requieren la toma de decisiones y la solución de problemas complejos basándose en un amplio conocimiento teórico y práctico en un área determinada. [...] Requieren por lo general de un nivel superior de instrucción y de matemáticas, a veces a un nivel elevado, así como excelentes capacidades de comunicación personal” (<xref ref-type="bibr" rid="B38">SINCO, INEGI, 2011, pp. 13-14</xref>). Para mayor detalle de las definiciones consultar publicación.</p>
+			</fn>
+			<fn fn-type="other" id="fn6">
+				<label>6</label>
+				<p>Aunque pueda parecer arbitrario, esta combinación considera tareas similares que se realizan en los ámbitos de competencias 3 y 4. Igualmente, permite que la agrupación sea muy similar a la que lleva a cabo <xref ref-type="bibr" rid="B7">Autor (2010)</xref> en su estudio de polarización para Estados Unidos.</p>
+			</fn>
+			<fn fn-type="other" id="fn7">
+				<label>7</label>
+				<p>Debe de tomarse en cuenta que la agregación que se realiza, que considera la división ocupacional del INEGI en la ENOE, es sumamente agregada y que dentro de estas ocupaciones existen otras ocupaciones que se caracterizan por realizar otras tareas, no obstante, consideramos que es una buena manera de manejar los datos, de otra forma, los resultados serían múltiples. Una desagregación más profunda podría darnos resultados interesantes, pero tal vez sería menos operativa para analizar el problema de polarización en el mercado laboral.</p>
+			</fn>
+			<fn fn-type="other" id="fn8">
+				<label>8</label>
+				<p>Cuando estas gráficas se han obtenido por género, los resultados son similares, sin embargo, los ingresos reales promedio de las mujeres suelen ser menores a los de los hombres para cualquier tipo de ocupación.</p>
+			</fn>
+			<fn fn-type="other" id="fn9">
+				<label>9</label>
+				<p>Desde la óptica de <xref ref-type="bibr" rid="B5">Autor, Levy y Murnane (2003)</xref> y <xref ref-type="bibr" rid="B7">Autor (2010) </xref>las tareas pueden dividirse en rutinarias y no rutinarias. Estas últimas pueden dividirse en manuales y abstractas. Las tareas rutinarias son aquellas actividades que están lo suficientemente bien definidas, de tal manera que pueden ser llevadas a cabo por una computadora o alternativamente, si nos enfocamos a países de bajo desarrollo, por trabajadores con menores destrezas. Dichas tareas por lo general pueden ser los trabajos de oficina, contaduría, labores de ensamblaje en la industria, trasporte interno, etc. En este sentido, las tareas rutinarias son proclives a ser sustituidas por el cambio tecnológico o por mano de obra menos educada, siempre y cuando éstas presenten una declinación en su precio. Por otro lado, las tareas no rutinarias pueden dividirse en tareas abstractas y tareas manuales. Las tareas abstractas se enfocan en resolver problemas, aplicar la intuición y la persuasión; quienes las realizan suelen tener altos niveles de escolaridad y una capacidad analítica desarrollada. Por otra parte, las tareas manuales requieren de adaptación, capacidad lingüística y visual, así como gran interacción personal; tareas que pueden verse influidas por el cambio técnico o ser independientes a él (<xref ref-type="bibr" rid="B5">Autor, Levy y Murnane, 2003 </xref>y <xref ref-type="bibr" rid="B7">Autor, 2010</xref>).</p>
+			</fn>
+			<fn fn-type="other" id="fn10">
+				<label>10</label>
+				<p>En las tres gráficas las líneas que muestran el comportamiento del salario promedio real imputado guardan un comportamiento muy similar al de las líneas que mostraban el salario promedio real, pero para datos no imputados.</p>
+			</fn>
+			<fn fn-type="other" id="fn11">
+				<label>11</label>
+				<p>La brecha en cuestión se explica por la diferencia de años de escolaridad entre las ocupaciones con mayor nivel educativo y las que presentan menor nivel educativo en promedio.</p>
+			</fn>
+			<fn fn-type="other" id="fn12">
+				<label>12</label>
+				<p>Cuando se observan los datos de escolaridad por sexo entre 2005 y 2017 podemos apreciar que la participación de mujeres con tercer año de secundaria aumentó de forma más profusa, en relación con la participación de mujeres en el último año de licenciatura. La variación porcentual fue del orden de 11.69 frente a 2.69 por ciento.</p>
+			</fn>
+			<fn fn-type="other" id="fn13">
+				<label>13</label>
+				<p>Durante las tres últimas décadas la tasa de crecimiento promedio del PIB para México ha sido del orden de 2%, incluso inferior a la tasa de crecimiento promedio de la población, lo cual ha propiciado un declive en el PIB per cápita.</p>
+			</fn>
+			<fn fn-type="other" id="fn14">
+				<label>14</label>
+				<p>Es interesante ver que los empleos informales se han incrementado en la parte baja de la distribución, es decir, en aquella parte que se refiere a trabajos de servicios personales, los cuales suelen ser muy mal pagados, así como aquellos referentes a las actividades agropecuarias y de protección y vigilancia. La situación de creciente inseguridad y violencia en el país puede ser una posible fuente de este crecimiento, en la medida que se ha requerido más personal de seguridad y protección para salvaguardar la propiedad y la integridad de las personas.</p>
+			</fn>
+			<fn fn-type="other" id="fn15">
+				<label>15</label>
+				<p>Es importante destacar que nuestra definición de informalidad establece que son asalariados informales (empleo informal) aquellos trabajadores que no cuentan con acceso a seguridad social o no tienen un contrato o no cuentan con prestación alguna. Desde esta perspectiva la informalidad, en nuestro caso, tiene que ver más con las condiciones laborales de la población trabajadora que con las características de la unidad económica (sector informal), (<xref ref-type="bibr" rid="B44">Organización Internacional del Trabajo, OIT, 2014</xref>). En este sentido, bien pueden existir trabajadores informales en unidades medianas o grandes (que pagan impuestos, presentan reportes contables, etc.), lo que justifica el por qué se incrementa de forma relativa la población de mayores destrezas en el mercado informal, dando lugar a una polarización canónica. Desde esta perspectiva, dichos incrementos no contradicen la hipótesis de la teoría subyacente del progreso técnico, que establece cierta complementariedad entre éste y las altas destrezas, ya que las unidades económicas (incluso grandes empresas) legales, por ejemplo, subcontratan personal de altas destrezas pero sin derecho a seguridad social, ni a prestaciones.</p>
+			</fn>
+			<fn fn-type="other" id="fn16">
+				<label>16</label>
+				<p>Cuando observamos la participación masculina en el empleo informal vemos que resalta su participación en los empleos agropecuarios de bajos niveles salariales. Lo que, obviamente, tiene un impacto en la distribución salarial masculina informal en el año 2005, la cual es más polarizada frente a la distribución masculina formal de ese mismo año. De esta manera, en términos generales se observa que existe una carga sumamente sensible tanto de mujeres como de hombres en la participación de trabajos de baja calidad y, por ello, de bajos ingresos promedio (<xref ref-type="bibr" rid="B28">Goos y Manning, 2003</xref>).</p>
+			</fn>
+			<fn fn-type="other" id="fn17">
+				<label>17</label>
+				<p>Recuérdese que 𝛼 significa el grado de sensibilidad a la polarización que se asigna a la sociedad. Cuando 𝛼 es igual a cero el índice de polarización DER sería igual al índice de desigualdad de Gini. </p>
+			</fn>
+			<fn fn-type="other" id="fn18">
+				<label>18</label>
+				<p>El mercado de trabajo formal no está exento de falta de derechos laborales, por ejemplo, la profundización de la contratación por outsourcing o subcontratación llevada a cabo las últimas dos décadas, implica pérdida en derechos laborales y muchas veces disminución en los ingresos salariales obtenidos por jornada laboral. En dicho sentido, otro factor que puede estar coadyuvando a la polarización es este mecanismo de contratación de los trabajadores.</p>
+			</fn>
+			<fn fn-type="other" id="fn19">
+				<label>19</label>
+				<p>Debe entenderse que estas contribuciones ahondan la polarización en cuanto a que una parte de la población asalariada se adjudica mayor nivel de escolaridad con respecto a otro grupo que tiende a acumular menos años de escolaridad; de igual modo, una parte de asalariados se emplea en establecimientos de mediano tamaño o grande, frente a otro grupo de asalariados más grande que se emplea en pequeños establecimientos. En este sentido, las brechas salariales se van ampliando entre los distintos grupos.</p>
+			</fn>
+			<fn fn-type="other" id="fn20">
+				<label>20</label>
+				<p>Considérese que, en teoría, los trabajadores sindicalizados obtendrían beneficios mediante incrementos salariales o prestaciones de otro tipo, frente a los trabajadores que no lo están. En este sentido, la sindicalización si es efectiva, contribuiría a ampliar la brecha entre trabajadores sindicalizados y no sindicalizados, es decir, a la polarización salarial.</p>
+			</fn>
+			<fn fn-type="other" id="fn21">
+				<label>21</label>
+				<p>La inflación subyacente alcanzó 6.77% en 2017, sin embargo, la no subyacente superó el 12% en dicho año, la cual estaría reflejando un mayor deterioro del poder adquisitivo del salario mínimo.</p>
+			</fn>
+		</fn-group>
+		<fn-group>
+			<fn fn-type="other" id="fn3">
+				<label>3</label>
+				<p>α considera el grado de sensibilidad de una población a la polarización, en este sentido se asocia al nivel de identificación que existe entre los grupos conformados. Hay que recordar que un _ igual a cero no es otra cosa que el índice de Gini. Los rangos establecidos para α se derivan de los estudios empíricos hechos por <xref ref-type="bibr" rid="B19">Duclos, Esteban y Ray, 2004</xref>.</p>
+			</fn>
+		</fn-group>
+		<app-group>
+			<app id="app1">
+				<label>Anexo</label>
+				<p>
+					<fig id="ch1">
+						<label>Gráfica 1</label>
+						<caption>
+							<title>Ingreso promedio real imputado (Hot deck) y escolaridad a nivel nacional en 2005 y 2017</title>
+						</caption>
+						<graphic xlink:href="0186-7202-ee-35-01-153-gch1.png"/>
+					</fig>
+				</p>
+				<p>
+					<fig id="ch2">
+						<label>Gráfica 2</label>
+						<caption>
+							<title>Ingreso promedio real imputado (Hot deck) y escolaridad a nivel formal en 2005 y 2017</title>
+						</caption>
+						<graphic xlink:href="0186-7202-ee-35-01-153-gch2.png"/>
+					</fig>
+				</p>
+				<p>
+					<fig id="ch3">
+						<label>Gráfica 3</label>
+						<caption>
+							<title>Ingreso promedio real imputado (Hot deck) y escolaridad a nivel informal en 2005 y 2017</title>
+						</caption>
+						<graphic xlink:href="0186-7202-ee-35-01-153-gch3.png"/>
+						<attrib>Nota: En las gráficas 1, 2 y 3 las ocupaciones para el caso de México se catalogan de la siguiente manera: 1) profesionales, técnicos y trabajadores del arte, 2) trabajadores de la educación, 3) funcionarios y directivos, 4) oficinistas, 5) trabajadores industriales artesanos y ayudantes, 6) comerciantes, 7) operadores de transporte, 8) trabajadores en servicios personales, 9) trabajadores en protección y vigilancia, 10) trabajadores agropecuarios.</attrib>
+						<attrib>Fuente: Elaboración propia con microdatos de la ENOE, 2005 y 2017. Los datos incluyen al conjunto de asalariados entre 15 y 98 años de edad, se dividen en tres grupos ocupacionales consistentes con un nivel de salario promedio (bajo, medio y alto), con base en la metodología de <xref ref-type="bibr" rid="B28">Goos y Manning (2003)</xref> y <xref ref-type="bibr" rid="B7">Autor (2010)</xref>.</attrib>
+					</fig>
+				</p>
+				<p>
+					<fig id="ch4">
+						<label>Gráfica 4</label>
+						<caption>
+							<title>Variación porcentual de la población asalariada a nivel nacional, formal e informal por nivel de destrezas entre 2005 y 2017</title>
+						</caption>
+						<graphic xlink:href="0186-7202-ee-35-01-153-gch4.png"></graphic>
+					</fig>
+				</p>
+				<p>
+					<fig id="ch5">
+						<label>Gráfica 5</label>
+						<caption>
+							<title>Variación porcentual de la población asalariada total femenina y masculina, por nivel de destrezas entre 2005 y 2017</title>
+						</caption>
+						<graphic xlink:href="0186-7202-ee-35-01-153-gch5.png"></graphic>
+						<attrib>Fuente: Elaboración propia con microdatos de la ENOE, 2005 y 2017. Los datos incluyen al conjunto de asalariados entre 15 y 98 años de edad, se dividen en tres grupos ocupacionales consistentes con un nivel de salario promedio (bajo, medio y alto), con base en la metodología de <xref ref-type="bibr" rid="B28">Goos y Manning (2003)</xref> y <xref ref-type="bibr" rid="B7">Autor (2010)</xref>.</attrib>
+					</fig>
+				</p>
+				<p>
+					<fig id="ch6">
+						<label>Gráfica 6</label>
+						<caption>
+							<title>Variación porcentual de la población asalariada formal femenina y masculina por nivel de destrezas entre 2005 y 2017</title>
+						</caption>
+						<graphic xlink:href="0186-7202-ee-35-01-153-gch6.png"></graphic>
+					</fig>
+				</p>
+				<p>
+					<fig id="ch7">
+						<label>Gráfica 7</label>
+						<caption>
+							<title>Variación porcentual de la población asalariada informal femenina y masculina, por nivel de destrezas entre 2005 y 2017</title>
+						</caption>
+						<graphic xlink:href="0186-7202-ee-35-01-153-gch7.png"></graphic>
+						<attrib>Fuente: Elaboración propia con microdatos de la ENOE, 2005 y 2017. Los datos incluyen al conjunto de asalariados entre 15 y 98 años de edad, se dividen en tres grupos ocupacionales consistentes con un nivel de salario promedio (bajo, medio y alto), con base en la metodología de <xref ref-type="bibr" rid="B28">Goos y Manning (2003)</xref> y <xref ref-type="bibr" rid="B7">Autor (2010)</xref>. </attrib>
+					</fig>
+				</p>
+				<p>
+					<fig id="ch8">
+						<label>Gráfica 8</label>
+						<caption>
+							<title>Distribución salarial (Hot deck) a nivel nacional en el mercado de trabajo en México en 2005 y 2017</title>
+						</caption>
+						<graphic xlink:href="0186-7202-ee-35-01-153-gch8.png"></graphic>
+					</fig>
+				</p>
+				<p>
+					<fig id="ch9">
+						<label>Gráfica 9</label>
+						<caption>
+							<title>Distribución porcentual de mujeres y hombres formales por nivel salarial (Hot deck), 2005</title>
+						</caption>
+						<graphic xlink:href="0186-7202-ee-35-01-153-gch9.png"></graphic>
+						<attrib>Fuente: Elaboración propia con microdatos de la ENOE, 2005 y 2017. Los datos incluyen al conjunto de asalariados entre 15 y 98 años de edad, los cuales son divididos en cinco grupos de ingreso salarial y uno no especificado. </attrib>
+					</fig>
+				</p>
+				<p>
+					<fig id="ch10">
+						<label>Gráfica 10</label>
+						<caption>
+							<title>Distribución porcentual de mujeres y hombres informales por nivel salarial (Hot deck), 2005</title>
+						</caption>
+						<graphic xlink:href="0186-7202-ee-35-01-153-gch10.png"></graphic>
+					</fig>
+				</p>
+				<p>
+					<fig id="ch11">
+						<label>Gráfica 11</label>
+						<caption>
+							<title>Distribución porcentual de mujeres y hombres formales por nivel salarial (Hot deck), 2017</title>
+						</caption>
+						<graphic xlink:href="0186-7202-ee-35-01-153-gch11.png"></graphic>
+						<attrib>Fuente: Elaboración propia con microdatos de la ENOE, 2005 y 2017. Los datos incluyen al conjunto de asalariados entre 15 y 98 años de edad, los cuales son divididos en cinco grupos de ingreso salarial y uno no especificado. </attrib>
+					</fig>
+				</p>
+				<p>
+					<fig id="ch12">
+						<label>Gráfica 12</label>
+						<caption>
+							<title>Distribución porcentual de mujeres y hombres informales por nivel salarial (Hot deck), 2017</title>
+						</caption>
+						<graphic xlink:href="0186-7202-ee-35-01-153-gch12.png"></graphic>
+						<attrib>Fuente: Elaboración propia con microdatos de la ENOE, 2005 y 2017. Los datos incluyen al conjunto de asalariados entre 15 y 98 años de edad, los cuales son divididos en cinco grupos de ingreso salarial y uno no especificado. </attrib>
+					</fig>
+				</p>
+				<p>
+					<fig id="ch13">
+						<label>Gráfica 13</label>
+						<caption>
+							<title>Índice generalizado de polarización salarial (Hot deck) (DER, 𝛼 = 0.5) México, 2005-2017</title>
+						</caption>
+						<graphic xlink:href="0186-7202-ee-35-01-153-gch13.png"></graphic>
+					</fig>
+				</p>
+				<p>
+					<fig id="ch14">
+						<label>Gráfica 14</label>
+						<caption>
+							<title>Índice generalizado de polarización ocupacional (DER, 𝛼 = 0.5) México, 2005-2017</title>
+						</caption>
+						<graphic xlink:href="0186-7202-ee-35-01-153-gch14.png"></graphic>
+						<attrib>Fuente: Gráficas13 y 14 elaboración propia con microdatos de la ENOE del 2005 al 2017. Los datos incluyen al conjunto de diez categorías ocupacionales de la población asalariada de entre 15 y 98 años de edad, con una partición igual a tres. Se ha utilizado el módulo Distributive Analysis Stata Package (DASP). </attrib>
+					</fig>
+				</p>
+				<p>
+					<table-wrap id="t1">
+						<label>Cuadro 1</label>
+						<caption>
+							<title>Descomposición del ´índice de polarización DER en 2005 y 2017, con imputación HOT DECK en salario mínimo: aproximación de Araar (2008)</title>
+						</caption>
+						<table style="border: 1px solid black; border collapse: collapse" border="1">
+							<colgroup>
+								<col/>
+								<col/>
+								<col/>
+								<col/>
+								<col/>
+								<col/>
+								<col/>
+							</colgroup>
+							<tbody>
+								<tr>
+									<td align="left"> </td>
+									<td align="center" colspan="3">2005</td>
+								
+									<td align="center" colspan="3">2017</td>
+									
+								</tr>
+								<tr>
+									<td align="center"><italic>Fuente</italic></td>
+									<td align="center"><italic>Índice de concentración</italic></td>
+									<td align="center"><italic>Contribución absoluta</italic></td>
+									<td align="center"><italic>Contribución relativa</italic></td>
+									<td align="center"><italic>Índice de concentración</italic></td>
+									<td align="center"><italic>Contribución absoluta</italic></td>
+									<td align="center"><italic>Contribución realtiva</italic></td>
+								</tr>
+								<tr>
+									<td align="left">1. Escolaridad básica</td>
+									<td align="center">-0.376754</td>
+									<td align="center">-0.0253</td>
+									<td align="center">-0.084938</td>
+									<td align="center">-0.586432</td>
+									<td align="center">-0.024875</td>
+									<td align="center">-0.085865</td>
+								</tr>
+								<tr>
+									<td align="left">2. Escolaridad media</td>
+									<td align="center">0.497367</td>
+									<td align="center">0.245789</td>
+									<td align="center">0.047625</td>
+									<td align="center">0.429054</td>
+									<td align="center">0.024548</td>
+									<td align="center">0.046854</td>
+								</tr>
+								<tr>
+									<td align="left">3. Escolaridad superior</td>
+									<td align="center">1.189784</td>
+									<td align="center">0.37458</td>
+									<td align="center">0.068967</td>
+									<td align="center">0.918858</td>
+									<td align="center">0.054124</td>
+									<td align="center">0.067457</td>
+								</tr>
+								<tr>
+									<td align="left">4. Sexo</td>
+									<td align="center">1.234603</td>
+									<td align="center">0.06874</td>
+									<td align="center">0.175890</td>
+									<td align="center">1.17464</td>
+									<td align="center">0.095783</td>
+									<td align="center">0.202156</td>
+								</tr>
+								<tr>
+									<td align="left">5. Soltero</td>
+									<td align="center">1.537461</td>
+									<td align="center">0.0658</td>
+									<td align="center">0.148796</td>
+									<td align="center">1.78904</td>
+									<td align="center">0.003568</td>
+									<td align="center">0.152163</td>
+								</tr>
+								<tr>
+									<td align="left">6. No casado</td>
+									<td align="center">0.481861</td>
+									<td align="center">0.005689</td>
+									<td align="center">0.012587</td>
+									<td align="center">1.004759</td>
+									<td align="center">0.135688</td>
+									<td align="center">0.022784</td>
+								</tr>
+								<tr>
+									<td align="left">7. Establecimiento pequeño</td>
+									<td align="center">-0.274395</td>
+									<td align="center">-0.2584</td>
+									<td align="center">-0.187592</td>
+									<td align="center">-0.189353</td>
+									<td align="center">-0.445845</td>
+									<td align="center">-0.151785</td>
+								</tr>
+								<tr>
+									<td align="left">8. Establecimiento mediano</td>
+									<td align="center">2.195988</td>
+									<td align="center">0.06548</td>
+									<td align="center">0.071689</td>
+									<td align="center">2.203642</td>
+									<td align="center">0.015784</td>
+									<td align="center">0.071002</td>
+								</tr>
+								<tr>
+									<td align="left">9. Establecimiento grande</td>
+									<td align="center">2.166054</td>
+									<td align="center">0.062154</td>
+									<td align="center">0.132745</td>
+									<td align="center">2.15461</td>
+									<td align="center">0.54847</td>
+									<td align="center">0.148975</td>
+								</tr>
+								<tr>
+									<td align="left">10. Salario mínimo</td>
+									<td align="center">0.13985</td>
+									<td align="center">0.019565</td>
+									<td align="center">0.035985</td>
+									<td align="center">0.146474</td>
+									<td align="center">0.012478</td>
+									<td align="center">0.056754</td>
+								</tr>
+								<tr>
+									<td align="left">11. Sindicalización</td>
+									<td align="center">3.08945</td>
+									<td align="center">0.095642</td>
+									<td align="center">0.211785</td>
+									<td align="center">3.27456</td>
+									<td align="center">0.095427</td>
+									<td align="center">0.152471</td>
+								</tr>
+								<tr>
+									<td align="left">12. Formalidad</td>
+									<td align="center">1.89753</td>
+									<td align="center">0.162543</td>
+									<td align="center">0.364587</td>
+									<td align="center">1.76451</td>
+									<td align="center">0.058427</td>
+									<td align="center">0.320312</td>
+								</tr>
+								<tr>
+									<td align="left">13. Ocupaciones I</td>
+									<td align="center">1.2569433</td>
+									<td align="center">0.324156</td>
+									<td align="center">0.051789</td>
+									<td align="center">1.015434</td>
+									<td align="center">0.022458</td>
+									<td align="center">0.037954</td>
+								</tr>
+								<tr>
+									<td align="left">14. Ocupaciones II</td>
+									<td align="center">0.174938</td>
+									<td align="center">0.265874</td>
+									<td align="center">0.044745</td>
+									<td align="center">0.187451</td>
+									<td align="center">0.021457</td>
+									<td align="center">0.058174</td>
+								</tr>
+								<tr>
+									<td align="left">15. Ocupaciones III</td>
+									<td align="center">-1.36789</td>
+									<td align="center">-0.98412</td>
+									<td align="center">-0.096376</td>
+									<td align="center">-1.25417</td>
+									<td align="center">-0.079864</td>
+									<td align="center">-0.099478</td>
+								</tr>
+								<tr>
+									<td align="left">16. Región I</td>
+									<td align="center">0.061327</td>
+									<td align="center">0.008954</td>
+									<td align="center">0.004615</td>
+									<td align="center">0.196473</td>
+									<td align="center">0.042548</td>
+									<td align="center">0.021457</td>
+								</tr>
+								<tr>
+									<td align="left">17. Región II</td>
+									<td align="center">0.098652</td>
+									<td align="center">0.0061</td>
+									<td align="center">0.013263</td>
+									<td align="center">0.021564</td>
+									<td align="center">0.000781</td>
+									<td align="center">0.003487</td>
+								</tr>
+								<tr>
+									<td align="left">18. Región III</td>
+									<td align="center">-0.148353</td>
+									<td align="center">-0.009</td>
+									<td align="center">-0.016157</td>
+									<td align="center">-0.35972</td>
+									<td align="center">-0.065874</td>
+									<td align="center">-0.02487</td>
+								</tr>
+								<tr>
+									<td align="left">Total</td>
+									<td align="center"><italic>…</italic></td>
+									<td align="center">0.494246</td>
+									<td align="center">1</td>
+									<td align="center"><italic>…</italic></td>
+									<td align="center">0.515083</td>
+									<td align="center">1</td>
+								</tr>
+							</tbody>
+						</table>
+					</table-wrap>
+				</p>
+			</app>
+		</app-group>
+	</back>
+</article>

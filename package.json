@@ -1,20 +1,20 @@
 {
-  "name": "lens-starter",
+  "name": "sps-lens-starter",
   "description": "SPS Lens bundle.",
   "dependencies": {
-    "ejs": "*",
+    "ejs": "^3.0.2",
     "express": "3.21.x",
     "lens": "github:escire/sps-lens",
     "underscore": "1.8.x"
   },
   "devDependencies": {
-    "browserify": "*",
-    "node-sass": "3.x",
-    "gulp": "^3.8.11",
-    "gulp-sass": "^2.0.3",
-    "gulp-uglify": "^1.2.0",
+    "browserify": "^16.5.1",
+    "gulp": "^3.9.1",
     "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.2.1",
+    "gulp-uglify": "^1.2.0",
+    "node-sass": "^4.13.1",
     "through2": "^2.0.0"
   },
-  "version": "2.0.0"
+  "version": "1.0.2"
 }

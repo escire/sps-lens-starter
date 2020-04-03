@@ -50,7 +50,7 @@ SPSConverter.Prototype = function() {
     // --------
     // 
     
-    this.enhanceFigure = function(state, node, element) {
+    /*this.enhanceFigure = function(state, node, element) {
         var graphic = element.querySelector("graphic");
         var url = graphic.getAttribute("xlink:href");
         node.url = this.resolveURL(state, url);
@@ -73,7 +73,7 @@ SPSConverter.Prototype = function() {
                 url,
             ].join('');
         }
-    };
+    };*/
 
     // avoid the use of this
     this.citationTypes = {

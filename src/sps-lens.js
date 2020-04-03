@@ -11,11 +11,9 @@ var LensApp = function(config) {
 };
 
 LensApp.Prototype = function() {
-    
     // Custom converters
     // --------------
     // 
-    
     this.getConverters = function(converterOptions) {
         return [
             new SPSConverter(converterOptions),

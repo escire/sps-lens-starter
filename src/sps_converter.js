@@ -50,30 +50,21 @@ SPSConverter.Prototype = function() {
     // --------
     // 
     
-    /*this.enhanceFigure = function(state, node, element) {
-        var graphic = element.querySelector("graphic");
-        var url = graphic.getAttribute("xlink:href");
-        node.url = this.resolveURL(state, url);
-    };
+    // this.enhanceFigure = function(state, node, element) {
+    //     var graphic = element.querySelector("graphic");
+    //     var url = graphic.getAttribute("xlink:href");
+    //     node.url = this.resolveURL(state, url);
+    // };
     
     this.resolveURL = function(state, url) {
-        // Use absolute URL
-        if (url.match(/http:\/\//)) return url;
-        
-        // Look up base url
-        var baseURL = this.getBaseURL(state);
-        
-        if (baseURL) {
-            return [baseURL, url].join('');
-        } else {
-            // Use special URL resolving for production articles
-            return [
-                //state.doc.id,
-                "/data/",
-                url,
-            ].join('');
-        }
-    };*/
+        // Just return absolute urls
+        if (url.match(/http:/)) return url;
+        return [
+          state.options.baseURL,
+          ojs_gal_url,
+          url
+        ].join('');
+    };
 
     // avoid the use of this
     this.citationTypes = {

@@ -35,8 +35,6 @@ SPSConverter.Prototype = function () {
     // Localization
     this._contribTypeMapping = Locale._contribTypeMapping;
 
-
-
     // Override document factory so we can create a customized Lens article,
     // including overridden node types
     this.createDocument = function () {
@@ -197,7 +195,7 @@ SPSConverter.Prototype = function () {
             "label": "Figure",
             "url": "",
             "caption": null,
-            "attrib" : null,
+            "attrib": null,
         };
 
         var labelEl = figure.querySelector("label");
@@ -257,6 +255,92 @@ SPSConverter.Prototype = function () {
         figure._converted = true;
 
         return figureNode;
+    };
+
+    // Formula Node Type
+    // --------
+
+    this._getFormulaData = function (formulaElement) {
+        var result = [];
+        for (var child = formulaElement.firstElementChild; child; child = child.nextElementSibling) {
+            var type = util.dom.getNodeType(child);
+
+            /**
+             * If are alternative it needs to get a subtag.
+             * First mml:math if doesn't exist, then graphic tag
+             */
+
+            if(type == 'alternatives'){
+                var element = _.find(child.children, element => element.tagName == 'mml:math')
+                if(element){
+                    child = element;
+                    type = 'mml:math'
+                }else{
+                    element = _.find(child.children, element => element.tagName == 'graphic')
+                    if(element){
+                        child = element;
+                        type = 'graphic'
+                    }
+                }
+            }
+
+            switch (type) {
+                case "graphic":
+                case "inline-graphic":
+                    result.push({
+                        format: 'image',
+                        data: child.getAttribute('xlink:href')
+                    });
+                    break;
+                case "svg":
+                    result.push({
+                        format: "svg",
+                        data: this.toHtml(child)
+                    });
+                    break;
+                case "mml:math":
+                case "math":
+                    result.push({
+                        format: "mathml",
+                        data: this.mmlToHtmlString(child)
+                    });
+                    break;
+                case "tex-math":
+                    result.push({
+                        format: "latex",
+                        data: child.textContent
+                    });
+                    break;
+                case "label":
+                    // Skipping - is handled in this.formula()
+                    break;
+                case "alternatives":
+                    console.log("========(4)")
+                    console.log(child.children)
+                    for (let item of child.children) {
+                        console.log(item.tagName)
+                        if (item.tagName == "mml:math") {
+                            result.push({
+                                format: "mathml",
+                                data: this.mmlToHtmlString(item)
+                            });
+                            // break;
+                        } else if (item.tagName == "graphic") {
+                            result.push({
+                                format: 'image',
+                                data: item.getAttribute('xlink:href')
+                            });
+                            // break;
+                        }
+                        console.log(item.tagName);
+                    }
+                    console.log("========")
+                    break;
+                default:
+                    console.error('Unsupported formula element of type ' + type);
+            }
+        }
+        return result;
     };
 };
 

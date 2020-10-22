@@ -4,5 +4,6 @@ module.exports = {
   "figure": require("./figure"),
   "caption": require("./caption"),
   "attrib": require("./attrib"),
+  "formula": require("./formula"),
   "footnote_reference": require("./footnote_reference")
 };

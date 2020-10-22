@@ -2,33 +2,44 @@
 
 var _ = require('underscore');
 var CompositeView = require("lens/article/nodes/composite").View;
-var $$ = require ("lens/substance/application").$$;
+var $$ = require("lens/substance/application").$$;
 var ResourceView = require('lens/article/resource_view');
 
-// Substance.Figure.View
-// ==========================================================================
+/**
+ * ===========
+ * 
+ * ===========
+ */
 
-var FigureView = function(node, viewFactory, options) {
+var FigureView = function (node, viewFactory, options) {
   CompositeView.call(this, node, viewFactory);
-
-  
   // Mix-in
   ResourceView.call(this, options);
 };
 
-FigureView.Prototype = function() {
+/**
+ * ===========
+ * 
+ * ===========
+ */
+
+FigureView.Prototype = function () {
 
   // Mix-in
   _.extend(this, ResourceView.prototype);
 
   this.isZoomable = true;
 
-  // Rendering
-  // =============================
-  //
+  /**
+   * ============
+   * RENDERING BODY
+   * ============
+   */
 
-  this.renderBody = function() {
-    this.content.appendChild($$('.label', {text: this.node.label}));
+  this.renderBody = function () {
+    this.content.appendChild(
+      $$('.label', { text: this.node.label })
+    );
 
     if (this.node.url) {
       // Add graphic (img element)
@@ -37,7 +48,9 @@ FigureView.Prototype = function() {
           $$("a", {
             href: this.node.url,
             target: "_blank",
-            children: [$$("img", {src: this.node.url})]
+            children: [
+              $$("img", { src: this.node.url })
+            ]
           })
         ]
       });
@@ -51,7 +64,13 @@ FigureView.Prototype = function() {
     // }
   };
 
-  this.renderLabel = function() {
+    /**
+   * ============
+   * RENDERING LABEL
+   * ============
+   */
+
+  this.renderLabel = function () {
     var labelEl = $$('.name', {
       href: "#"
     });

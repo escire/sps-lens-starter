@@ -266,8 +266,10 @@ SPSConverter.Prototype = function () {
             var type = util.dom.getNodeType(child);
 
             /**
-             * If are alternative it needs to get a subtag.
-             * First mml:math if doesn't exist, then graphic tag
+             * ---------------------------------------------------
+             * If it has alternative tag it needs to get a subtag.
+             * First mml:math, if doesn't exist, then graphic tag
+             * ---------------------------------------------------
              */
 
             if(type == 'alternatives'){
@@ -283,6 +285,13 @@ SPSConverter.Prototype = function () {
                     }
                 }
             }
+
+            /**
+             * ---------------------------------------------------
+             * Add format and data attributes depending the 
+             * type of the tag.
+             * ---------------------------------------------------
+             */
 
             switch (type) {
                 case "graphic":

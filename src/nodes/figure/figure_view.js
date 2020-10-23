@@ -42,14 +42,19 @@ FigureView.Prototype = function () {
     );
 
     if (this.node.url) {
+
+      console.log({
+        imageInFigure: this.node
+      })
+
       // Add graphic (img element)
       var imgEl = $$('.image-wrapper', {
         children: [
           $$("a", {
-            href: this.node.url,
+            href: 'data/'+this.node.url,
             target: "_blank",
             children: [
-              $$("img", { src: this.node.url })
+              $$("img", { src: 'data/'+this.node.url })
             ]
           })
         ]

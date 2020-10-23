@@ -57,11 +57,6 @@ FigureView.Prototype = function () {
       this.content.appendChild(imgEl);
     }
     this.renderChildren();
-    // Attrib
-    // if (this.node.attrib) {
-    //   // console.log('this.node.attrib ' + this.node.attrib);
-    //   this.content.appendChild($$('.figure-attribution', {text: this.node.attrib}));
-    // }
   };
 
     /**

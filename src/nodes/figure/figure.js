@@ -14,7 +14,8 @@ Figure.type = {
     "label": "string",
     "url": "string",
     "caption": "caption",
-    "attrib": "attrib",
+    // "attrib": "attrib",
+    "attrib": ["array", "attrib"],
     "position": "string", // 'float': default;figure goes into figure panel | 'anchor': figure is rendered in-flow
   }
 };
@@ -60,20 +61,24 @@ Figure.Prototype = function() {
 
   this.getChildrenIds = function() {
     var nodes = [];
+
     if (this.properties.caption) {
-      // console.log(this.properties.caption)
       nodes.push(this.properties.caption);
     }
 
+    /**
+     * ------------------------------------
+     * If the figure has attributions
+     * add each atrib to nodes to render
+     * ------------------------------------
+     */
+
     if (this.properties.attrib) {
-      // console.log(this.properties.attrib)
-      nodes.push(this.properties.attrib);
+      this.properties.attrib.forEach(attrib => {
+        nodes.push(attrib);
+      });
     }
 
-    
-    // if (this.properties.attrib) {
-    //   nodes.push(this.properties.attrib);
-    // }
     return nodes;
   };
 

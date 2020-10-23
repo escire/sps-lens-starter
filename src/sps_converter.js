@@ -206,41 +206,30 @@ SPSConverter.Prototype = function () {
         // Add a caption if available
         var caption = figure.querySelector("caption");
 
-        // console.log({
-        //     figureCaption: caption
-        // })
 
         if (caption) {
             var captionNode = this.caption(state, caption);
             if (captionNode) figureNode.caption = captionNode.id;
-
-            // console.log({
-            //     figureCaptionNode: captionNode.id
-            // })
         }
 
-        console.log({
-            figureNodeCaption: figureNode.caption
-        })
+        
+        /**
+         * ----------------------------------
+         * If any attrib in the DOM exists
+         * link the attrib to the figure node
+         * -----------------------------------
+         */
+        
+        var attribs = figure.querySelectorAll("attrib");
 
-        var attrib = figure.querySelector("attrib");
-
-        // console.log({
-        //     figureAttrib: attrib
-        // })
-
-        if (attrib) {
-            var attribNode = this.attrib(state, attrib);
-            if (attribNode) figureNode.attrib = attribNode.id;
-
-            // console.log({
-            //     figureAttribNode: attribNode.id
-            // })
+        if (attribs.length > 0) {
+            figureNode.attrib = []
+            attribs.forEach(attrib => {
+                var attribNode = this.attrib(state, attrib);
+                if (attribNode) figureNode.attrib.push(attribNode.id);
+            });
         }
 
-        console.log({
-            figureNodeAttrib: figureNode.attrib
-        })
 
         var position = figure.getAttribute('position');
         if (position) {
@@ -272,14 +261,14 @@ SPSConverter.Prototype = function () {
              * ---------------------------------------------------
              */
 
-            if(type == 'alternatives'){
+            if (type == 'alternatives') {
                 var element = _.find(child.children, element => element.tagName == 'mml:math')
-                if(element){
+                if (element) {
                     child = element;
                     type = 'mml:math'
-                }else{
+                } else {
                     element = _.find(child.children, element => element.tagName == 'graphic')
-                    if(element){
+                    if (element) {
                         child = element;
                         type = 'graphic'
                     }

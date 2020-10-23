@@ -29,18 +29,6 @@ FormulaView.Prototype = function () {
 
     this.render = function () {
 
-        
-        if(this.node.properties.source_id == "e3"){
-            console.log("======== (1)")
-
-
-            console.log({
-                node: this.node
-            })
-
-            console.log("========")
-        }
-
         if (this.node.inline) {
             this.$el.addClass('inline');
         }

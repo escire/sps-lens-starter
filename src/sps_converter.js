@@ -149,11 +149,7 @@ SPSConverter.Prototype = function () {
             "description": "",
             "children": []
         };
-
-        // console.log({
-        //     attribNode
-        // })
-
+        
         // Titles can be annotated, thus delegate to paragraph
         var description = attrib;
         // var description = attrib.querySelector("description");
@@ -177,12 +173,24 @@ SPSConverter.Prototype = function () {
         attribNode.children = children;
         doc.create(attribNode);
 
-        // console.log({
-        //     attribNode
-        // })
-
         return attribNode;
     };
+
+    this.table = function (state, table) {
+        var doc = state.doc;
+
+        var tableNode = {
+            "id": state.nextId("table"),
+            "source_id": table.getAttribute("id"),
+            "type": "table",
+            "description": "",
+        };
+
+        tableNode.description = this.toHtml(table)
+
+        doc.create(tableNode);
+        return tableNode;
+    }
 
     this.figure = function (state, figure) {
         var doc = state.doc;
@@ -198,9 +206,9 @@ SPSConverter.Prototype = function () {
             "attrib": null,
         };
 
-        var labelEl = figure.querySelector("label");
-        if (labelEl) {
-            figureNode.label = this.annotatedText(state, labelEl, [figureNode.id, 'label']);
+        var label = figure.querySelector("label");
+        if (label) {
+            figureNode.label = this.annotatedText(state, label, [figureNode.id, 'label']);
         }
 
         // Add a caption if available
@@ -210,16 +218,17 @@ SPSConverter.Prototype = function () {
         if (caption) {
             var captionNode = this.caption(state, caption);
             if (captionNode) figureNode.caption = captionNode.id;
+
         }
 
-        
+
         /**
          * ----------------------------------
          * If any attrib in the DOM exists
          * link the attrib to the figure node
          * -----------------------------------
          */
-        
+
         var attribs = figure.querySelectorAll("attrib");
 
         if (attribs.length > 0) {
@@ -229,6 +238,8 @@ SPSConverter.Prototype = function () {
                 if (attribNode) figureNode.attrib.push(attribNode.id);
             });
         }
+
+
 
 
         var position = figure.getAttribute('position');
@@ -244,6 +255,55 @@ SPSConverter.Prototype = function () {
         figure._converted = true;
 
         return figureNode;
+    };
+
+    // ========= 
+    //  TABLE WRAP
+    // ========= 
+
+
+    this.tableWrap = function (state, tableWrap) {
+
+        var doc = state.doc;
+        var label = tableWrap.querySelector("label");
+
+        // console.info({tableWrap});
+
+        var tableNode = {
+            "id": state.nextId("html_table"),
+            "source_id": tableWrap.getAttribute("id"),
+            "type": "html_table",
+            "title": "",
+            "label": label ? label.textContent : "Table",
+            "content": "",
+            "caption": null,
+            "tables": null,
+            // Not supported yet ... need examples
+            footers: [],
+            // doi: "" needed?
+        };
+
+        // Note: using a DOM div element to create HTML
+        var tables = tableWrap.querySelectorAll("table");
+
+        if (tables) {
+            tableNode.tables = [];
+
+            tables.forEach(table => {
+                var node = this.table(state, table);
+                if (node) tableNode.tables.push(node.id)
+            });
+
+
+            //   for (var i = 0; i < table.length; i++) {
+            //     tableNode.content += this.toHtml(table[i]);
+            //   }
+        }
+        this.extractTableCaption(state, tableNode, tableWrap);
+
+        this.enhanceTable(state, tableNode, tableWrap);
+        doc.create(tableNode);
+        return tableNode;
     };
 
     // Formula Node Type
@@ -313,10 +373,7 @@ SPSConverter.Prototype = function () {
                     // Skipping - is handled in this.formula()
                     break;
                 case "alternatives":
-                    console.log("========(4)")
-                    console.log(child.children)
                     for (let item of child.children) {
-                        console.log(item.tagName)
                         if (item.tagName == "mml:math") {
                             result.push({
                                 format: "mathml",
@@ -330,9 +387,7 @@ SPSConverter.Prototype = function () {
                             });
                             // break;
                         }
-                        console.log(item.tagName);
                     }
-                    console.log("========")
                     break;
                 default:
                     console.error('Unsupported formula element of type ' + type);

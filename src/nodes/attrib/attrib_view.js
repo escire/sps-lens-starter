@@ -22,6 +22,7 @@ AttribView.Prototype = function () {
    */
 
   this.render = function () {
+
     this.content = $$('div.content');
 
 

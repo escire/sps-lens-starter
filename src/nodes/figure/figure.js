@@ -6,7 +6,6 @@ var Figure = function(node, document) {
   Document.Composite.call(this, node, document);
 };
 
-
 Figure.type = {
   "parent": "content",
   "properties": {

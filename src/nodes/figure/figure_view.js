@@ -41,13 +41,11 @@ FigureView.Prototype = function () {
       $$('.label', { text: this.node.label })
     );
 
+    // -----------------------
+    // If image exists, add it
+    // -----------------------
+
     if (this.node.url) {
-
-      console.log({
-        imageInFigure: this.node
-      })
-
-      // Add graphic (img element)
       var imgEl = $$('.image-wrapper', {
         children: [
           $$("a", {

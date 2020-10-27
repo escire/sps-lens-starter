@@ -11,7 +11,9 @@ Table.type = {
   "parent": "content",
   "properties": {
     "source_id": "string",
-    "description": "string",
+    "colgroup": "colgroup",
+    "thead": "thead",
+    "tbody": "tbody",
     // "children": ["array", "paragraph"]
   }
 };
@@ -43,15 +45,18 @@ Table.example = {
 Table.Prototype = function() {
 
   this.getChildrenIds = function() {
-    return this.properties.children || [];
-  };
-
-  this.hasDescription = function() {
-    return (!!this.properties.description);
-  };
-
-  this.getDescription = function() {
-    if (this.properties.description) return this.document.get(this.properties.description);
+    // return this.properties.children || [];
+    var nodes = [];
+    if (this.properties.colgroup) {
+      nodes.push(this.properties.colgroup);
+    }
+    if (this.properties.thead) {
+      nodes.push(this.properties.thead);
+    }
+    if (this.properties.tbody) {
+      nodes.push(this.properties.tbody);
+    }
+    return nodes;
   };
 
 };

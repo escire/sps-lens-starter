@@ -9,11 +9,11 @@ var $$ = require("lens/substance/application").$$;
  * ============
  */
 
-var TableView = function (node, viewFactory) {
+var TbodyView = function (node, viewFactory) {
     CompositeView.call(this, node, viewFactory);
 };
 
-TableView.Prototype = function () {
+TbodyView.Prototype = function () {
 
     /**
      * ============
@@ -21,26 +21,13 @@ TableView.Prototype = function () {
      * ============
      */
 
-    // this.render = function () {
-
-    //     this.content = $$('.table-wrapper',{
-    //         html: this.node.properties.description
-    //     });
-
-    //     this.el.appendChild(this.content);
-    //     return this;
-    // };
-
     this.render = function () {
 
-        this.content = $$('.table-wrapper');
-        this.child = $$('table');
+        this.content = $$('tbody.table-wrapper-tbody');
 
         this.renderChildren();
 
-        this.content.appendChild(this.child)
-
-        this.el.appendChild(this.content)
+        this.el.appendChild(this.content);
         return this;
     };
 
@@ -55,19 +42,37 @@ TableView.Prototype = function () {
         for (var i = 0; i < children.length; i++) {
             var childView = this.createChildView(children[i]);
             var childViewEl = childView.render().el;
-            this.child.appendChild(childViewEl.childNodes[0]);
+
+            console.log({
+                tBodyTrUnwrapped: this.unwrap(childViewEl)})
+
+            this.content.appendChild(childViewEl.childNodes[0]);
         }
     };
 
     this.createChildView = function (nodeId) {
+
+        console.log({
+            tbodyNodeId: nodeId
+        })
+
         var view = this.createView(nodeId);
         this.childrenViews.push(view);
         return view;
     };
 
+    this.unwrap = function(node) {
+
+        console.log({nodeUnwraped: node})
+        console.log({childNodes: node.childNodes[0]})
+        console.log({nodeWraped: node.replaceWith(...node.childNodes)})
+
+        return node.replaceWith(...node.childNodes);
+    }
+
 };
 
-TableView.Prototype.prototype = CompositeView.prototype;
-TableView.prototype = new TableView.Prototype();
+TbodyView.Prototype.prototype = CompositeView.prototype;
+TbodyView.prototype = new TbodyView.Prototype();
 
-module.exports = TableView;
+module.exports = TbodyView;

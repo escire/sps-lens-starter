@@ -149,7 +149,7 @@ SPSConverter.Prototype = function () {
             "description": "",
             "children": []
         };
-        
+
         // Titles can be annotated, thus delegate to paragraph
         var description = attrib;
         // var description = attrib.querySelector("description");
@@ -183,13 +183,131 @@ SPSConverter.Prototype = function () {
             "id": state.nextId("table"),
             "source_id": table.getAttribute("id"),
             "type": "table",
-            "description": "",
+            "colgroup": null,
+            "thead": null,
+            "tbody": null,
         };
 
-        tableNode.description = this.toHtml(table)
+        var colgroup = table.querySelector('colgroup');
+
+        if (colgroup) {
+            var colgroupNode = this.colgroup(state, colgroup);
+            if (colgroupNode) tableNode.colgroup = colgroupNode.id;
+        }
+
+        var thead = table.querySelector('thead');
+
+        if (thead) {
+            var theadNode = this.thead(state, thead);
+            if (theadNode) tableNode.thead = theadNode.id;
+        }
+
+        var tbody = table.querySelector('tbody');
+
+        if (tbody) {
+            var tbodyNode = this.tbody(state, tbody);
+            if (tbodyNode) tableNode.tbody = tbodyNode.id;
+        }
 
         doc.create(tableNode);
         return tableNode;
+    }
+
+    this.colgroup = function (state, colgroup) {
+        var doc = state.doc;
+
+        var colgroupNode = {
+            "id": state.nextId("colgroup"),
+            "source_id": colgroup.getAttribute("id"),
+            "type": "colgroup",
+            "content": "",
+        };
+
+        colgroupNode.content = this.toHtml(colgroup);
+
+        doc.create(colgroupNode);
+        return colgroupNode;
+    }
+
+    this.thead = function (state, thead) {
+        var doc = state.doc;
+
+        var theadNode = {
+            "id": state.nextId("thead"),
+            "source_id": thead.getAttribute("id"),
+            "type": "thead",
+            "content": "",
+        };
+
+        theadNode.content = this.toHtml(thead);
+
+        doc.create(theadNode);
+        return theadNode;
+    }
+
+    this.td = function (state, td) {
+        var doc = state.doc
+
+        var tdNode = {
+            "id": state.nextId("td"),
+            "source_id": td.getAttribute("id"),
+            "type": "td",
+            "description": ""
+        }
+
+        if (td) {
+            var node = this.paragraph(state, td)
+            if (node) tdNode.description = node.id
+        }
+
+        doc.create(tdNode);
+        return tdNode;
+    }
+
+    this.tr = function (state, tr) {
+        var doc = state.doc
+
+        var trNode = {
+            "id": state.nextId("tr"),
+            "source_id": tr.getAttribute("id"),
+            "type": "tr",
+            "td": [],
+        }
+
+        var tableData = tr.querySelectorAll('td');
+
+        if (tableData.length > 0) {
+            tableData.forEach(td => {
+                var tdNode = this.td(state, td);
+                if (tdNode) trNode.td.push(tdNode.id)
+            });
+        }
+
+        doc.create(trNode);
+        return trNode;
+    }
+
+    this.tbody = function (state, tbody) {
+        var doc = state.doc;
+
+        var tbodyNode = {
+            "id": state.nextId("tbody"),
+            "source_id": tbody.getAttribute("id"),
+            "type": "tbody",
+            "tr": [],
+        };
+
+        var tableRows = tbody.querySelectorAll('tr');
+
+        if (tableRows.length > 0) {
+            tableRows.forEach(tr => {
+                var trNode = this.tr(state, tr);
+                if (trNode) tbodyNode.tr.push(trNode.id)
+            });
+        }
+
+        doc.create(tbodyNode);
+        return tbodyNode;
     }
 
     this.figure = function (state, figure) {
@@ -283,22 +401,23 @@ SPSConverter.Prototype = function () {
             // doi: "" needed?
         };
 
-        // Note: using a DOM div element to create HTML
+        /**
+         * ----------------------------
+         * Create table models 
+         * and link it to tablewrap
+         * ----------------------------
+         */
+
         var tables = tableWrap.querySelectorAll("table");
 
         if (tables) {
             tableNode.tables = [];
-
             tables.forEach(table => {
                 var node = this.table(state, table);
                 if (node) tableNode.tables.push(node.id)
             });
-
-
-            //   for (var i = 0; i < table.length; i++) {
-            //     tableNode.content += this.toHtml(table[i]);
-            //   }
         }
+
         this.extractTableCaption(state, tableNode, tableWrap);
 
         this.enhanceTable(state, tableNode, tableWrap);

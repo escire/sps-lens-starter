@@ -1,7 +1,7 @@
 "use strict";
 
 var _ = require("underscore");
-var NodeView = require("lens/article/nodes/node").View;
+var NodeView = require("../node").View;
 var $$ = require("lens/substance/application").$$;
 var ResourceView = require('lens/article/resource_view');
 
@@ -25,8 +25,6 @@ HTMLTableView.Prototype = function () {
 	this.isZoomable = true;
 
 	this.renderBody = function () {
-
-
 
 		this.renderChildren();
 

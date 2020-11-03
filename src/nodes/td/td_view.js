@@ -61,11 +61,6 @@ TdView.Prototype = function () {
     };
 
     this.createChildView = function (nodeId) {
-
-        console.log({
-            trViewNodeId: nodeId
-        })
-
         var view = this.createView(nodeId);
         this.childrenViews.push(view);
         return view;

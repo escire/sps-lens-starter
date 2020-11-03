@@ -2,7 +2,7 @@
 
 var Document = require('lens/substance/document');
 
-var Thead = function(node, document) {
+var Thead = function (node, document) {
   Document.Composite.call(this, node, document);
 };
 
@@ -17,7 +17,7 @@ Thead.type = {
   "parent": "table",
   "properties": {
     "source_id": "string",
-    "content": "string"
+    "tr": ["string", "tr"]
   }
 };
 
@@ -55,11 +55,16 @@ Thead.example = {
  * =============
  */
 
-Thead.Prototype = function() {
+Thead.Prototype = function () {
 
-  this.getContent = function() {
-    if (this.properties.content) return this.document.get(this.properties.content);
+  this.getChildrenIds = function () {
+    var nodes = [];
+    if (this.properties.tr) {
+      nodes = this.properties.tr;
+    }
+    return nodes;
   };
+
 
 };
 

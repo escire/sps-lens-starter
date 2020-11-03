@@ -9,11 +9,11 @@ var $$ = require("lens/substance/application").$$;
  * ============
  */
 
-var TheadView = function (node, viewFactory) {
+var TableWrapFootView = function (node, viewFactory) {
     CompositeView.call(this, node, viewFactory);
 };
 
-TheadView.Prototype = function () {
+TableWrapFootView.Prototype = function () {
 
     /**
      * ============
@@ -23,9 +23,9 @@ TheadView.Prototype = function () {
 
     this.render = function () {
 
-        this.content = $$('thead.table-thead');
+        this.content = $$('div.table-wrap-foot');
 
-        this.renderChildren()
+        this.renderChildren();
 
         this.el.appendChild(this.content);
         return this;
@@ -43,7 +43,7 @@ TheadView.Prototype = function () {
             var childView = this.createChildView(children[i]);
             var childViewEl = childView.render().el;
 
-            this.content.appendChild(childViewEl.childNodes[0]);
+            this.content.appendChild(childViewEl);
         }
     };
 
@@ -55,7 +55,7 @@ TheadView.Prototype = function () {
 
 };
 
-TheadView.Prototype.prototype = CompositeView.prototype;
-TheadView.prototype = new TheadView.Prototype();
+TableWrapFootView.Prototype.prototype = CompositeView.prototype;
+TableWrapFootView.prototype = new TableWrapFootView.Prototype();
 
-module.exports = TheadView;
+module.exports = TableWrapFootView;

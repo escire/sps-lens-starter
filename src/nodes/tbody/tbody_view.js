@@ -43,32 +43,15 @@ TbodyView.Prototype = function () {
             var childView = this.createChildView(children[i]);
             var childViewEl = childView.render().el;
 
-            console.log({
-                tBodyTrUnwrapped: this.unwrap(childViewEl)})
-
             this.content.appendChild(childViewEl.childNodes[0]);
         }
     };
 
     this.createChildView = function (nodeId) {
-
-        console.log({
-            tbodyNodeId: nodeId
-        })
-
         var view = this.createView(nodeId);
         this.childrenViews.push(view);
         return view;
     };
-
-    this.unwrap = function(node) {
-
-        console.log({nodeUnwraped: node})
-        console.log({childNodes: node.childNodes[0]})
-        console.log({nodeWraped: node.replaceWith(...node.childNodes)})
-
-        return node.replaceWith(...node.childNodes);
-    }
 
 };
 

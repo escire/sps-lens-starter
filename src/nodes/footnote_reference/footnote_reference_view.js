@@ -1,6 +1,6 @@
 "use strict";
 
-var AnnotationView = require('lens/article/nodes/annotation/annotation_view');
+var AnnotationView = require('../annotation/annotation_view');
 var $$ = require("lens/substance/application").$$;
 
 var _ = require("underscore");
@@ -8,6 +8,7 @@ var _ = require("underscore");
 var FootnoteReferenceView = function(node, viewFactory) {
   AnnotationView.call(this, node, viewFactory);
   this.$el.addClass('footnote-reference');
+
   this._expanded = false;
 };
 
@@ -22,6 +23,13 @@ FootnoteReferenceView.Prototype = function() {
 
     // this.el.innerHTML = formulaView.render().el.innerHTML;
     this.el.innerHTML = "";
+
+    /**
+     * ---------------------------------------
+     * 
+     * ---------------------------------------
+     */
+
     this.toggleEl = $$('a', {href: '#', html: footnote.properties.label});
 
     $(this.toggleEl).on('click', this._onToggle.bind(this));

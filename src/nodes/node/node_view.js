@@ -17,10 +17,6 @@ var NodeView = function(node, viewFactory, options) {
     throw new Error('Illegal argument. Argument "viewFactory" is mandatory.');
   }
 
-  console.log({
-      nodeViewEl: this
-  })
-
   this.$el.addClass('content-node').addClass(node.type.replace('_', '-'));
   this.el.dataset.id = this.node.id;
 };
@@ -48,11 +44,6 @@ NodeView.Prototype = function() {
   };
 
   this.createView = function(nodeId) {
-
-    console.log({
-      thisNode: this.node
-    })
-
     var childNode = this.node.document.get(nodeId);
 
     var view = this.viewFactory.createView(childNode);

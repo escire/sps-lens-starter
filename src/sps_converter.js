@@ -18,6 +18,25 @@ var SPSConverter = function (options) {
 
 SPSConverter.Prototype = function () {
 
+    this._annotationTypes = {
+        "bold": "strong",
+        "italic": "emphasis",
+        "monospace": "code",
+        "sub": "subscript",
+        "sup": "superscript",
+        "sc": "custom_annotation",
+        "roman": "custom_annotation",
+        "sans-serif": "custom_annotation",
+        "styled-content": "custom_annotation",
+        "underline": "underline",
+        "ext-link": "link",
+        "xref": "",
+        "email": "link",
+        "named-content": "",
+        "inline-formula": "inline-formula",
+        "uri": "link"
+      };
+
     this.test = function (xmlDoc) {
         var article = xmlDoc.querySelector("article");
         var articleSPS = article.getAttribute("specific-use");
@@ -69,6 +88,97 @@ SPSConverter.Prototype = function () {
         "mixed-citation": true,
         "element-citation": false
     };
+
+    this.paragraph = function (state, children) {
+        var doc = state.doc;
+    
+        // Reset whitespace handling at the beginning of a paragraph.
+        // I.e., whitespaces at the beginning will be removed rigorously.
+        state.skipWS = true;
+    
+        var node = {
+          id: state.nextId("paragraph"),
+          type: "paragraph",
+          children: null
+        };
+        var nodes = [];
+    
+        var iterator = new util.dom.ChildNodeIterator(children);
+        while (iterator.hasNext()) {
+          var child = iterator.next();
+          var type = util.dom.getNodeType(child);
+    
+          // annotated text node
+          if (type === "text" || this.isAnnotation(type) || this.isInlineNode(type)) {
+            var textNode = {
+              id: state.nextId("text"),
+              type: "text",
+              content: null
+            };
+            // pushing information to the stack so that annotations can be created appropriately
+            state.stack.push({
+              path: [textNode.id, "content"]
+            });
+            // Note: this will consume as many textish elements (text and annotations)
+            // but will return when hitting the first un-textish element.
+            // In that case, the iterator will still have more elements
+            // and the loop is continued
+            // Before descending, we reset the iterator to provide the current element again.
+            // TODO: We have disabled the described behavior as it seems
+            // worse to break automatically on unknown inline tags,
+            // than to render plain text, as it results in data loss.
+            // If you find a situation where you want to flatten structure
+            // found within a paragraph, use this.acceptedParagraphElements instead
+            // which is used in a preparation step before converting paragraphs.
+            var annotatedText = this._annotatedText(state, iterator.back(), { offset: 0, breakOnUnknown: false });
+    
+            // Ignore empty paragraphs
+            if (annotatedText.length > 0) {
+              textNode.content = annotatedText;
+              doc.create(textNode);
+              nodes.push(textNode);
+            }
+    
+            // popping the stack
+            state.stack.pop();
+          }
+          // inline image node
+          else if (type === "inline-graphic") {
+            var url = child.getAttribute("xlink:href");
+            var img = {
+              id: state.nextId("image"),
+              type: "image",
+              url: this.resolveURL(state, url)
+            };
+            doc.create(img);
+            nodes.push(img);
+          }
+          else if (type === "inline-formula") {
+            var formula = this.formula(state, child, "inline");
+            if (formula) {
+              nodes.push(formula);
+            }
+          }
+        }
+    
+        // return if there is no content
+        if (nodes.length === 0) return null;
+    
+        // FIXME: ATM we can not unwrap single nodes, as there is code relying
+        // on getting a paragraph with children
+        // // if there is only a single node, do not create a paragraph around it
+        // if (nodes.length === 1) {
+        //   return nodes[0];
+        // } else {
+        //   node.children = _.map(nodes, function(n) { return n.id; } );
+        //   doc.create(node);
+        //   return node;
+        // }
+    
+        node.children = _.map(nodes, function (n) { return n.id; });
+        doc.create(node);
+        return node;
+      };
 
     this.ref = function (state, ref) {
         var children = util.dom.getChildren(ref);
@@ -236,13 +346,41 @@ SPSConverter.Prototype = function () {
             "id": state.nextId("thead"),
             "source_id": thead.getAttribute("id"),
             "type": "thead",
-            "content": "",
+            "tr": [],
         };
 
         theadNode.content = this.toHtml(thead);
 
+        var tableRows = thead.querySelectorAll('tr');
+
+        if (tableRows.length > 0) {
+            tableRows.forEach(tr => {
+                var trNode = this.tr(state, tr);
+                if (trNode) theadNode.tr.push(trNode.id)
+            });
+        }
+
         doc.create(theadNode);
         return theadNode;
+    }
+
+    this.th = function (state, th) {
+        var doc = state.doc
+
+        var thNode = {
+            "id": state.nextId("th"),
+            "source_id": th.getAttribute("id"),
+            "type": "th",
+            "description": ""
+        }
+
+        if (th) {
+            var node = this.paragraph(state, th)
+            if (node) thNode.description = node.id
+        }
+
+        doc.create(thNode);
+        return thNode;
     }
 
     this.td = function (state, td) {
@@ -256,6 +394,7 @@ SPSConverter.Prototype = function () {
         }
 
         if (td) {
+            // console.log({td})
             var node = this.paragraph(state, td)
             if (node) tdNode.description = node.id
         }
@@ -272,6 +411,7 @@ SPSConverter.Prototype = function () {
             "source_id": tr.getAttribute("id"),
             "type": "tr",
             "td": [],
+            "th": [],
         }
 
         var tableData = tr.querySelectorAll('td');
@@ -280,6 +420,15 @@ SPSConverter.Prototype = function () {
             tableData.forEach(td => {
                 var tdNode = this.td(state, td);
                 if (tdNode) trNode.td.push(tdNode.id)
+            });
+        }
+
+        var tableHeader = tr.querySelectorAll('th');
+
+        if (tableHeader.length > 0) {
+            tableHeader.forEach(th => {
+                var thNode = this.th(state, th);
+                if (thNode) trNode.th.push(thNode.id)
             });
         }
 
@@ -375,6 +524,136 @@ SPSConverter.Prototype = function () {
         return figureNode;
     };
 
+      // Internal function for parsing annotated text
+  // --------------------------------------------
+  // As annotations are nested this is a bit more involved and meant for
+  // internal use only.
+  //
+  this._annotatedText = function(state, iterator, options) {
+    var plainText = "";
+
+    var charPos = (options.offset === undefined) ? 0 : options.offset;
+    var nested = !!options.nested;
+    var breakOnUnknown = !!options.breakOnUnknown;
+
+    while(iterator.hasNext()) {
+      var el = iterator.next();
+      // Plain text nodes...
+      if (el.nodeType === Node.TEXT_NODE) {
+        var text = state.acceptText(el.textContent);
+        plainText += text;
+        charPos += text.length;
+      }
+      // Annotations...
+      else {
+        var annotatedText;
+        var type = util.dom.getNodeType(el);
+        if (this.isAnnotation(type)) {
+          if (state.top().ignore.indexOf(type) < 0) {
+            var start = charPos;
+            if (this._annotationTextHandler[type]) {
+              annotatedText = this._annotationTextHandler[type].call(this, state, el, type, charPos);
+            } else {
+              annotatedText = this._getAnnotationText(state, el, type, charPos);
+            }
+            plainText += annotatedText;
+            charPos += annotatedText.length;
+            if (!state.ignoreAnnotations) {
+              this.createAnnotation(state, el, start, charPos);
+            }
+          }
+        }
+        else if (this.isInlineNode(type)) {
+          plainText += " ";
+          this.createInlineNode(state, el, charPos);
+        }
+        // Unsupported...
+        else if (!breakOnUnknown) {
+          if (state.top().ignore.indexOf(type) < 0) {
+            annotatedText = this._getAnnotationText(state, el, type, charPos);
+            plainText += annotatedText;
+            charPos += annotatedText.length;
+          }
+        } else {
+          if (nested) {
+            console.error("Node not supported in annoted text: " + type +"\n"+el.outerHTML);
+          }
+          else {
+            // on paragraph level other elements can break a text block
+            // we shift back the position and finish this call
+            iterator.back();
+            break;
+          }
+        }
+      }
+    }
+
+    return plainText;
+  };
+
+    // ======== 
+    //  TABLE WRAP
+    // =========
+
+    this.footnote = function (state, footnoteElement) {
+
+        var doc = state.doc;
+        var footnote = {
+            type: 'footnote',
+            id: state.nextId('fn'),
+            source_id: footnoteElement.getAttribute("id"),
+            label: '',
+            children: []
+        };
+
+        var children = footnoteElement.children;
+        var i = 0;
+
+
+        if (children[0].tagName.toLowerCase() === 'label') {
+            footnote.label = this.annotatedText(state, children[0], [footnote.id, 'label']);
+            i++;
+        }
+
+        footnote.children = [];
+        for (; i < children.length; i++) {
+            var nodes = this.paragraphGroup(state, children[i]);
+            Array.prototype.push.apply(footnote.children, _.pluck(nodes, 'id'));
+        }
+        doc.create(footnote);
+        // leave a trace for the catch-all converter
+        // to know that this has been converted already
+        footnoteElement.__converted__ = true;
+        return footnote;
+    };
+
+    // ========= 
+    //  TABLE WRAP
+    // =========
+
+    this.tableWrapFoot = function (state, tableWrapFoot) {
+        var doc = state.doc;
+
+        var tableWrapFootNode = {
+            "id": state.nextId("table-wrap-foot"),
+            "source_id": tableWrapFoot.getAttribute("id"),
+            "type": "table_wrap_foot",
+            "fn": [],
+        };
+
+        // var footnotes = tableWrapFoot.querySelectorAll('fn');
+
+        // if (footnotes.length > 0) {
+        //     footnotes.forEach(footnote => {
+        //         var node = this.footnote(state, footnote)
+        //         if (node) tableWrapFootNode.fn.push(node.id)
+        //     });
+        // }
+
+        doc.create(tableWrapFootNode);
+        return tableWrapFootNode;
+    }
+
     // ========= 
     //  TABLE WRAP
     // ========= 
@@ -397,7 +676,7 @@ SPSConverter.Prototype = function () {
             "caption": null,
             "tables": null,
             // Not supported yet ... need examples
-            footers: [],
+            "footer": null,
             // doi: "" needed?
         };
 
@@ -416,6 +695,20 @@ SPSConverter.Prototype = function () {
                 var node = this.table(state, table);
                 if (node) tableNode.tables.push(node.id)
             });
+        }
+
+        /**
+         * ----------------------------
+         * Create table models 
+         * and link it to tablewrap
+         * ----------------------------
+         */
+
+        var tableWrapFoot = tableWrap.querySelector('table-wrap-foot')
+
+        if (tableWrapFoot) {
+            var tableWrapFootNode = this.tableWrapFoot(state, tableWrapFoot)
+            if (tableWrapFootNode) tableNode.footer = tableWrapFootNode.id
         }
 
         this.extractTableCaption(state, tableNode, tableWrap);

@@ -56,11 +56,6 @@ Attrib.Prototype = function() {
   };
 
   this.getDescription = function() {
-
-    // console.log({
-    //     propertieDescription: this.properties.description
-    // });
-
     if (this.properties.description) return this.document.get(this.properties.description);
   };
 

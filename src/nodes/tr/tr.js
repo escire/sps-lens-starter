@@ -20,6 +20,7 @@ TrNode.type = {
     "properties": {
         "source_id": "string",
         "td": ["string", "td"],
+        "th": ["string", "th"],
     }
 };
 
@@ -54,8 +55,10 @@ TrNode.Prototype = function () {
 
     this.getChildrenIds = function () {
         var nodes = [];
-        if (this.properties.td) {
-            nodes = this.properties.td;
+        if (this.properties.td.length > 0) {
+            nodes.push(...this.properties.td);
+        }else if(this.properties.th.length > 0){
+            nodes.push(...this.properties.th);
         }
         return nodes;
     };

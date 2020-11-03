@@ -12,7 +12,10 @@ module.exports = {
   "tbody": require("./tbody"),
   "tr": require("./tr"),
   "td": require("./td"),
+  "th": require("./th"),
   "node": require("./node"),
   "composite": require("./composite"),
-  "footnote_reference": require("./footnote_reference")
+  "table_wrap_foot": require("./table_wrap_foot"),
+  "footnote_reference": require("./footnote_reference"),
+  "annotation": require("./annotation")
 };

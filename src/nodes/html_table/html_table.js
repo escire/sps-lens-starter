@@ -20,7 +20,7 @@ HTMLTable.type = {
     "source_id": "string",
     "label": "string",
     "content": "string",
-    "footers": ["array", "string"],
+    "footer": "table-wrap-foot",
     "caption": "caption"
   }
 };
@@ -67,7 +67,10 @@ HTMLTable.example = {
 HTMLTable.Prototype = function () {
 
   this.getChildrenIds = function () {
-    return this.properties.tables || [];
+    var nodes = []
+    if (this.properties.tables.length > 0) nodes.push(...this.properties.tables)
+    if (this.properties.footer) nodes.push(this.properties.footer)
+    return nodes;
   };
 
   this.getCaption = function () {

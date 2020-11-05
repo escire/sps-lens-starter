@@ -2,18 +2,21 @@
   "name": "sps-lens-starter",
   "description": "SPS Lens bundle.",
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
     "ejs": "^3.0.2",
-    "express": "3.21.x",
+    "express": "^4.17.1",
     "lens": "github:escire/sps-lens",
+    "method-override": "^3.0.0",
     "underscore": "1.8.x"
   },
   "devDependencies": {
     "browserify": "^16.5.1",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.2.1",
     "gulp-uglify": "^1.2.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^5.0.0",
     "through2": "^2.0.0"
   },
   "version": "1.0.2"

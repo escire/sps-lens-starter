@@ -1462,3 +1462,6 @@ a.go-back:hover span {
   display: inline;
   padding-left: 6px;
   padding-right: 6px; }
+
+.superscript .footnote-reference {
+  vertical-align: -webkit-baseline-middle; }

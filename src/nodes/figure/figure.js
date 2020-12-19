@@ -90,7 +90,7 @@ Figure.Prototype = function() {
   };
 };
 
-Figure.Prototype.prototype = Document.Composite.prototype;
+Figure.Prototype.prototype = Document.Node.prototype;
 Figure.prototype = new Figure.Prototype();
 Figure.prototype.constructor = Figure;
 

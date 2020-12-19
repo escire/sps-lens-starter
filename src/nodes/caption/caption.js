@@ -56,11 +56,6 @@ Caption.Prototype = function() {
   };
 
   this.getTitle = function() {
-
-    // console.log({
-    //     propertieTitle: this.properties.title
-    // });
-
     if (this.properties.title) return this.document.get(this.properties.title);
   };
 

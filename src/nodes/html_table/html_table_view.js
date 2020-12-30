@@ -54,6 +54,8 @@ HTMLTableView.Prototype = function () {
 	this.renderChildren = function () {
 		var children = this.node.getChildrenIds();
 
+		console.log(this.node)
+
 		// ----------------------------
 		//  for each child of table-wrap,
 		// append it

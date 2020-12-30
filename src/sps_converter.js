@@ -675,10 +675,13 @@ SPSConverter.Prototype = function () {
             "content": "",
             "caption": null,
             "tables": null,
+            "graphics": null,
             // Not supported yet ... need examples
             "footer": null,
             // doi: "" needed?
         };
+
+        var graphicsArray = []
 
         /**
          * ----------------------------
@@ -695,6 +698,35 @@ SPSConverter.Prototype = function () {
                 var node = this.table(state, table);
                 if (node) tableNode.tables.push(node.id)
             });
+        }
+
+        // Titles can be annotated, thus delegate to paragraph
+        var graphics = tableWrap.querySelectorAll("graphic");
+
+        
+        // var description = attrib.querySelector("description");
+        if (graphics) {
+            
+            graphics.forEach(graphic => {
+
+                var url = "data/"+graphic.getAttribute("xlink:href");
+
+                var img = {
+                  id: state.nextId("image"),
+                  type: "image",
+                  url: this.resolveURL(state, url)
+                };
+                doc.create(img);
+                graphicsArray.push(img);
+
+            });
+
+            tableNode.graphics = _.map(graphicsArray, function (n) { return n.id; });
+
+            console.log({
+                tableNode
+            })
+
         }
 
         /**

@@ -21,7 +21,8 @@ HTMLTable.type = {
     "label": "string",
     "content": "string",
     "footer": "table-wrap-foot",
-    "caption": "caption"
+    "caption": "caption",
+    "graphics": "image"
   }
 };
 
@@ -70,6 +71,7 @@ HTMLTable.Prototype = function () {
     var nodes = []
     if (this.properties.tables.length > 0) nodes.push(...this.properties.tables)
     if (this.properties.footer) nodes.push(this.properties.footer)
+    if(this.properties.graphics) nodes.push(...this.properties.graphics)
     return nodes;
   };
 

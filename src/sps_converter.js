@@ -35,7 +35,7 @@ SPSConverter.Prototype = function () {
         "named-content": "",
         "inline-formula": "inline-formula",
         "uri": "link"
-      };
+    };
 
     this.test = function (xmlDoc) {
         var article = xmlDoc.querySelector("article");
@@ -91,79 +91,79 @@ SPSConverter.Prototype = function () {
 
     this.paragraph = function (state, children) {
         var doc = state.doc;
-    
+
         // Reset whitespace handling at the beginning of a paragraph.
         // I.e., whitespaces at the beginning will be removed rigorously.
         state.skipWS = true;
-    
+
         var node = {
-          id: state.nextId("paragraph"),
-          type: "paragraph",
-          children: null
+            id: state.nextId("paragraph"),
+            type: "paragraph",
+            children: null
         };
         var nodes = [];
-    
+
         var iterator = new util.dom.ChildNodeIterator(children);
         while (iterator.hasNext()) {
-          var child = iterator.next();
-          var type = util.dom.getNodeType(child);
-    
-          // annotated text node
-          if (type === "text" || this.isAnnotation(type) || this.isInlineNode(type)) {
-            var textNode = {
-              id: state.nextId("text"),
-              type: "text",
-              content: null
-            };
-            // pushing information to the stack so that annotations can be created appropriately
-            state.stack.push({
-              path: [textNode.id, "content"]
-            });
-            // Note: this will consume as many textish elements (text and annotations)
-            // but will return when hitting the first un-textish element.
-            // In that case, the iterator will still have more elements
-            // and the loop is continued
-            // Before descending, we reset the iterator to provide the current element again.
-            // TODO: We have disabled the described behavior as it seems
-            // worse to break automatically on unknown inline tags,
-            // than to render plain text, as it results in data loss.
-            // If you find a situation where you want to flatten structure
-            // found within a paragraph, use this.acceptedParagraphElements instead
-            // which is used in a preparation step before converting paragraphs.
-            var annotatedText = this._annotatedText(state, iterator.back(), { offset: 0, breakOnUnknown: false });
-    
-            // Ignore empty paragraphs
-            if (annotatedText.length > 0) {
-              textNode.content = annotatedText;
-              doc.create(textNode);
-              nodes.push(textNode);
+            var child = iterator.next();
+            var type = util.dom.getNodeType(child);
+
+            // annotated text node
+            if (type === "text" || this.isAnnotation(type) || this.isInlineNode(type)) {
+                var textNode = {
+                    id: state.nextId("text"),
+                    type: "text",
+                    content: null
+                };
+                // pushing information to the stack so that annotations can be created appropriately
+                state.stack.push({
+                    path: [textNode.id, "content"]
+                });
+                // Note: this will consume as many textish elements (text and annotations)
+                // but will return when hitting the first un-textish element.
+                // In that case, the iterator will still have more elements
+                // and the loop is continued
+                // Before descending, we reset the iterator to provide the current element again.
+                // TODO: We have disabled the described behavior as it seems
+                // worse to break automatically on unknown inline tags,
+                // than to render plain text, as it results in data loss.
+                // If you find a situation where you want to flatten structure
+                // found within a paragraph, use this.acceptedParagraphElements instead
+                // which is used in a preparation step before converting paragraphs.
+                var annotatedText = this._annotatedText(state, iterator.back(), { offset: 0, breakOnUnknown: false });
+
+                // Ignore empty paragraphs
+                if (annotatedText.length > 0) {
+                    textNode.content = annotatedText;
+                    doc.create(textNode);
+                    nodes.push(textNode);
+                }
+
+                // popping the stack
+                state.stack.pop();
             }
-    
-            // popping the stack
-            state.stack.pop();
-          }
-          // inline image node
-          else if (type === "inline-graphic") {
-            var url = child.getAttribute("xlink:href");
-            var img = {
-              id: state.nextId("image"),
-              type: "image",
-              url: this.resolveURL(state, url)
-            };
-            doc.create(img);
-            nodes.push(img);
-          }
-          else if (type === "inline-formula") {
-            var formula = this.formula(state, child, "inline");
-            if (formula) {
-              nodes.push(formula);
+            // inline image node
+            else if (type === "inline-graphic") {
+                var url = child.getAttribute("xlink:href");
+                var img = {
+                    id: state.nextId("image"),
+                    type: "image",
+                    url: this.resolveURL(state, url)
+                };
+                doc.create(img);
+                nodes.push(img);
             }
-          }
+            else if (type === "inline-formula") {
+                var formula = this.formula(state, child, "inline");
+                if (formula) {
+                    nodes.push(formula);
+                }
+            }
         }
-    
+
         // return if there is no content
         if (nodes.length === 0) return null;
-    
+
         // FIXME: ATM we can not unwrap single nodes, as there is code relying
         // on getting a paragraph with children
         // // if there is only a single node, do not create a paragraph around it
@@ -174,11 +174,11 @@ SPSConverter.Prototype = function () {
         //   doc.create(node);
         //   return node;
         // }
-    
+
         node.children = _.map(nodes, function (n) { return n.id; });
         doc.create(node);
         return node;
-      };
+    };
 
     this.ref = function (state, ref) {
         var children = util.dom.getChildren(ref);
@@ -216,6 +216,16 @@ SPSConverter.Prototype = function () {
         doc.show("citations", id);
 
         return citationNode;
+    };
+
+    this.titleGroup = function (state, titleGroup) {
+        var doc = state.doc;
+        var articleTitle = titleGroup.querySelector("article-title");
+        if (articleTitle) {
+            doc.title = this.annotatedText(state, articleTitle, ['document', 'title']);
+        }
+        // Not yet supported:
+        // <subtitle> Document Subtitle, zero or one
     };
 
     this.appGroup = function (state, appGroup) {
@@ -524,72 +534,72 @@ SPSConverter.Prototype = function () {
         return figureNode;
     };
 
-      // Internal function for parsing annotated text
-  // --------------------------------------------
-  // As annotations are nested this is a bit more involved and meant for
-  // internal use only.
-  //
-  this._annotatedText = function(state, iterator, options) {
-    var plainText = "";
+    // Internal function for parsing annotated text
+    // --------------------------------------------
+    // As annotations are nested this is a bit more involved and meant for
+    // internal use only.
+    //
+    this._annotatedText = function (state, iterator, options) {
+        var plainText = "";
 
-    var charPos = (options.offset === undefined) ? 0 : options.offset;
-    var nested = !!options.nested;
-    var breakOnUnknown = !!options.breakOnUnknown;
+        var charPos = (options.offset === undefined) ? 0 : options.offset;
+        var nested = !!options.nested;
+        var breakOnUnknown = !!options.breakOnUnknown;
 
-    while(iterator.hasNext()) {
-      var el = iterator.next();
-      // Plain text nodes...
-      if (el.nodeType === Node.TEXT_NODE) {
-        var text = state.acceptText(el.textContent);
-        plainText += text;
-        charPos += text.length;
-      }
-      // Annotations...
-      else {
-        var annotatedText;
-        var type = util.dom.getNodeType(el);
-        if (this.isAnnotation(type)) {
-          if (state.top().ignore.indexOf(type) < 0) {
-            var start = charPos;
-            if (this._annotationTextHandler[type]) {
-              annotatedText = this._annotationTextHandler[type].call(this, state, el, type, charPos);
-            } else {
-              annotatedText = this._getAnnotationText(state, el, type, charPos);
+        while (iterator.hasNext()) {
+            var el = iterator.next();
+            // Plain text nodes...
+            if (el.nodeType === Node.TEXT_NODE) {
+                var text = state.acceptText(el.textContent);
+                plainText += text;
+                charPos += text.length;
             }
-            plainText += annotatedText;
-            charPos += annotatedText.length;
-            if (!state.ignoreAnnotations) {
-              this.createAnnotation(state, el, start, charPos);
+            // Annotations...
+            else {
+                var annotatedText;
+                var type = util.dom.getNodeType(el);
+                if (this.isAnnotation(type)) {
+                    if (state.top().ignore.indexOf(type) < 0) {
+                        var start = charPos;
+                        if (this._annotationTextHandler[type]) {
+                            annotatedText = this._annotationTextHandler[type].call(this, state, el, type, charPos);
+                        } else {
+                            annotatedText = this._getAnnotationText(state, el, type, charPos);
+                        }
+                        plainText += annotatedText;
+                        charPos += annotatedText.length;
+                        if (!state.ignoreAnnotations) {
+                            this.createAnnotation(state, el, start, charPos);
+                        }
+                    }
+                }
+                else if (this.isInlineNode(type)) {
+                    plainText += " ";
+                    this.createInlineNode(state, el, charPos);
+                }
+                // Unsupported...
+                else if (!breakOnUnknown) {
+                    if (state.top().ignore.indexOf(type) < 0) {
+                        annotatedText = this._getAnnotationText(state, el, type, charPos);
+                        plainText += annotatedText;
+                        charPos += annotatedText.length;
+                    }
+                } else {
+                    if (nested) {
+                        console.error("Node not supported in annoted text: " + type + "\n" + el.outerHTML);
+                    }
+                    else {
+                        // on paragraph level other elements can break a text block
+                        // we shift back the position and finish this call
+                        iterator.back();
+                        break;
+                    }
+                }
             }
-          }
         }
-        else if (this.isInlineNode(type)) {
-          plainText += " ";
-          this.createInlineNode(state, el, charPos);
-        }
-        // Unsupported...
-        else if (!breakOnUnknown) {
-          if (state.top().ignore.indexOf(type) < 0) {
-            annotatedText = this._getAnnotationText(state, el, type, charPos);
-            plainText += annotatedText;
-            charPos += annotatedText.length;
-          }
-        } else {
-          if (nested) {
-            console.error("Node not supported in annoted text: " + type +"\n"+el.outerHTML);
-          }
-          else {
-            // on paragraph level other elements can break a text block
-            // we shift back the position and finish this call
-            iterator.back();
-            break;
-          }
-        }
-      }
-    }
 
-    return plainText;
-  };
+        return plainText;
+    };
 
     // ======== 
     //  TABLE WRAP
@@ -703,18 +713,18 @@ SPSConverter.Prototype = function () {
         // Titles can be annotated, thus delegate to paragraph
         var graphics = tableWrap.querySelectorAll("graphic");
 
-        
+
         // var description = attrib.querySelector("description");
         if (graphics) {
-            
+
             graphics.forEach(graphic => {
 
-                var url = "data/"+graphic.getAttribute("xlink:href");
+                var url = "data/" + graphic.getAttribute("xlink:href");
 
                 var img = {
-                  id: state.nextId("image"),
-                  type: "image",
-                  url: this.resolveURL(state, url)
+                    id: state.nextId("image"),
+                    type: "image",
+                    url: this.resolveURL(state, url)
                 };
                 doc.create(img);
                 graphicsArray.push(img);

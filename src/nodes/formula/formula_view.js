@@ -82,7 +82,8 @@ FormulaView.Prototype = function () {
                     case "image":
                         if (!hasPreview) {
                             var $preview = $('<div>').addClass('MathJax_Preview');
-                            $preview.append($('<img>').attr('src', "data/" + data));
+                            // $preview.append($('<img>').attr('src', "data/" + data));
+                            $preview.append($('<img>').attr('src', data));
                             this.$el.append($preview);
                             this.$preview = $preview;
                             hasPreview = true;

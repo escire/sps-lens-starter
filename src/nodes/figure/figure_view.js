@@ -49,10 +49,12 @@ FigureView.Prototype = function () {
       var imgEl = $$('.image-wrapper', {
         children: [
           $$("a", {
-            href: 'data/'+this.node.url,
+            // href: 'data/'+this.node.url,
+            href: this.node.url,
             target: "_blank",
             children: [
-              $$("img", { src: 'data/'+this.node.url })
+              // $$("img", { src: 'data/'+this.node.url })
+              $$("img", { src: this.node.url })
             ]
           })
         ]

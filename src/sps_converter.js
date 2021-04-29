@@ -719,7 +719,8 @@ SPSConverter.Prototype = function () {
 
             graphics.forEach(graphic => {
 
-                var url = "data/" + graphic.getAttribute("xlink:href");
+                // var url = "data/" + graphic.getAttribute("xlink:href");
+                // var url = graphic.getAttribute("xlink:href");
 
                 var img = {
                     id: state.nextId("image"),
@@ -732,10 +733,6 @@ SPSConverter.Prototype = function () {
             });
 
             tableNode.graphics = _.map(graphicsArray, function (n) { return n.id; });
-
-            console.log({
-                tableNode
-            })
 
         }
 

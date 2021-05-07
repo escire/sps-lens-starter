@@ -9,7 +9,7 @@
     "lens": "github:escire/sps-lens",
     "method-override": "^3.0.0",
     "uglify-es": "^3.3.9",
-    "underscore": "1.8.x"
+    "underscore": "1.12.x"
   },
   "devDependencies": {
     "browserify": "^16.5.1",
